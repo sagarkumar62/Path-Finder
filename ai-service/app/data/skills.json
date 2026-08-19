@@ -1,0 +1,19 @@
+[
+  {"name": "javascript", "aliases": ["js", "javascript", "ecmascript"]},
+  {"name": "typescript", "aliases": ["ts", "typescript"]},
+  {"name": "react", "aliases": ["reactjs", "react.js", "react"]},
+  {"name": "node.js", "aliases": ["node", "nodejs", "node.js"]},
+  {"name": "python", "aliases": ["python3", "python 3", "python"]},
+  {"name": "machine learning", "aliases": ["ml", "machine learning"]},
+  {"name": "data analysis", "aliases": ["data analysis", "analytics", "pandas"]},
+  {"name": "sql", "aliases": ["sql", "databases", "postgres", "mysql"]},
+  {"name": "docker", "aliases": ["docker", "containers"]},
+  {"name": "kubernetes", "aliases": ["k8s", "kubernetes"]},
+  {"name": "cloud", "aliases": ["aws", "gcp", "azure", "cloud"]},
+  {"name": "statistics", "aliases": ["statistics", "stats"]},
+  {"name": "design", "aliases": ["ui", "ux", "design"]},
+  {"name": "security fundamentals", "aliases": ["security", "cybersecurity"]},
+  {"name": "mobile development", "aliases": ["mobile", "android", "ios", "react native"]},
+  {"name": "databases", "aliases": ["database", "databases", "sql"]},
+  {"name": "api development", "aliases": ["apis", "api", "rest"]}
+]

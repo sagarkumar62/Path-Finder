@@ -1,0 +1,179 @@
+[
+  {
+    "id": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "description": "Builds end-to-end web applications, covering frontend and backend systems, deployment, and databases.",
+    "required_skills": [
+      {"name": "JavaScript", "importance": 0.9, "required_level": 4},
+      {"name": "Node.js", "importance": 0.8, "required_level": 3},
+      {"name": "React", "importance": 0.85, "required_level": 3},
+      {"name": "Databases", "importance": 0.7, "required_level": 3}
+    ],
+    "recommended_skills": ["TypeScript", "CSS", "Docker"],
+    "interests": ["Web Development", "Product"],
+    "education": ["Bachelor's in CS or related"],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 6
+  },
+  {
+    "id": "frontend-developer",
+    "title": "Frontend Developer",
+    "description": "Focuses on building user interfaces, accessibility, and performant client-side experiences.",
+    "required_skills": [
+      {"name": "JavaScript", "importance": 0.95, "required_level": 4},
+      {"name": "React", "importance": 0.9, "required_level": 4},
+      {"name": "HTML/CSS", "importance": 0.9, "required_level": 4}
+    ],
+    "recommended_skills": ["TypeScript", "Design Systems", "Performance"],
+    "interests": ["UI/UX", "Frontend"],
+    "education": [],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 5
+  },
+  {
+    "id": "backend-developer",
+    "title": "Backend Developer",
+    "description": "Designs and implements server-side logic, APIs, and data management systems.",
+    "required_skills": [
+      {"name": "Node.js", "importance": 0.9, "required_level": 4},
+      {"name": "Databases", "importance": 0.9, "required_level": 4},
+      {"name": "APIs", "importance": 0.85, "required_level": 4}
+    ],
+    "recommended_skills": ["TypeScript", "Testing", "Authentication"],
+    "interests": ["Systems", "APIs"],
+    "education": [],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 6
+  },
+  {
+    "id": "ai-engineer",
+    "title": "AI Engineer",
+    "description": "Builds AI-enabled systems, integrates ML models into products, and engineers data pipelines for production ML.",
+    "required_skills": [
+      {"name": "Python", "importance": 0.95, "required_level": 4},
+      {"name": "Machine Learning", "importance": 0.95, "required_level": 4},
+      {"name": "Data Engineering", "importance": 0.7, "required_level": 3}
+    ],
+    "recommended_skills": ["PyTorch", "TensorFlow", "MLOps"],
+    "interests": ["Artificial Intelligence", "Data"],
+    "education": ["Bachelor's in CS, EE, Math or related"],
+    "experience_levels": ["Mid", "Senior"],
+    "typical_duration_months": 8
+  },
+  {
+    "id": "machine-learning-engineer",
+    "title": "Machine Learning Engineer",
+    "description": "Focuses on training, evaluating, and deploying machine learning models and building scalable model pipelines.",
+    "required_skills": [
+      {"name": "Python", "importance": 0.95, "required_level": 4},
+      {"name": "Machine Learning", "importance": 0.95, "required_level": 4},
+      {"name": "Statistics", "importance": 0.9, "required_level": 3}
+    ],
+    "recommended_skills": ["Model Evaluation", "Feature Engineering"],
+    "interests": ["AI", "Research"],
+    "education": ["Bachelor's or Master's preferred"],
+    "experience_levels": ["Mid", "Senior"],
+    "typical_duration_months": 9
+  },
+  {
+    "id": "data-scientist",
+    "title": "Data Scientist",
+    "description": "Analyzes data to extract insights, build models, and inform product decisions.",
+    "required_skills": [
+      {"name": "Python", "importance": 0.9, "required_level": 4},
+      {"name": "Statistics", "importance": 0.9, "required_level": 4},
+      {"name": "Data Analysis", "importance": 0.9, "required_level": 4}
+    ],
+    "recommended_skills": ["SQL", "Visualization", "Experimentation"],
+    "interests": ["Data", "Research"],
+    "education": ["Bachelor's or Master's"],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 7
+  },
+  {
+    "id": "data-analyst",
+    "title": "Data Analyst",
+    "description": "Transforms and interprets data to support business decisions, reporting, and dashboards.",
+    "required_skills": [
+      {"name": "SQL", "importance": 0.95, "required_level": 4},
+      {"name": "Data Analysis", "importance": 0.9, "required_level": 3},
+      {"name": "Excel", "importance": 0.7, "required_level": 3}
+    ],
+    "recommended_skills": ["Visualization", "Python/pandas"],
+    "interests": ["Business", "Data"],
+    "education": [],
+    "experience_levels": ["Junior", "Mid"],
+    "typical_duration_months": 4
+  },
+  {
+    "id": "devops-engineer",
+    "title": "DevOps Engineer",
+    "description": "Automates deployments, builds CI/CD pipelines, and improves system reliability and observability.",
+    "required_skills": [
+      {"name": "Docker", "importance": 0.9, "required_level": 3},
+      {"name": "CI/CD", "importance": 0.9, "required_level": 3},
+      {"name": "Cloud", "importance": 0.85, "required_level": 3}
+    ],
+    "recommended_skills": ["Kubernetes", "Monitoring"],
+    "interests": ["Infrastructure", "Reliability"],
+    "education": [],
+    "experience_levels": ["Mid", "Senior"],
+    "typical_duration_months": 6
+  },
+  {
+    "id": "cloud-engineer",
+    "title": "Cloud Engineer",
+    "description": "Designs and operates cloud infrastructure, focusing on scalability, security, and cost optimization.",
+    "required_skills": [
+      {"name": "Cloud", "importance": 0.95, "required_level": 4},
+      {"name": "Networking", "importance": 0.7, "required_level": 3}
+    ],
+    "recommended_skills": ["Terraform", "AWS/GCP/Azure"],
+    "interests": ["Cloud", "Infrastructure"],
+    "education": [],
+    "experience_levels": ["Mid", "Senior"],
+    "typical_duration_months": 8
+  },
+  {
+    "id": "cybersecurity-analyst",
+    "title": "Cybersecurity Analyst",
+    "description": "Monitors systems, investigates incidents, and helps secure applications and infrastructure.",
+    "required_skills": [
+      {"name": "Security Fundamentals", "importance": 0.95, "required_level": 4},
+      {"name": "Networking", "importance": 0.8, "required_level": 3}
+    ],
+    "recommended_skills": ["Incident Response", "Forensics"],
+    "interests": ["Security"],
+    "education": [],
+    "experience_levels": ["Junior", "Mid"],
+    "typical_duration_months": 6
+  },
+  {
+    "id": "ui-ux-designer",
+    "title": "UI/UX Designer",
+    "description": "Creates user-centered designs, prototypes, and ensures accessible, usable interfaces.",
+    "required_skills": [
+      {"name": "Design", "importance": 0.95, "required_level": 4},
+      {"name": "Prototyping", "importance": 0.8, "required_level": 3}
+    ],
+    "recommended_skills": ["Figma", "User Research"],
+    "interests": ["Design", "User Experience"],
+    "education": [],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 5
+  },
+  {
+    "id": "mobile-developer",
+    "title": "Mobile Developer",
+    "description": "Builds native or cross-platform mobile applications and optimizes for device constraints.",
+    "required_skills": [
+      {"name": "Mobile Development", "importance": 0.95, "required_level": 4},
+      {"name": "UI/UX", "importance": 0.7, "required_level": 3}
+    ],
+    "recommended_skills": ["React Native", "Kotlin", "Swift"],
+    "interests": ["Mobile", "Interfaces"],
+    "education": [],
+    "experience_levels": ["Junior", "Mid"],
+    "typical_duration_months": 6
+  }
+]

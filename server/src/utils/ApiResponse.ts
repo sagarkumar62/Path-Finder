@@ -1,0 +1,21 @@
+export class ApiResponse<T = any> {
+  public statusCode: number;
+  public success: boolean;
+  public message: string;
+  public data: T;
+
+  constructor(statusCode: number, data: T, message: string = 'Success') {
+    this.statusCode = statusCode;
+    this.success = statusCode < 400;
+    this.message = message;
+    this.data = data;
+  }
+
+  public toJSON() {
+    return {
+      success: this.success,
+      message: this.message,
+      data: this.data,
+    };
+  }
+}
