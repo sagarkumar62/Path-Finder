@@ -175,5 +175,54 @@
     "education": [],
     "experience_levels": ["Junior", "Mid"],
     "typical_duration_months": 6
+  },
+  {
+    "id": "pilot",
+    "title": "Commercial Pilot",
+    "description": "Navigates and operates aircraft for commercial airlines, cargo services, and charter flights.",
+    "required_skills": [
+      {"name": "Flight Navigation", "importance": 0.95, "required_level": 4},
+      {"name": "Aviation Regulations", "importance": 0.90, "required_level": 4},
+      {"name": "Aeronautical Meteorology", "importance": 0.85, "required_level": 3},
+      {"name": "Aircraft Systems", "importance": 0.85, "required_level": 3},
+      {"name": "Cockpit Radio Communication", "importance": 0.80, "required_level": 3}
+    ],
+    "recommended_skills": ["Instrument Rating", "Multi-Engine Rating", "Emergency Protocols"],
+    "interests": ["Aviation", "Navigation", "Flight"],
+    "education": ["Commercial Pilot License (CPL)", "Aviation Science"],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 18
+  },
+  {
+    "id": "civil-engineer",
+    "title": "Civil Engineer",
+    "description": "Designs, plans, and oversees construction of infrastructure projects such as bridges, roads, and dams.",
+    "required_skills": [
+      {"name": "Structural Analysis", "importance": 0.95, "required_level": 4},
+      {"name": "AutoCAD & CAD Design", "importance": 0.90, "required_level": 4},
+      {"name": "Geotechnical Engineering", "importance": 0.85, "required_level": 3},
+      {"name": "Construction Management", "importance": 0.80, "required_level": 3}
+    ],
+    "recommended_skills": ["Revit", "Surveying", "Building Codes"],
+    "interests": ["Construction", "Infrastructure", "Engineering"],
+    "education": ["Bachelor's in Civil Engineering"],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 12
+  },
+  {
+    "id": "accountant",
+    "title": "Accountant",
+    "description": "Prepares financial reports, performs auditing, handles taxation, and ensures financial compliance.",
+    "required_skills": [
+      {"name": "Financial Accounting", "importance": 0.95, "required_level": 4},
+      {"name": "Taxation & Compliance", "importance": 0.90, "required_level": 4},
+      {"name": "Auditing", "importance": 0.85, "required_level": 3},
+      {"name": "Excel Financial Modeling", "importance": 0.85, "required_level": 4}
+    ],
+    "recommended_skills": ["QuickBooks", "SAP Financials", "IFRS Standards"],
+    "interests": ["Finance", "Accounting", "Tax"],
+    "education": ["Bachelor's in Accounting or CPA"],
+    "experience_levels": ["Junior", "Mid", "Senior"],
+    "typical_duration_months": 9
   }
 ]

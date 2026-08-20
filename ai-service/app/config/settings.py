@@ -15,5 +15,13 @@ class Settings:
     EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
     AI_SERVICE_TIMEOUT: int = int(os.getenv("AI_SERVICE_TIMEOUT", "30000"))
 
+    # Scalable Data & Vector Index Paths
+    ESCO_DATA_PATH: Optional[str] = os.getenv("ESCO_DATA_PATH")
+    ONET_DATA_PATH: Optional[str] = os.getenv("ONET_DATA_PATH")
+    CAREER_DATA_PATH: Optional[str] = os.getenv("CAREER_DATA_PATH")
+    VECTOR_INDEX_PATH: Optional[str] = os.getenv("VECTOR_INDEX_PATH")
+    VECTOR_METADATA_PATH: Optional[str] = os.getenv("VECTOR_METADATA_PATH")
+
 
 settings = Settings()
+

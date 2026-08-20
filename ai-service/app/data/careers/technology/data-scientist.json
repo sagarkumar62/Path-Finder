@@ -1,0 +1,46 @@
+{
+  "careerId": "data-scientist",
+  "title": "Data Scientist",
+  "domain": "technology",
+  "description": "Analyze structured and unstructured datasets, build predictive statistical models, and communicate data insights.",
+  "aliases": ["data scientist", "data science"],
+  "nodes": [
+    {
+      "id": "python_sql",
+      "title": "Python & Advanced SQL",
+      "type": "foundation",
+      "description": "Master SQL queries, Python data structures, and statistical data cleaning.",
+      "topics": ["SQL Window Functions", "Python Data Structures", "Data Wrangling"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "stats",
+      "title": "Statistics & Probability",
+      "type": "core",
+      "description": "Apply probability distributions, hypothesis testing, and regression analysis.",
+      "topics": ["Hypothesis Testing", "Probability Distributions", "Linear Regression"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["python_sql"]
+    },
+    {
+      "id": "machine_learning",
+      "title": "Predictive Modeling & Scikit-Learn",
+      "type": "advanced",
+      "description": "Build classification, regression, and clustering algorithms.",
+      "topics": ["Scikit-Learn", "Random Forests", "Gradient Boosting"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "requiredLevel": 4,
+      "prerequisites": ["stats"]
+    }
+  ],
+  "edges": [
+    { "source": "python_sql", "target": "stats", "type": "prerequisite" },
+    { "source": "stats", "target": "machine_learning", "type": "prerequisite" }
+  ]
+}

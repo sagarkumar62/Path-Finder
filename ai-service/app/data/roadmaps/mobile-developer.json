@@ -1,0 +1,58 @@
+{
+  "id": "mobile-developer",
+  "title": "Mobile Developer",
+  "domain": "technology",
+  "source": "roadmap.sh",
+  "source_url": "https://roadmap.sh/android",
+  "nodes": [
+    {
+      "id": "mobile_lang",
+      "title": "Kotlin / Swift & Mobile Core",
+      "type": "foundation",
+      "description": "Master modern mobile programming languages, memory management, and mobile UI lifecycles.",
+      "topics": ["Kotlin / Swift Fundamentals", "Mobile UI Components", "Activity & View Lifecycle", "State Management"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": [],
+      "recommended_level": 4
+    },
+    {
+      "id": "cross_platform",
+      "title": "React Native & Flutter",
+      "type": "core",
+      "description": "Build cross-platform mobile apps for iOS and Android using React Native or Flutter frameworks.",
+      "topics": ["React Native / Flutter UI", "Native Modules & Bridges", "Navigation & Routing", "Local Storage & SQLite"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["mobile_lang"],
+      "recommended_level": 4
+    },
+    {
+      "id": "mobile_backend",
+      "title": "REST APIs & Push Notifications",
+      "type": "advanced",
+      "description": "Integrate backend REST APIs, WebSocket connections, OAuth mobile auth, and Firebase push notifications.",
+      "topics": ["REST API Integration", "Firebase Cloud Messaging", "OAuth 2.0 Mobile Auth", "Offline Syncing"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "prerequisites": ["cross_platform"],
+      "recommended_level": 3
+    },
+    {
+      "id": "app_store",
+      "title": "App Store & Play Store Deployment Capstone",
+      "type": "capstone",
+      "description": "Optimize app bundle sizes, configure CI/CD for app stores (Fastlane), and publish production mobile applications.",
+      "topics": ["Google Play Store & Apple App Store Guidelines", "App Performance & Memory Optimization", "Fastlane CI/CD Automation", "Production Mobile Capstone"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "prerequisites": ["mobile_backend"],
+      "recommended_level": 4
+    }
+  ],
+  "edges": [
+    { "from": "mobile_lang", "to": "cross_platform", "type": "prerequisite" },
+    { "from": "cross_platform", "to": "mobile_backend", "type": "prerequisite" },
+    { "from": "mobile_backend", "to": "app_store", "type": "prerequisite" }
+  ]
+}

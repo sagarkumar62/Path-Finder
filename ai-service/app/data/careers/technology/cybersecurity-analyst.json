@@ -1,0 +1,34 @@
+{
+  "careerId": "cybersecurity-analyst",
+  "title": "Cybersecurity Analyst",
+  "domain": "technology",
+  "description": "Monitor, analyze, and secure enterprise network infrastructures, firewalls, and application endpoints.",
+  "aliases": ["cybersecurity analyst", "cybersecurity"],
+  "nodes": [
+    {
+      "id": "networking_sec",
+      "title": "Network & System Security",
+      "type": "foundation",
+      "description": "Understand TCP/IP protocols, OSI security layers, firewalls, and packet analysis.",
+      "topics": ["TCP/IP & Wireshark", "Firewalls & VPNs", "Network Hardening"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "threat_analysis",
+      "title": "Threat Intelligence & SIEM",
+      "type": "core",
+      "description": "Analyze security logs and conduct incident response.",
+      "topics": ["SIEM Deployment", "Log Analysis", "Incident Response"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["networking_sec"]
+    }
+  ],
+  "edges": [
+    { "source": "networking_sec", "target": "threat_analysis", "type": "prerequisite" }
+  ]
+}

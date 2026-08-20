@@ -1,0 +1,100 @@
+{
+  "ai-engineer": {
+    "title": "AI Engineer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/ai-engineer.json"
+  },
+  "backend-developer": {
+    "title": "Backend Developer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/backend-developer.json"
+  },
+  "frontend-developer": {
+    "title": "Frontend Developer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/frontend-developer.json"
+  },
+  "full-stack-developer": {
+    "title": "Full Stack Developer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/full-stack-developer.json"
+  },
+  "devops-engineer": {
+    "title": "DevOps Engineer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/devops-engineer.json"
+  },
+  "data-engineer": {
+    "title": "Data Engineer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/data-engineer.json"
+  },
+  "mlops-engineer": {
+    "title": "MLOps Engineer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/mlops-engineer.json"
+  },
+  "cybersecurity": {
+    "title": "Cybersecurity Analyst",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/cybersecurity.json"
+  },
+  "mobile-developer": {
+    "title": "Mobile Developer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/mobile-developer.json"
+  },
+  "cloud-engineer": {
+    "title": "Cloud Engineer",
+    "domain": "technology",
+    "career_type": "technical",
+    "source_provider": "roadmap.sh",
+    "file_path": "careers/technical/cloud-engineer.json"
+  },
+  "pilot": {
+    "title": "Commercial Pilot",
+    "domain": "aviation",
+    "career_type": "occupational",
+    "source_provider": "onet_or_esco",
+    "file_path": "careers/occupational/pilot.json"
+  },
+  "nurse": {
+    "title": "Registered Nurse",
+    "domain": "healthcare",
+    "career_type": "occupational",
+    "source_provider": "onet_or_esco",
+    "file_path": "careers/occupational/nurse.json"
+  },
+  "accountant": {
+    "title": "Accountant",
+    "domain": "finance",
+    "career_type": "occupational",
+    "source_provider": "onet_or_esco",
+    "file_path": "careers/occupational/accountant.json"
+  },
+  "civil-engineer": {
+    "title": "Civil Engineer",
+    "domain": "engineering",
+    "career_type": "occupational",
+    "source_provider": "onet_or_esco",
+    "file_path": "careers/occupational/civil-engineer.json"
+  }
+}

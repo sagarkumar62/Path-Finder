@@ -1,0 +1,1081 @@
+{
+  "id": "ai-engineer",
+  "career_id": "ai-engineer",
+  "title": "AI Engineer",
+  "domain": "data-and-ai",
+  "estimatedMonths": 6,
+  "estimatedHours": 200,
+  "nodes": [
+    {
+      "id": "node_1",
+      "nodeId": "node_1",
+      "title": "Deep Learning",
+      "description": "Learn and apply Deep Learning in AI Engineer workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "node_2",
+      "nodeId": "node_2",
+      "title": "Machine Learning",
+      "description": "Learn and apply Machine Learning in AI Engineer workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "node_3",
+      "nodeId": "node_3",
+      "title": "NLP",
+      "description": "Learn and apply NLP in AI Engineer workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_2"
+      ]
+    },
+    {
+      "id": "node_4",
+      "nodeId": "node_4",
+      "title": "Transformers",
+      "description": "Learn and apply Transformers in AI Engineer workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "node_5",
+      "nodeId": "node_5",
+      "title": "Python",
+      "description": "Learn and apply Python in AI Engineer workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_4"
+      ]
+    },
+    {
+      "id": "node_6",
+      "nodeId": "node_6",
+      "title": "Data Science",
+      "description": "Learn and apply Data Science in AI Engineer workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_5"
+      ]
+    },
+    {
+      "id": "node_7",
+      "nodeId": "node_7",
+      "title": "ML",
+      "description": "Learn and apply ML in AI Engineer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_6"
+      ]
+    },
+    {
+      "id": "node_8",
+      "nodeId": "node_8",
+      "title": "SQL",
+      "description": "Learn and apply SQL in AI Engineer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_7"
+      ]
+    },
+    {
+      "id": "node_9",
+      "nodeId": "node_9",
+      "title": "Data Analysis",
+      "description": "Learn and apply Data Analysis in AI Engineer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_8"
+      ]
+    },
+    {
+      "id": "node_10",
+      "nodeId": "node_10",
+      "title": "Machine Learning Projects",
+      "description": "Learn and apply Machine Learning Projects in AI Engineer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_9"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_node_1_node_2",
+      "source": "node_1",
+      "target": "node_2",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_2_node_3",
+      "source": "node_2",
+      "target": "node_3",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_3_node_4",
+      "source": "node_3",
+      "target": "node_4",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_4_node_5",
+      "source": "node_4",
+      "target": "node_5",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_5_node_6",
+      "source": "node_5",
+      "target": "node_6",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_6_node_7",
+      "source": "node_6",
+      "target": "node_7",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_7_node_8",
+      "source": "node_7",
+      "target": "node_8",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_8_node_9",
+      "source": "node_8",
+      "target": "node_9",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_9_node_10",
+      "source": "node_9",
+      "target": "node_10",
+      "type": "prerequisite"
+    }
+  ],
+  "phases": [
+    {
+      "phaseId": "p1",
+      "title": "Phase 1: Foundations for AI Engineer",
+      "description": "Master fundamental prerequisite concepts and core tooling.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Deep Learning",
+        "Machine Learning"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p1_1",
+          "title": "Deep Learning",
+          "description": "Master Deep Learning competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Deep Learning"
+          ]
+        },
+        {
+          "milestoneId": "m_p1_2",
+          "title": "Machine Learning",
+          "description": "Master Machine Learning competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Machine Learning"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076854",
+          "resourceId": "LR076854",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "scikit-learn User Guide",
+          "provider": "scikit-learn",
+          "url": "https://scikit-learn.org/stable/user_guide.html",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "70 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076857",
+          "resourceId": "LR076857",
+          "careerId": "ai-engineer",
+          "skill": "Deep Learning",
+          "skills_covered": [
+            "Deep Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "fast.ai",
+          "provider": "fast.ai",
+          "url": "https://course.fast.ai/",
+          "videoUrl": "https://course.fast.ai/",
+          "rating": 4.8,
+          "duration": "29 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076845",
+          "resourceId": "LR076845",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Hands-On Machine Learning",
+          "provider": "O'Reilly",
+          "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Intermediate",
+          "access": "Paid",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076851",
+          "resourceId": "LR076851",
+          "careerId": "ai-engineer",
+          "skill": "Deep Learning",
+          "skills_covered": [
+            "Deep Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Deep Learning Specialization",
+          "provider": "DeepLearning.AI",
+          "url": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+          "videoUrl": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+          "rating": 4.8,
+          "duration": "5 hours",
+          "level": "Intermediate",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076852",
+          "resourceId": "LR076852",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Machine Learning Crash Course",
+          "provider": "Google",
+          "url": "https://developers.google.com/machine-learning/crash-course",
+          "videoUrl": "https://developers.google.com/machine-learning/crash-course",
+          "rating": 4.8,
+          "duration": "61 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076855",
+          "resourceId": "LR076855",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning Projects",
+          "skills_covered": [
+            "Machine Learning Projects"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "Kaggle Competitions",
+          "provider": "Kaggle",
+          "url": "https://www.kaggle.com/competitions",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "41 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p2",
+      "title": "Phase 2: Skill Development for AI Engineer",
+      "description": "Build core domain logic, architecture, and intermediate patterns.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "NLP",
+        "Transformers"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p2_1",
+          "title": "NLP",
+          "description": "Master NLP competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "NLP"
+          ]
+        },
+        {
+          "milestoneId": "m_p2_2",
+          "title": "Transformers",
+          "description": "Master Transformers competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Transformers"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076846",
+          "resourceId": "LR076846",
+          "careerId": "ai-engineer",
+          "skill": "NLP",
+          "skills_covered": [
+            "NLP",
+            "Transformers"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Hugging Face Course",
+          "provider": "Hugging Face",
+          "url": "https://huggingface.co/learn",
+          "videoUrl": "https://huggingface.co/learn",
+          "rating": 4.8,
+          "duration": "61 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076854",
+          "resourceId": "LR076854",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "scikit-learn User Guide",
+          "provider": "scikit-learn",
+          "url": "https://scikit-learn.org/stable/user_guide.html",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "70 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076857",
+          "resourceId": "LR076857",
+          "careerId": "ai-engineer",
+          "skill": "Deep Learning",
+          "skills_covered": [
+            "Deep Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "fast.ai",
+          "provider": "fast.ai",
+          "url": "https://course.fast.ai/",
+          "videoUrl": "https://course.fast.ai/",
+          "rating": 4.8,
+          "duration": "29 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076845",
+          "resourceId": "LR076845",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Hands-On Machine Learning",
+          "provider": "O'Reilly",
+          "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Intermediate",
+          "access": "Paid",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076851",
+          "resourceId": "LR076851",
+          "careerId": "ai-engineer",
+          "skill": "Deep Learning",
+          "skills_covered": [
+            "Deep Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Deep Learning Specialization",
+          "provider": "DeepLearning.AI",
+          "url": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+          "videoUrl": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+          "rating": 4.8,
+          "duration": "5 hours",
+          "level": "Intermediate",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076858",
+          "resourceId": "LR076858",
+          "careerId": "ai-engineer",
+          "skill": "Python",
+          "skills_covered": [
+            "Python",
+            "Data Science",
+            "ML"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Kaggle Learn",
+          "provider": "Kaggle",
+          "url": "https://www.kaggle.com/learn",
+          "videoUrl": "https://www.kaggle.com/learn",
+          "rating": 4.8,
+          "duration": "16 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p3",
+      "title": "Phase 3: Projects & Experience for AI Engineer",
+      "description": "Advanced techniques, performance optimization, and real-world projects.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Python",
+        "Data Science"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p3_1",
+          "title": "Python",
+          "description": "Master Python competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Python"
+          ]
+        },
+        {
+          "milestoneId": "m_p3_2",
+          "title": "Data Science",
+          "description": "Master Data Science competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Data Science"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076858",
+          "resourceId": "LR076858",
+          "careerId": "ai-engineer",
+          "skill": "Python",
+          "skills_covered": [
+            "Python",
+            "Data Science",
+            "ML"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Kaggle Learn",
+          "provider": "Kaggle",
+          "url": "https://www.kaggle.com/learn",
+          "videoUrl": "https://www.kaggle.com/learn",
+          "rating": 4.8,
+          "duration": "16 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076854",
+          "resourceId": "LR076854",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "scikit-learn User Guide",
+          "provider": "scikit-learn",
+          "url": "https://scikit-learn.org/stable/user_guide.html",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "70 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076846",
+          "resourceId": "LR076846",
+          "careerId": "ai-engineer",
+          "skill": "NLP",
+          "skills_covered": [
+            "NLP",
+            "Transformers"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Hugging Face Course",
+          "provider": "Hugging Face",
+          "url": "https://huggingface.co/learn",
+          "videoUrl": "https://huggingface.co/learn",
+          "rating": 4.8,
+          "duration": "61 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076857",
+          "resourceId": "LR076857",
+          "careerId": "ai-engineer",
+          "skill": "Deep Learning",
+          "skills_covered": [
+            "Deep Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "fast.ai",
+          "provider": "fast.ai",
+          "url": "https://course.fast.ai/",
+          "videoUrl": "https://course.fast.ai/",
+          "rating": 4.8,
+          "duration": "29 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076845",
+          "resourceId": "LR076845",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Hands-On Machine Learning",
+          "provider": "O'Reilly",
+          "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Intermediate",
+          "access": "Paid",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076851",
+          "resourceId": "LR076851",
+          "careerId": "ai-engineer",
+          "skill": "Deep Learning",
+          "skills_covered": [
+            "Deep Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Deep Learning Specialization",
+          "provider": "DeepLearning.AI",
+          "url": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+          "videoUrl": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+          "rating": 4.8,
+          "duration": "5 hours",
+          "level": "Intermediate",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p4",
+      "title": "Phase 4: Career & Placement for AI Engineer",
+      "description": "Deploy real-world capstone project and prepare for career placement.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "ML",
+        "SQL",
+        "Data Analysis",
+        "Machine Learning Projects"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p4_1",
+          "title": "ML",
+          "description": "Master ML competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "ML"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_2",
+          "title": "SQL",
+          "description": "Master SQL competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "SQL"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_3",
+          "title": "Data Analysis",
+          "description": "Master Data Analysis competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Data Analysis"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_4",
+          "title": "Machine Learning Projects",
+          "description": "Master Machine Learning Projects competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Machine Learning Projects"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076854",
+          "resourceId": "LR076854",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "scikit-learn User Guide",
+          "provider": "scikit-learn",
+          "url": "https://scikit-learn.org/stable/user_guide.html",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "70 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076845",
+          "resourceId": "LR076845",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Hands-On Machine Learning",
+          "provider": "O'Reilly",
+          "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Intermediate",
+          "access": "Paid",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076856",
+          "resourceId": "LR076856",
+          "careerId": "ai-engineer",
+          "skill": "SQL",
+          "skills_covered": [
+            "SQL"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "SQLBolt",
+          "provider": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "64 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076848",
+          "resourceId": "LR076848",
+          "careerId": "ai-engineer",
+          "skill": "Data Analysis",
+          "skills_covered": [
+            "Data Analysis"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Pandas Documentation",
+          "provider": "Pandas",
+          "url": "https://pandas.pydata.org/docs/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "66 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076852",
+          "resourceId": "LR076852",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning",
+          "skills_covered": [
+            "Machine Learning"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Machine Learning Crash Course",
+          "provider": "Google",
+          "url": "https://developers.google.com/machine-learning/crash-course",
+          "videoUrl": "https://developers.google.com/machine-learning/crash-course",
+          "rating": 4.8,
+          "duration": "61 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076855",
+          "resourceId": "LR076855",
+          "careerId": "ai-engineer",
+          "skill": "Machine Learning Projects",
+          "skills_covered": [
+            "Machine Learning Projects"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "Kaggle Competitions",
+          "provider": "Kaggle",
+          "url": "https://www.kaggle.com/competitions",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "41 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "learningResources": [
+    {
+      "id": "LR076854",
+      "resourceId": "LR076854",
+      "careerId": "ai-engineer",
+      "skill": "Machine Learning",
+      "skills_covered": [
+        "Machine Learning"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "scikit-learn User Guide",
+      "provider": "scikit-learn",
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "70 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076846",
+      "resourceId": "LR076846",
+      "careerId": "ai-engineer",
+      "skill": "NLP",
+      "skills_covered": [
+        "NLP",
+        "Transformers"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Hugging Face Course",
+      "provider": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "videoUrl": "https://huggingface.co/learn",
+      "rating": 4.8,
+      "duration": "61 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076857",
+      "resourceId": "LR076857",
+      "careerId": "ai-engineer",
+      "skill": "Deep Learning",
+      "skills_covered": [
+        "Deep Learning"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "fast.ai",
+      "provider": "fast.ai",
+      "url": "https://course.fast.ai/",
+      "videoUrl": "https://course.fast.ai/",
+      "rating": 4.8,
+      "duration": "29 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076845",
+      "resourceId": "LR076845",
+      "careerId": "ai-engineer",
+      "skill": "Machine Learning",
+      "skills_covered": [
+        "Machine Learning"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Hands-On Machine Learning",
+      "provider": "O'Reilly",
+      "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "75 hours",
+      "level": "Intermediate",
+      "access": "Paid",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076851",
+      "resourceId": "LR076851",
+      "careerId": "ai-engineer",
+      "skill": "Deep Learning",
+      "skills_covered": [
+        "Deep Learning"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Deep Learning Specialization",
+      "provider": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+      "videoUrl": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+      "rating": 4.8,
+      "duration": "5 hours",
+      "level": "Intermediate",
+      "access": "Paid",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076858",
+      "resourceId": "LR076858",
+      "careerId": "ai-engineer",
+      "skill": "Python",
+      "skills_covered": [
+        "Python",
+        "Data Science",
+        "ML"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Kaggle Learn",
+      "provider": "Kaggle",
+      "url": "https://www.kaggle.com/learn",
+      "videoUrl": "https://www.kaggle.com/learn",
+      "rating": 4.8,
+      "duration": "16 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076856",
+      "resourceId": "LR076856",
+      "careerId": "ai-engineer",
+      "skill": "SQL",
+      "skills_covered": [
+        "SQL"
+      ],
+      "resourceType": "project",
+      "type": "project",
+      "title": "SQLBolt",
+      "provider": "SQLBolt",
+      "url": "https://sqlbolt.com/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "64 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076848",
+      "resourceId": "LR076848",
+      "careerId": "ai-engineer",
+      "skill": "Data Analysis",
+      "skills_covered": [
+        "Data Analysis"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Pandas Documentation",
+      "provider": "Pandas",
+      "url": "https://pandas.pydata.org/docs/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "66 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "2",
+      "phase_name": "Skill Development",
+      "source": "careers.csv",
+      "verified": true
+    }
+  ]
+}

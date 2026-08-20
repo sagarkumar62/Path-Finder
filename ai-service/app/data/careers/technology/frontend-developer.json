@@ -1,0 +1,94 @@
+{
+  "careerId": "frontend-developer",
+  "title": "Frontend Developer",
+  "domain": "technology",
+  "description": "Design and build responsive modern web applications using HTML, CSS, JavaScript, TypeScript, React, and Next.js.",
+  "aliases": ["frontend developer", "front end developer", "frontend engineer"],
+  "nodes": [
+    {
+      "id": "internet",
+      "title": "Internet & Web Protocols",
+      "type": "foundation",
+      "description": "Understand how the internet works, HTTP protocols, DNS, domain names, and browser rendering engines.",
+      "topics": ["How the Internet Works", "HTTP & HTTPS", "DNS Architecture", "Browsers & Rendering"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 3,
+      "prerequisites": []
+    },
+    {
+      "id": "html",
+      "title": "HTML5 & Semantic Markup",
+      "type": "foundation",
+      "description": "Master semantic HTML tags, forms, accessibility (ARIA), and SEO best practices.",
+      "topics": ["Semantic HTML", "Forms & Validation", "Accessibility (a11y)", "SEO Basics"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": ["internet"]
+    },
+    {
+      "id": "css",
+      "title": "CSS3 & Modern Layouts",
+      "type": "core",
+      "description": "Learn CSS selectors, Flexbox, Grid, Responsive Web Design, and CSS Animations.",
+      "topics": ["CSS Selectors", "Flexbox & Grid", "Responsive Design", "Transitions"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": ["html"]
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript (ES6+)",
+      "type": "core",
+      "description": "Master core JavaScript syntax, DOM manipulation, Fetch API, Event Loop, Async/Await, and Closures.",
+      "topics": ["Variables & Scopes", "Async / Await & Promises", "DOM Manipulation", "Event Loop"],
+      "difficulty": "intermediate",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": ["html", "css"]
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript",
+      "type": "intermediate",
+      "description": "Add static typing to JavaScript applications using interfaces, generics, and strict mode.",
+      "topics": ["Type Annotations & Interfaces", "Generics", "TS Config"],
+      "difficulty": "intermediate",
+      "importance": 0.90,
+      "requiredLevel": 3,
+      "prerequisites": ["javascript"]
+    },
+    {
+      "id": "react",
+      "title": "React.js",
+      "type": "core",
+      "description": "Build component-driven user interfaces using React Hooks, State Management, and Context.",
+      "topics": ["JSX & Components", "useState & useEffect", "Context API"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["javascript"]
+    },
+    {
+      "id": "nextjs",
+      "title": "Next.js Framework",
+      "type": "advanced",
+      "description": "Build production React applications with Server Components, App Router, and SSR.",
+      "topics": ["App Router", "Server Components", "SSR & SSG"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "requiredLevel": 3,
+      "prerequisites": ["react", "typescript"]
+    }
+  ],
+  "edges": [
+    { "source": "internet", "target": "html", "type": "prerequisite" },
+    { "source": "html", "target": "css", "type": "prerequisite" },
+    { "source": "css", "target": "javascript", "type": "prerequisite" },
+    { "source": "javascript", "target": "typescript", "type": "prerequisite" },
+    { "source": "javascript", "target": "react", "type": "prerequisite" },
+    { "source": "react", "target": "nextjs", "type": "prerequisite" }
+  ]
+}

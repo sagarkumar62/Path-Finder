@@ -44,3 +44,20 @@ def normalize_profile_skills(profile: Dict) -> Dict:
         normalized.append({"name": canon, "level": level})
     profile["skills"] = normalized
     return profile
+
+
+def _parse_level(level) -> int:
+    if level is None:
+        return 0
+    if isinstance(level, (int, float)):
+        return int(level)
+    lvl_str = str(level).strip().lower()
+    mapping = {
+        "beginner": 1,
+        "elementary": 2,
+        "intermediate": 3,
+        "advanced": 4,
+        "expert": 5
+    }
+    return mapping.get(lvl_str, 0)
+

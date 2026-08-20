@@ -1,0 +1,82 @@
+{
+  "careerId": "ux-designer",
+  "title": "UX/Product Designer",
+  "domain": "design",
+  "description": "Design intuitive user experiences, conduct user research, create interactive wireframes and prototypes, and build scalable design systems.",
+  "aliases": ["ux designer", "ui ux designer", "product designer"],
+  "nodes": [
+    {
+      "id": "ui_fundamentals",
+      "title": "UI & Visual Fundamentals",
+      "type": "foundation",
+      "description": "Master typography, color theory, grid systems, layout balance, and visual hierarchy.",
+      "topics": ["Typography & Pairings", "Color Theory & Contrast", "Grid Systems & Spacing", "Visual Hierarchy"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "user_research",
+      "title": "User Research & Personas",
+      "type": "foundation",
+      "description": "Conduct user interviews, synthesize research data, build user personas, and map customer journey maps.",
+      "topics": ["User Interviews & Surveys", "User Personas", "Empathy Mapping", "Customer Journey Maps"],
+      "difficulty": "beginner",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["ui_fundamentals"]
+    },
+    {
+      "id": "information_arch",
+      "title": "Information Architecture & Card Sorting",
+      "type": "core",
+      "description": "Structure navigation flows, sitemaps, information hierarchy, and card sorting exercises.",
+      "topics": ["Sitemaps & User Flows", "Card Sorting", "Navigation Patterns", "Content Hierarchy"],
+      "difficulty": "intermediate",
+      "importance": 0.90,
+      "requiredLevel": 3,
+      "prerequisites": ["user_research"]
+    },
+    {
+      "id": "wireframing_figma",
+      "title": "Wireframing & Figma Mastery",
+      "type": "core",
+      "description": "Create low-fidelity and high-fidelity wireframes using Figma, auto-layout, components, and variant sets.",
+      "topics": ["Low-Fi & High-Fi Wireframes", "Figma Auto Layout", "Component Variants", "Interactive Prototypes"],
+      "difficulty": "intermediate",
+      "importance": 0.98,
+      "requiredLevel": 4,
+      "prerequisites": ["information_arch"]
+    },
+    {
+      "id": "usability_testing",
+      "title": "Usability Testing & Feedback Loops",
+      "type": "advanced",
+      "description": "Conduct moderated and unmoderated usability tests, analyze heatmaps, and iterate based on feedback.",
+      "topics": ["Usability Scripting", "Heatmap Analysis", "A/B Testing Basics", "Design Iteration"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "requiredLevel": 3,
+      "prerequisites": ["wireframing_figma"]
+    },
+    {
+      "id": "design_systems",
+      "title": "Design Systems & Capstone Portfolio",
+      "type": "capstone",
+      "description": "Build tokenized design systems, component libraries, design handoff documentation, and present a portfolio.",
+      "topics": ["Design Tokens & Variables", "Component Libraries", "Developer Handoff", "Design Portfolio Presentation"],
+      "difficulty": "advanced",
+      "importance": 0.92,
+      "requiredLevel": 4,
+      "prerequisites": ["usability_testing"]
+    }
+  ],
+  "edges": [
+    { "source": "ui_fundamentals", "target": "user_research", "type": "prerequisite" },
+    { "source": "user_research", "target": "information_arch", "type": "prerequisite" },
+    { "source": "information_arch", "target": "wireframing_figma", "type": "prerequisite" },
+    { "source": "wireframing_figma", "target": "usability_testing", "type": "prerequisite" },
+    { "source": "usability_testing", "target": "design_systems", "type": "prerequisite" }
+  ]
+}

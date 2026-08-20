@@ -1,0 +1,70 @@
+{
+  "careerId": "financial-analyst",
+  "title": "Financial Analyst",
+  "domain": "finance",
+  "description": "Analyze financial data, build 3-statement financial models in Excel, evaluate corporate valuations, and prepare financial reports.",
+  "aliases": ["financial analyst", "finance analyst"],
+  "nodes": [
+    {
+      "id": "financial_accounting",
+      "title": "Financial Accounting Fundamentals",
+      "type": "foundation",
+      "description": "Understand double-entry bookkeeping, GAAP & IFRS accounting standards, debit/credit rules, and ledger accounts.",
+      "topics": ["GAAP vs IFRS Standards", "Double-Entry Bookkeeping", "General Ledger & Trial Balance", "Accrual Accounting"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "financial_statements",
+      "title": "Three-Statement Analysis",
+      "type": "foundation",
+      "description": "Analyze Income Statements, Balance Sheets, and Cash Flow Statements and understand inter-statement linkages.",
+      "topics": ["Income Statement Analysis", "Balance Sheet Structure", "Cash Flow Waterfall", "Three-Statement Integration"],
+      "difficulty": "beginner",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["financial_accounting"]
+    },
+    {
+      "id": "excel_modeling",
+      "title": "Financial Modeling in Excel",
+      "type": "core",
+      "description": "Master Excel financial formulas (VLOOKUP, INDEX/MATCH, XLOOKUP), scenario analysis, dynamic formatting, and DCF modeling.",
+      "topics": ["Advanced Excel Formulas", "Dynamic Financial Models", "Scenario & Sensitivity Analysis", "DCF Valuation Modeling"],
+      "difficulty": "intermediate",
+      "importance": 0.98,
+      "requiredLevel": 4,
+      "prerequisites": ["financial_statements"]
+    },
+    {
+      "id": "valuation_methods",
+      "title": "Corporate Valuation & Multiples",
+      "type": "advanced",
+      "description": "Evaluate companies using Comparable Company Analysis (Comps), Precedent Transactions, and LBO models.",
+      "topics": ["Comparable Company Analysis (Comps)", "Precedent Transactions", "LBO Valuation Basics", "WACC & Enterprise Value"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "requiredLevel": 3,
+      "prerequisites": ["excel_modeling"]
+    },
+    {
+      "id": "financial_reporting",
+      "title": "Financial Reporting & Capstone Case Studies",
+      "type": "capstone",
+      "description": "Prepare executive financial slide decks, variance analysis, investment committee memos, and equity research reports.",
+      "topics": ["Variance Analysis (Actual vs Budget)", "Executive Slide Decks", "Equity Research Reports", "Investment Committee Capstone Case"],
+      "difficulty": "advanced",
+      "importance": 0.92,
+      "requiredLevel": 4,
+      "prerequisites": ["valuation_methods"]
+    }
+  ],
+  "edges": [
+    { "source": "financial_accounting", "target": "financial_statements", "type": "prerequisite" },
+    { "source": "financial_statements", "target": "excel_modeling", "type": "prerequisite" },
+    { "source": "excel_modeling", "target": "valuation_methods", "type": "prerequisite" },
+    { "source": "valuation_methods", "target": "financial_reporting", "type": "prerequisite" }
+  ]
+}

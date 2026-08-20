@@ -1,0 +1,35 @@
+{
+  "id": "full-stack-developer",
+  "title": "Full Stack Developer",
+  "domain": "technology",
+  "career_type": "technical",
+  "source": {
+    "provider": "roadmap.sh",
+    "source_id": "full-stack",
+    "url": "https://roadmap.sh/full-stack"
+  },
+  "description": "Architect and deploy end-to-end web applications, from responsive modern frontend interfaces to scalable backend APIs and database infrastructure.",
+  "skills": [
+    { "id": "html_css", "name": "HTML5 & Modern CSS", "importance": 0.95, "required_level": 4, "phase": 1 },
+    { "id": "javascript", "name": "JavaScript (ES6+)", "importance": 0.98, "required_level": 4, "phase": 1 },
+    { "id": "react", "name": "React.js", "importance": 0.95, "required_level": 4, "phase": 2 },
+    { "id": "nodejs", "name": "Node.js & Express.js", "importance": 0.95, "required_level": 4, "phase": 2 },
+    { "id": "databases", "name": "SQL & NoSQL Databases (PostgreSQL / MongoDB)", "importance": 0.90, "required_level": 3, "phase": 2 },
+    { "id": "typescript", "name": "TypeScript", "importance": 0.88, "required_level": 3, "phase": 3 },
+    { "id": "nextjs", "name": "Next.js Framework", "importance": 0.85, "required_level": 3, "phase": 3 },
+    { "id": "deployment", "name": "System Security, JWT Auth & Cloud Deployment", "importance": 0.82, "required_level": 3, "phase": 4 }
+  ],
+  "prerequisites": [
+    ["html_css", "javascript"],
+    ["javascript", "react"],
+    ["javascript", "nodejs"],
+    ["nodejs", "databases"],
+    ["react", "nextjs"],
+    ["typescript", "nextjs"]
+  ],
+  "recommended_skills": ["Tailwind CSS", "Docker", "GraphQL", "REST APIs"],
+  "interests": ["Web Development", "Software Engineering"],
+  "education": ["Computer Science", "Bootcamp / Self-Taught"],
+  "experience_levels": ["Junior", "Mid", "Senior"],
+  "typical_duration_months": 6
+}

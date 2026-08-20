@@ -1,0 +1,1021 @@
+{
+  "id": "product-manager",
+  "career_id": "product-manager",
+  "title": "Product Manager",
+  "domain": "management-and-product",
+  "estimatedMonths": 6,
+  "estimatedHours": 200,
+  "nodes": [
+    {
+      "id": "node_1",
+      "nodeId": "node_1",
+      "title": "Project Management",
+      "description": "Learn and apply Project Management in Product Manager workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "node_2",
+      "nodeId": "node_2",
+      "title": "Product Management",
+      "description": "Learn and apply Product Management in Product Manager workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "node_3",
+      "nodeId": "node_3",
+      "title": "Scrum",
+      "description": "Learn and apply Scrum in Product Manager workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_2"
+      ]
+    },
+    {
+      "id": "node_4",
+      "nodeId": "node_4",
+      "title": "Data Analytics",
+      "description": "Learn and apply Data Analytics in Product Manager workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "node_5",
+      "nodeId": "node_5",
+      "title": "Business Strategy",
+      "description": "Learn and apply Business Strategy in Product Manager workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_4"
+      ]
+    },
+    {
+      "id": "node_6",
+      "nodeId": "node_6",
+      "title": "Power BI",
+      "description": "Learn and apply Power BI in Product Manager workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_5"
+      ]
+    },
+    {
+      "id": "node_7",
+      "nodeId": "node_7",
+      "title": "Agile",
+      "description": "Learn and apply Agile in Product Manager workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_6"
+      ]
+    },
+    {
+      "id": "node_8",
+      "nodeId": "node_8",
+      "title": "SQL",
+      "description": "Learn and apply SQL in Product Manager workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_7"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_node_1_node_2",
+      "source": "node_1",
+      "target": "node_2",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_2_node_3",
+      "source": "node_2",
+      "target": "node_3",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_3_node_4",
+      "source": "node_3",
+      "target": "node_4",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_4_node_5",
+      "source": "node_4",
+      "target": "node_5",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_5_node_6",
+      "source": "node_5",
+      "target": "node_6",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_6_node_7",
+      "source": "node_6",
+      "target": "node_7",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_7_node_8",
+      "source": "node_7",
+      "target": "node_8",
+      "type": "prerequisite"
+    }
+  ],
+  "phases": [
+    {
+      "phaseId": "p1",
+      "title": "Phase 1: Foundations for Product Manager",
+      "description": "Master fundamental prerequisite concepts and core tooling.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Project Management",
+        "Product Management"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p1_1",
+          "title": "Project Management",
+          "description": "Master Project Management competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Project Management"
+          ]
+        },
+        {
+          "milestoneId": "m_p1_2",
+          "title": "Product Management",
+          "description": "Master Product Management competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Product Management"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076921",
+          "resourceId": "LR076921",
+          "careerId": "product-manager",
+          "skill": "Project Management",
+          "skills_covered": [
+            "Project Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "PMI Learning",
+          "provider": "PMI",
+          "url": "https://www.pmi.org/learning",
+          "videoUrl": "https://www.pmi.org/learning",
+          "rating": 4.8,
+          "duration": "40 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075533",
+          "resourceId": "LR075533",
+          "careerId": "product-manager",
+          "skill": "Product Management",
+          "skills_covered": [
+            "Product Management"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "Mind the Product",
+          "provider": "Mind the Product",
+          "url": "https://www.mindtheproduct.com/",
+          "videoUrl": "https://www.mindtheproduct.com/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075534",
+          "resourceId": "LR075534",
+          "careerId": "product-manager",
+          "skill": "Product Management",
+          "skills_covered": [
+            "Product Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Product School",
+          "provider": "Product School",
+          "url": "https://productschool.com/",
+          "videoUrl": "https://productschool.com/",
+          "rating": 4.8,
+          "duration": "70 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076911",
+          "resourceId": "LR076911",
+          "careerId": "product-manager",
+          "skill": "Project Management",
+          "skills_covered": [
+            "Project Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Project Management",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/project-management/",
+          "videoUrl": "https://grow.google/certificates/project-management/",
+          "rating": 4.8,
+          "duration": "34 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075528",
+          "resourceId": "LR075528",
+          "careerId": "product-manager",
+          "skill": "Data Analytics",
+          "skills_covered": [
+            "Data Analytics"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Data Analytics",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/data-analytics/",
+          "videoUrl": "https://grow.google/certificates/data-analytics/",
+          "rating": 4.8,
+          "duration": "48 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076908",
+          "resourceId": "LR076908",
+          "careerId": "product-manager",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "58 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p2",
+      "title": "Phase 2: Skill Development for Product Manager",
+      "description": "Build core domain logic, architecture, and intermediate patterns.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Scrum",
+        "Data Analytics"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p2_1",
+          "title": "Scrum",
+          "description": "Master Scrum competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Scrum"
+          ]
+        },
+        {
+          "milestoneId": "m_p2_2",
+          "title": "Data Analytics",
+          "description": "Master Data Analytics competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Data Analytics"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR075528",
+          "resourceId": "LR075528",
+          "careerId": "product-manager",
+          "skill": "Data Analytics",
+          "skills_covered": [
+            "Data Analytics"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Data Analytics",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/data-analytics/",
+          "videoUrl": "https://grow.google/certificates/data-analytics/",
+          "rating": 4.8,
+          "duration": "48 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076917",
+          "resourceId": "LR076917",
+          "careerId": "product-manager",
+          "skill": "Scrum",
+          "skills_covered": [
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Scrum Guide",
+          "provider": "Scrum.org",
+          "url": "https://scrumguides.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "20 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076921",
+          "resourceId": "LR076921",
+          "careerId": "product-manager",
+          "skill": "Project Management",
+          "skills_covered": [
+            "Project Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "PMI Learning",
+          "provider": "PMI",
+          "url": "https://www.pmi.org/learning",
+          "videoUrl": "https://www.pmi.org/learning",
+          "rating": 4.8,
+          "duration": "40 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076908",
+          "resourceId": "LR076908",
+          "careerId": "product-manager",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "58 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076920",
+          "resourceId": "LR076920",
+          "careerId": "product-manager",
+          "skill": "Power BI",
+          "skills_covered": [
+            "Power BI"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn Power BI",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/power-bi/",
+          "videoUrl": "https://learn.microsoft.com/power-bi/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076919",
+          "resourceId": "LR076919",
+          "careerId": "product-manager",
+          "skill": "SQL",
+          "skills_covered": [
+            "SQL"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "SQLBolt",
+          "provider": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "61 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p3",
+      "title": "Phase 3: Projects & Experience for Product Manager",
+      "description": "Advanced techniques, performance optimization, and real-world projects.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Business Strategy",
+        "Power BI"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p3_1",
+          "title": "Business Strategy",
+          "description": "Master Business Strategy competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Business Strategy"
+          ]
+        },
+        {
+          "milestoneId": "m_p3_2",
+          "title": "Power BI",
+          "description": "Master Power BI competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Power BI"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076920",
+          "resourceId": "LR076920",
+          "careerId": "product-manager",
+          "skill": "Power BI",
+          "skills_covered": [
+            "Power BI"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn Power BI",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/power-bi/",
+          "videoUrl": "https://learn.microsoft.com/power-bi/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076922",
+          "resourceId": "LR076922",
+          "careerId": "product-manager",
+          "skill": "Business Strategy",
+          "skills_covered": [
+            "Business Strategy"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Strategyzer",
+          "provider": "Strategyzer",
+          "url": "https://www.strategyzer.com/",
+          "videoUrl": "https://www.strategyzer.com/",
+          "rating": 4.8,
+          "duration": "14 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075528",
+          "resourceId": "LR075528",
+          "careerId": "product-manager",
+          "skill": "Data Analytics",
+          "skills_covered": [
+            "Data Analytics"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Data Analytics",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/data-analytics/",
+          "videoUrl": "https://grow.google/certificates/data-analytics/",
+          "rating": 4.8,
+          "duration": "48 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076921",
+          "resourceId": "LR076921",
+          "careerId": "product-manager",
+          "skill": "Project Management",
+          "skills_covered": [
+            "Project Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "PMI Learning",
+          "provider": "PMI",
+          "url": "https://www.pmi.org/learning",
+          "videoUrl": "https://www.pmi.org/learning",
+          "rating": 4.8,
+          "duration": "40 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076908",
+          "resourceId": "LR076908",
+          "careerId": "product-manager",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "58 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076919",
+          "resourceId": "LR076919",
+          "careerId": "product-manager",
+          "skill": "SQL",
+          "skills_covered": [
+            "SQL"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "SQLBolt",
+          "provider": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "61 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p4",
+      "title": "Phase 4: Career & Placement for Product Manager",
+      "description": "Deploy real-world capstone project and prepare for career placement.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Agile",
+        "SQL"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p4_1",
+          "title": "Agile",
+          "description": "Master Agile competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Agile"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_2",
+          "title": "SQL",
+          "description": "Master SQL competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "SQL"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076908",
+          "resourceId": "LR076908",
+          "careerId": "product-manager",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "58 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076919",
+          "resourceId": "LR076919",
+          "careerId": "product-manager",
+          "skill": "SQL",
+          "skills_covered": [
+            "SQL"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "SQLBolt",
+          "provider": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "61 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075528",
+          "resourceId": "LR075528",
+          "careerId": "product-manager",
+          "skill": "Data Analytics",
+          "skills_covered": [
+            "Data Analytics"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Data Analytics",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/data-analytics/",
+          "videoUrl": "https://grow.google/certificates/data-analytics/",
+          "rating": 4.8,
+          "duration": "48 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076921",
+          "resourceId": "LR076921",
+          "careerId": "product-manager",
+          "skill": "Project Management",
+          "skills_covered": [
+            "Project Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "PMI Learning",
+          "provider": "PMI",
+          "url": "https://www.pmi.org/learning",
+          "videoUrl": "https://www.pmi.org/learning",
+          "rating": 4.8,
+          "duration": "40 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076920",
+          "resourceId": "LR076920",
+          "careerId": "product-manager",
+          "skill": "Power BI",
+          "skills_covered": [
+            "Power BI"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn Power BI",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/power-bi/",
+          "videoUrl": "https://learn.microsoft.com/power-bi/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076917",
+          "resourceId": "LR076917",
+          "careerId": "product-manager",
+          "skill": "Scrum",
+          "skills_covered": [
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Scrum Guide",
+          "provider": "Scrum.org",
+          "url": "https://scrumguides.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "20 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "learningResources": [
+    {
+      "id": "LR075528",
+      "resourceId": "LR075528",
+      "careerId": "product-manager",
+      "skill": "Data Analytics",
+      "skills_covered": [
+        "Data Analytics"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Google Data Analytics",
+      "provider": "Google",
+      "url": "https://grow.google/certificates/data-analytics/",
+      "videoUrl": "https://grow.google/certificates/data-analytics/",
+      "rating": 4.8,
+      "duration": "48 hours",
+      "level": "Beginner",
+      "access": "Paid",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076921",
+      "resourceId": "LR076921",
+      "careerId": "product-manager",
+      "skill": "Project Management",
+      "skills_covered": [
+        "Project Management"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "PMI Learning",
+      "provider": "PMI",
+      "url": "https://www.pmi.org/learning",
+      "videoUrl": "https://www.pmi.org/learning",
+      "rating": 4.8,
+      "duration": "40 hours",
+      "level": "Beginner",
+      "access": "Paid",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076908",
+      "resourceId": "LR076908",
+      "careerId": "product-manager",
+      "skill": "Agile",
+      "skills_covered": [
+        "Agile",
+        "Scrum"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Atlassian Agile Coach",
+      "provider": "Atlassian",
+      "url": "https://www.atlassian.com/agile",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "58 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076920",
+      "resourceId": "LR076920",
+      "careerId": "product-manager",
+      "skill": "Power BI",
+      "skills_covered": [
+        "Power BI"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Microsoft Learn Power BI",
+      "provider": "Microsoft",
+      "url": "https://learn.microsoft.com/power-bi/",
+      "videoUrl": "https://learn.microsoft.com/power-bi/",
+      "rating": 4.8,
+      "duration": "33 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076919",
+      "resourceId": "LR076919",
+      "careerId": "product-manager",
+      "skill": "SQL",
+      "skills_covered": [
+        "SQL"
+      ],
+      "resourceType": "project",
+      "type": "project",
+      "title": "SQLBolt",
+      "provider": "SQLBolt",
+      "url": "https://sqlbolt.com/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "61 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076917",
+      "resourceId": "LR076917",
+      "careerId": "product-manager",
+      "skill": "Scrum",
+      "skills_covered": [
+        "Scrum"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Scrum Guide",
+      "provider": "Scrum.org",
+      "url": "https://scrumguides.org/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "20 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR075533",
+      "resourceId": "LR075533",
+      "careerId": "product-manager",
+      "skill": "Product Management",
+      "skills_covered": [
+        "Product Management"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "Mind the Product",
+      "provider": "Mind the Product",
+      "url": "https://www.mindtheproduct.com/",
+      "videoUrl": "https://www.mindtheproduct.com/",
+      "rating": 4.8,
+      "duration": "33 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR075534",
+      "resourceId": "LR075534",
+      "careerId": "product-manager",
+      "skill": "Product Management",
+      "skills_covered": [
+        "Product Management"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Product School",
+      "provider": "Product School",
+      "url": "https://productschool.com/",
+      "videoUrl": "https://productschool.com/",
+      "rating": 4.8,
+      "duration": "70 hours",
+      "level": "Beginner",
+      "access": "Paid",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    }
+  ]
+}

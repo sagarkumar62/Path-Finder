@@ -1,0 +1,71 @@
+{
+  "id": "data-engineer",
+  "title": "Data Engineer",
+  "domain": "technology",
+  "source": "roadmap.sh",
+  "source_url": "https://roadmap.sh/data-engineer",
+  "nodes": [
+    {
+      "id": "python_sql",
+      "title": "Python & Advanced SQL",
+      "type": "foundation",
+      "description": "Master complex SQL queries, window functions, Python data structures, and database indexing.",
+      "topics": ["SQL Window Functions & CTEs", "Python Data Manipulation", "Database Indexing", "Query Optimization"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": [],
+      "recommended_level": 4
+    },
+    {
+      "id": "data_modeling",
+      "title": "Data Modeling & Warehousing",
+      "type": "core",
+      "description": "Design star schemas, snowflake schemas, dimensional modeling, and cloud data warehouses (Snowflake / BigQuery).",
+      "topics": ["Star & Snowflake Schema", "Fact & Dimension Tables", "Snowflake & BigQuery", "SCD Type I & II"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["python_sql"],
+      "recommended_level": 4
+    },
+    {
+      "id": "spark",
+      "title": "Apache Spark & Distributed Computing",
+      "type": "core",
+      "description": "Process large-scale datasets using Apache Spark DataFrames, PySpark, partitions, and distributed memory management.",
+      "topics": ["PySpark DataFrames", "Spark Transformations & Actions", "Memory Management & Shuffling", "Delta Lake / Parquet Formats"],
+      "difficulty": "intermediate",
+      "importance": 0.92,
+      "prerequisites": ["python_sql", "data_modeling"],
+      "recommended_level": 4
+    },
+    {
+      "id": "orchestration",
+      "title": "Data Pipelines & Airflow Orchestration",
+      "type": "advanced",
+      "description": "Build, schedule, and monitor automated ETL/ELT pipelines using Apache Airflow DAGs and dbt.",
+      "topics": ["Apache Airflow DAGs", "dbt Data Transformations", "Pipeline Monitoring & Alerts", "Data Lineage"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "prerequisites": ["spark"],
+      "recommended_level": 3
+    },
+    {
+      "id": "streaming",
+      "title": "Real-Time Streaming & Capstone",
+      "type": "capstone",
+      "description": "Implement real-time event streaming architectures using Apache Kafka, Flink, and cloud data lakehouses.",
+      "topics": ["Apache Kafka Producers & Consumers", "Real-Time Stream Processing", "Cloud Data Lakehouse", "End-to-End Data Pipeline Project"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "prerequisites": ["orchestration"],
+      "recommended_level": 4
+    }
+  ],
+  "edges": [
+    { "from": "python_sql", "to": "data_modeling", "type": "prerequisite" },
+    { "from": "python_sql", "to": "spark", "type": "prerequisite" },
+    { "from": "data_modeling", "to": "spark", "type": "prerequisite" },
+    { "from": "spark", "to": "orchestration", "type": "prerequisite" },
+    { "from": "orchestration", "to": "streaming", "type": "prerequisite" }
+  ]
+}

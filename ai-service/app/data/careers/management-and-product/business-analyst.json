@@ -1,0 +1,1021 @@
+{
+  "id": "business-analyst",
+  "career_id": "business-analyst",
+  "title": "Business Analyst",
+  "domain": "management-and-product",
+  "estimatedMonths": 6,
+  "estimatedHours": 200,
+  "nodes": [
+    {
+      "id": "node_1",
+      "nodeId": "node_1",
+      "title": "Project Management",
+      "description": "Learn and apply Project Management in Business Analyst workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "node_2",
+      "nodeId": "node_2",
+      "title": "Product Management",
+      "description": "Learn and apply Product Management in Business Analyst workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "node_3",
+      "nodeId": "node_3",
+      "title": "Scrum",
+      "description": "Learn and apply Scrum in Business Analyst workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_2"
+      ]
+    },
+    {
+      "id": "node_4",
+      "nodeId": "node_4",
+      "title": "Data Analytics",
+      "description": "Learn and apply Data Analytics in Business Analyst workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "node_5",
+      "nodeId": "node_5",
+      "title": "Power BI",
+      "description": "Learn and apply Power BI in Business Analyst workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_4"
+      ]
+    },
+    {
+      "id": "node_6",
+      "nodeId": "node_6",
+      "title": "Business Strategy",
+      "description": "Learn and apply Business Strategy in Business Analyst workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_5"
+      ]
+    },
+    {
+      "id": "node_7",
+      "nodeId": "node_7",
+      "title": "SQL",
+      "description": "Learn and apply SQL in Business Analyst workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_6"
+      ]
+    },
+    {
+      "id": "node_8",
+      "nodeId": "node_8",
+      "title": "Agile",
+      "description": "Learn and apply Agile in Business Analyst workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_7"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_node_1_node_2",
+      "source": "node_1",
+      "target": "node_2",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_2_node_3",
+      "source": "node_2",
+      "target": "node_3",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_3_node_4",
+      "source": "node_3",
+      "target": "node_4",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_4_node_5",
+      "source": "node_4",
+      "target": "node_5",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_5_node_6",
+      "source": "node_5",
+      "target": "node_6",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_6_node_7",
+      "source": "node_6",
+      "target": "node_7",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_7_node_8",
+      "source": "node_7",
+      "target": "node_8",
+      "type": "prerequisite"
+    }
+  ],
+  "phases": [
+    {
+      "phaseId": "p1",
+      "title": "Phase 1: Foundations for Business Analyst",
+      "description": "Master fundamental prerequisite concepts and core tooling.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Project Management",
+        "Product Management"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p1_1",
+          "title": "Project Management",
+          "description": "Master Project Management competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Project Management"
+          ]
+        },
+        {
+          "milestoneId": "m_p1_2",
+          "title": "Product Management",
+          "description": "Master Product Management competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Product Management"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076764",
+          "resourceId": "LR076764",
+          "careerId": "business-analyst",
+          "skill": "Product Management",
+          "skills_covered": [
+            "Product Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Product School",
+          "provider": "Product School",
+          "url": "https://productschool.com/",
+          "videoUrl": "https://productschool.com/",
+          "rating": 4.8,
+          "duration": "53 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076765",
+          "resourceId": "LR076765",
+          "careerId": "business-analyst",
+          "skill": "Product Management",
+          "skills_covered": [
+            "Product Management"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "Mind the Product",
+          "provider": "Mind the Product",
+          "url": "https://www.mindtheproduct.com/",
+          "videoUrl": "https://www.mindtheproduct.com/",
+          "rating": 4.8,
+          "duration": "40 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076766",
+          "resourceId": "LR076766",
+          "careerId": "business-analyst",
+          "skill": "Project Management",
+          "skills_covered": [
+            "Project Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Project Management",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/project-management/",
+          "videoUrl": "https://grow.google/certificates/project-management/",
+          "rating": 4.8,
+          "duration": "59 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076757",
+          "resourceId": "LR076757",
+          "careerId": "business-analyst",
+          "skill": "Project Management",
+          "skills_covered": [
+            "Project Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "PMI Learning",
+          "provider": "PMI",
+          "url": "https://www.pmi.org/learning",
+          "videoUrl": "https://www.pmi.org/learning",
+          "rating": 4.8,
+          "duration": "62 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076753",
+          "resourceId": "LR076753",
+          "careerId": "business-analyst",
+          "skill": "Scrum",
+          "skills_covered": [
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Scrum Guide",
+          "provider": "Scrum.org",
+          "url": "https://scrumguides.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "9 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076761",
+          "resourceId": "LR076761",
+          "careerId": "business-analyst",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "32 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p2",
+      "title": "Phase 2: Skill Development for Business Analyst",
+      "description": "Build core domain logic, architecture, and intermediate patterns.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Scrum",
+        "Data Analytics"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p2_1",
+          "title": "Scrum",
+          "description": "Master Scrum competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Scrum"
+          ]
+        },
+        {
+          "milestoneId": "m_p2_2",
+          "title": "Data Analytics",
+          "description": "Master Data Analytics competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Data Analytics"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076753",
+          "resourceId": "LR076753",
+          "careerId": "business-analyst",
+          "skill": "Scrum",
+          "skills_covered": [
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Scrum Guide",
+          "provider": "Scrum.org",
+          "url": "https://scrumguides.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "9 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076760",
+          "resourceId": "LR076760",
+          "careerId": "business-analyst",
+          "skill": "Data Analytics",
+          "skills_covered": [
+            "Data Analytics"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Data Analytics",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/data-analytics/",
+          "videoUrl": "https://grow.google/certificates/data-analytics/",
+          "rating": 4.8,
+          "duration": "46 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076764",
+          "resourceId": "LR076764",
+          "careerId": "business-analyst",
+          "skill": "Product Management",
+          "skills_covered": [
+            "Product Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Product School",
+          "provider": "Product School",
+          "url": "https://productschool.com/",
+          "videoUrl": "https://productschool.com/",
+          "rating": 4.8,
+          "duration": "53 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076761",
+          "resourceId": "LR076761",
+          "careerId": "business-analyst",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "32 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076763",
+          "resourceId": "LR076763",
+          "careerId": "business-analyst",
+          "skill": "Power BI",
+          "skills_covered": [
+            "Power BI"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn Power BI",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/power-bi/",
+          "videoUrl": "https://learn.microsoft.com/power-bi/",
+          "rating": 4.8,
+          "duration": "79 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076762",
+          "resourceId": "LR076762",
+          "careerId": "business-analyst",
+          "skill": "Business Strategy",
+          "skills_covered": [
+            "Business Strategy"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Strategyzer",
+          "provider": "Strategyzer",
+          "url": "https://www.strategyzer.com/",
+          "videoUrl": "https://www.strategyzer.com/",
+          "rating": 4.8,
+          "duration": "72 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p3",
+      "title": "Phase 3: Projects & Experience for Business Analyst",
+      "description": "Advanced techniques, performance optimization, and real-world projects.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Power BI",
+        "Business Strategy"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p3_1",
+          "title": "Power BI",
+          "description": "Master Power BI competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Power BI"
+          ]
+        },
+        {
+          "milestoneId": "m_p3_2",
+          "title": "Business Strategy",
+          "description": "Master Business Strategy competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Business Strategy"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076763",
+          "resourceId": "LR076763",
+          "careerId": "business-analyst",
+          "skill": "Power BI",
+          "skills_covered": [
+            "Power BI"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn Power BI",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/power-bi/",
+          "videoUrl": "https://learn.microsoft.com/power-bi/",
+          "rating": 4.8,
+          "duration": "79 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076762",
+          "resourceId": "LR076762",
+          "careerId": "business-analyst",
+          "skill": "Business Strategy",
+          "skills_covered": [
+            "Business Strategy"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Strategyzer",
+          "provider": "Strategyzer",
+          "url": "https://www.strategyzer.com/",
+          "videoUrl": "https://www.strategyzer.com/",
+          "rating": 4.8,
+          "duration": "72 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076764",
+          "resourceId": "LR076764",
+          "careerId": "business-analyst",
+          "skill": "Product Management",
+          "skills_covered": [
+            "Product Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Product School",
+          "provider": "Product School",
+          "url": "https://productschool.com/",
+          "videoUrl": "https://productschool.com/",
+          "rating": 4.8,
+          "duration": "53 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076753",
+          "resourceId": "LR076753",
+          "careerId": "business-analyst",
+          "skill": "Scrum",
+          "skills_covered": [
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Scrum Guide",
+          "provider": "Scrum.org",
+          "url": "https://scrumguides.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "9 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076761",
+          "resourceId": "LR076761",
+          "careerId": "business-analyst",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "32 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076760",
+          "resourceId": "LR076760",
+          "careerId": "business-analyst",
+          "skill": "Data Analytics",
+          "skills_covered": [
+            "Data Analytics"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Data Analytics",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/data-analytics/",
+          "videoUrl": "https://grow.google/certificates/data-analytics/",
+          "rating": 4.8,
+          "duration": "46 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p4",
+      "title": "Phase 4: Career & Placement for Business Analyst",
+      "description": "Deploy real-world capstone project and prepare for career placement.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "SQL",
+        "Agile"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p4_1",
+          "title": "SQL",
+          "description": "Master SQL competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "SQL"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_2",
+          "title": "Agile",
+          "description": "Master Agile competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Agile"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076761",
+          "resourceId": "LR076761",
+          "careerId": "business-analyst",
+          "skill": "Agile",
+          "skills_covered": [
+            "Agile",
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Atlassian Agile Coach",
+          "provider": "Atlassian",
+          "url": "https://www.atlassian.com/agile",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "32 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076758",
+          "resourceId": "LR076758",
+          "careerId": "business-analyst",
+          "skill": "SQL",
+          "skills_covered": [
+            "SQL"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "SQLBolt",
+          "provider": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "73 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076764",
+          "resourceId": "LR076764",
+          "careerId": "business-analyst",
+          "skill": "Product Management",
+          "skills_covered": [
+            "Product Management"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Product School",
+          "provider": "Product School",
+          "url": "https://productschool.com/",
+          "videoUrl": "https://productschool.com/",
+          "rating": 4.8,
+          "duration": "53 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076753",
+          "resourceId": "LR076753",
+          "careerId": "business-analyst",
+          "skill": "Scrum",
+          "skills_covered": [
+            "Scrum"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Scrum Guide",
+          "provider": "Scrum.org",
+          "url": "https://scrumguides.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "9 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076763",
+          "resourceId": "LR076763",
+          "careerId": "business-analyst",
+          "skill": "Power BI",
+          "skills_covered": [
+            "Power BI"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn Power BI",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/power-bi/",
+          "videoUrl": "https://learn.microsoft.com/power-bi/",
+          "rating": 4.8,
+          "duration": "79 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076760",
+          "resourceId": "LR076760",
+          "careerId": "business-analyst",
+          "skill": "Data Analytics",
+          "skills_covered": [
+            "Data Analytics"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Google Data Analytics",
+          "provider": "Google",
+          "url": "https://grow.google/certificates/data-analytics/",
+          "videoUrl": "https://grow.google/certificates/data-analytics/",
+          "rating": 4.8,
+          "duration": "46 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "learningResources": [
+    {
+      "id": "LR076764",
+      "resourceId": "LR076764",
+      "careerId": "business-analyst",
+      "skill": "Product Management",
+      "skills_covered": [
+        "Product Management"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Product School",
+      "provider": "Product School",
+      "url": "https://productschool.com/",
+      "videoUrl": "https://productschool.com/",
+      "rating": 4.8,
+      "duration": "53 hours",
+      "level": "Beginner",
+      "access": "Paid",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076753",
+      "resourceId": "LR076753",
+      "careerId": "business-analyst",
+      "skill": "Scrum",
+      "skills_covered": [
+        "Scrum"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Scrum Guide",
+      "provider": "Scrum.org",
+      "url": "https://scrumguides.org/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "9 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076761",
+      "resourceId": "LR076761",
+      "careerId": "business-analyst",
+      "skill": "Agile",
+      "skills_covered": [
+        "Agile",
+        "Scrum"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Atlassian Agile Coach",
+      "provider": "Atlassian",
+      "url": "https://www.atlassian.com/agile",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "32 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076763",
+      "resourceId": "LR076763",
+      "careerId": "business-analyst",
+      "skill": "Power BI",
+      "skills_covered": [
+        "Power BI"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Microsoft Learn Power BI",
+      "provider": "Microsoft",
+      "url": "https://learn.microsoft.com/power-bi/",
+      "videoUrl": "https://learn.microsoft.com/power-bi/",
+      "rating": 4.8,
+      "duration": "79 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076760",
+      "resourceId": "LR076760",
+      "careerId": "business-analyst",
+      "skill": "Data Analytics",
+      "skills_covered": [
+        "Data Analytics"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Google Data Analytics",
+      "provider": "Google",
+      "url": "https://grow.google/certificates/data-analytics/",
+      "videoUrl": "https://grow.google/certificates/data-analytics/",
+      "rating": 4.8,
+      "duration": "46 hours",
+      "level": "Beginner",
+      "access": "Paid",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076762",
+      "resourceId": "LR076762",
+      "careerId": "business-analyst",
+      "skill": "Business Strategy",
+      "skills_covered": [
+        "Business Strategy"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Strategyzer",
+      "provider": "Strategyzer",
+      "url": "https://www.strategyzer.com/",
+      "videoUrl": "https://www.strategyzer.com/",
+      "rating": 4.8,
+      "duration": "72 hours",
+      "level": "Beginner",
+      "access": "Paid",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076765",
+      "resourceId": "LR076765",
+      "careerId": "business-analyst",
+      "skill": "Product Management",
+      "skills_covered": [
+        "Product Management"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "Mind the Product",
+      "provider": "Mind the Product",
+      "url": "https://www.mindtheproduct.com/",
+      "videoUrl": "https://www.mindtheproduct.com/",
+      "rating": 4.8,
+      "duration": "40 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076758",
+      "resourceId": "LR076758",
+      "careerId": "business-analyst",
+      "skill": "SQL",
+      "skills_covered": [
+        "SQL"
+      ],
+      "resourceType": "project",
+      "type": "project",
+      "title": "SQLBolt",
+      "provider": "SQLBolt",
+      "url": "https://sqlbolt.com/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "73 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "2",
+      "phase_name": "Skill Development",
+      "source": "careers.csv",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,1204 @@
+{
+  "id": "full-stack-developer",
+  "career_id": "full-stack-developer",
+  "title": "Full Stack Developer",
+  "domain": "software-development",
+  "estimatedMonths": 6,
+  "estimatedHours": 200,
+  "nodes": [
+    {
+      "id": "node_1",
+      "nodeId": "node_1",
+      "title": "Full Stack Development",
+      "description": "Learn and apply Full Stack Development in Full Stack Developer workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "node_2",
+      "nodeId": "node_2",
+      "title": "Java",
+      "description": "Learn and apply Java in Full Stack Developer workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "node_3",
+      "nodeId": "node_3",
+      "title": "Git",
+      "description": "Learn and apply Git in Full Stack Developer workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_2"
+      ]
+    },
+    {
+      "id": "node_4",
+      "nodeId": "node_4",
+      "title": "GitHub",
+      "description": "Learn and apply GitHub in Full Stack Developer workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "node_5",
+      "nodeId": "node_5",
+      "title": "DSA",
+      "description": "Learn and apply DSA in Full Stack Developer workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_4"
+      ]
+    },
+    {
+      "id": "node_6",
+      "nodeId": "node_6",
+      "title": "Coding",
+      "description": "Learn and apply Coding in Full Stack Developer workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_5"
+      ]
+    },
+    {
+      "id": "node_7",
+      "nodeId": "node_7",
+      "title": "Spring Boot",
+      "description": "Learn and apply Spring Boot in Full Stack Developer workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_6"
+      ]
+    },
+    {
+      "id": "node_8",
+      "nodeId": "node_8",
+      "title": "HTML",
+      "description": "Learn and apply HTML in Full Stack Developer workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_7"
+      ]
+    },
+    {
+      "id": "node_9",
+      "nodeId": "node_9",
+      "title": "CSS",
+      "description": "Learn and apply CSS in Full Stack Developer workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_8"
+      ]
+    },
+    {
+      "id": "node_10",
+      "nodeId": "node_10",
+      "title": "JavaScript",
+      "description": "Learn and apply JavaScript in Full Stack Developer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_9"
+      ]
+    },
+    {
+      "id": "node_11",
+      "nodeId": "node_11",
+      "title": "Developer Roadmaps",
+      "description": "Learn and apply Developer Roadmaps in Full Stack Developer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_10"
+      ]
+    },
+    {
+      "id": "node_12",
+      "nodeId": "node_12",
+      "title": "Computer Science",
+      "description": "Learn and apply Computer Science in Full Stack Developer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_11"
+      ]
+    },
+    {
+      "id": "node_13",
+      "nodeId": "node_13",
+      "title": "Programming",
+      "description": "Learn and apply Programming in Full Stack Developer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_12"
+      ]
+    },
+    {
+      "id": "node_14",
+      "nodeId": "node_14",
+      "title": "Web Development",
+      "description": "Learn and apply Web Development in Full Stack Developer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_13"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_node_1_node_2",
+      "source": "node_1",
+      "target": "node_2",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_2_node_3",
+      "source": "node_2",
+      "target": "node_3",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_3_node_4",
+      "source": "node_3",
+      "target": "node_4",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_4_node_5",
+      "source": "node_4",
+      "target": "node_5",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_5_node_6",
+      "source": "node_5",
+      "target": "node_6",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_6_node_7",
+      "source": "node_6",
+      "target": "node_7",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_7_node_8",
+      "source": "node_7",
+      "target": "node_8",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_8_node_9",
+      "source": "node_8",
+      "target": "node_9",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_9_node_10",
+      "source": "node_9",
+      "target": "node_10",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_10_node_11",
+      "source": "node_10",
+      "target": "node_11",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_11_node_12",
+      "source": "node_11",
+      "target": "node_12",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_12_node_13",
+      "source": "node_12",
+      "target": "node_13",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_13_node_14",
+      "source": "node_13",
+      "target": "node_14",
+      "type": "prerequisite"
+    }
+  ],
+  "phases": [
+    {
+      "phaseId": "p1",
+      "title": "Phase 1: Foundations for Full Stack Developer",
+      "description": "Master fundamental prerequisite concepts and core tooling.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Full Stack Development",
+        "Java",
+        "Git"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p1_1",
+          "title": "Full Stack Development",
+          "description": "Master Full Stack Development competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Full Stack Development"
+          ]
+        },
+        {
+          "milestoneId": "m_p1_2",
+          "title": "Java",
+          "description": "Master Java competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Java"
+          ]
+        },
+        {
+          "milestoneId": "m_p1_3",
+          "title": "Git",
+          "description": "Master Git competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Git"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076046",
+          "resourceId": "LR076046",
+          "careerId": "full-stack-developer",
+          "skill": "Full Stack Development",
+          "skills_covered": [
+            "Full Stack Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Full Stack Open",
+          "provider": "University of Helsinki",
+          "url": "https://fullstackopen.com/",
+          "videoUrl": "https://fullstackopen.com/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076044",
+          "resourceId": "LR076044",
+          "careerId": "full-stack-developer",
+          "skill": "Full Stack Development",
+          "skills_covered": [
+            "Full Stack Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "The Odin Project",
+          "provider": "The Odin Project",
+          "url": "https://www.theodinproject.com/",
+          "videoUrl": "https://www.theodinproject.com/",
+          "rating": 4.8,
+          "duration": "23 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076033",
+          "resourceId": "LR076033",
+          "careerId": "full-stack-developer",
+          "skill": "Java",
+          "skills_covered": [
+            "Java"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Java Documentation",
+          "provider": "Oracle",
+          "url": "https://docs.oracle.com/en/java/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "51 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076045",
+          "resourceId": "LR076045",
+          "careerId": "full-stack-developer",
+          "skill": "Git",
+          "skills_covered": [
+            "Git",
+            "GitHub"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "GitHub Skills",
+          "provider": "GitHub",
+          "url": "https://skills.github.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "65 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076034",
+          "resourceId": "LR076034",
+          "careerId": "full-stack-developer",
+          "skill": "HTML",
+          "skills_covered": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "MDN Web Docs",
+          "provider": "MDN",
+          "url": "https://developer.mozilla.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "11 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076038",
+          "resourceId": "LR076038",
+          "careerId": "full-stack-developer",
+          "skill": "Programming",
+          "skills_covered": [
+            "Programming",
+            "Web Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "freeCodeCamp",
+          "provider": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "videoUrl": "https://www.freecodecamp.org/",
+          "rating": 4.8,
+          "duration": "48 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p2",
+      "title": "Phase 2: Skill Development for Full Stack Developer",
+      "description": "Build core domain logic, architecture, and intermediate patterns.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "GitHub",
+        "DSA",
+        "Coding"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p2_1",
+          "title": "GitHub",
+          "description": "Master GitHub competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "GitHub"
+          ]
+        },
+        {
+          "milestoneId": "m_p2_2",
+          "title": "DSA",
+          "description": "Master DSA competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "DSA"
+          ]
+        },
+        {
+          "milestoneId": "m_p2_3",
+          "title": "Coding",
+          "description": "Master Coding competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Coding"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076047",
+          "resourceId": "LR076047",
+          "careerId": "full-stack-developer",
+          "skill": "DSA",
+          "skills_covered": [
+            "DSA",
+            "Coding"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "LeetCode",
+          "provider": "LeetCode",
+          "url": "https://leetcode.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "7 hours",
+          "level": "Intermediate",
+          "access": "Freemium",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076045",
+          "resourceId": "LR076045",
+          "careerId": "full-stack-developer",
+          "skill": "Git",
+          "skills_covered": [
+            "Git",
+            "GitHub"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "GitHub Skills",
+          "provider": "GitHub",
+          "url": "https://skills.github.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "65 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076046",
+          "resourceId": "LR076046",
+          "careerId": "full-stack-developer",
+          "skill": "Full Stack Development",
+          "skills_covered": [
+            "Full Stack Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Full Stack Open",
+          "provider": "University of Helsinki",
+          "url": "https://fullstackopen.com/",
+          "videoUrl": "https://fullstackopen.com/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076034",
+          "resourceId": "LR076034",
+          "careerId": "full-stack-developer",
+          "skill": "HTML",
+          "skills_covered": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "MDN Web Docs",
+          "provider": "MDN",
+          "url": "https://developer.mozilla.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "11 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076044",
+          "resourceId": "LR076044",
+          "careerId": "full-stack-developer",
+          "skill": "Full Stack Development",
+          "skills_covered": [
+            "Full Stack Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "The Odin Project",
+          "provider": "The Odin Project",
+          "url": "https://www.theodinproject.com/",
+          "videoUrl": "https://www.theodinproject.com/",
+          "rating": 4.8,
+          "duration": "23 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076033",
+          "resourceId": "LR076033",
+          "careerId": "full-stack-developer",
+          "skill": "Java",
+          "skills_covered": [
+            "Java"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Java Documentation",
+          "provider": "Oracle",
+          "url": "https://docs.oracle.com/en/java/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "51 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p3",
+      "title": "Phase 3: Projects & Experience for Full Stack Developer",
+      "description": "Advanced techniques, performance optimization, and real-world projects.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Spring Boot",
+        "HTML",
+        "CSS"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p3_1",
+          "title": "Spring Boot",
+          "description": "Master Spring Boot competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Spring Boot"
+          ]
+        },
+        {
+          "milestoneId": "m_p3_2",
+          "title": "HTML",
+          "description": "Master HTML competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "HTML"
+          ]
+        },
+        {
+          "milestoneId": "m_p3_3",
+          "title": "CSS",
+          "description": "Master CSS competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "CSS"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076034",
+          "resourceId": "LR076034",
+          "careerId": "full-stack-developer",
+          "skill": "HTML",
+          "skills_covered": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "MDN Web Docs",
+          "provider": "MDN",
+          "url": "https://developer.mozilla.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "11 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076037",
+          "resourceId": "LR076037",
+          "careerId": "full-stack-developer",
+          "skill": "Spring Boot",
+          "skills_covered": [
+            "Spring Boot",
+            "Java"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Spring Guides",
+          "provider": "Spring",
+          "url": "https://spring.io/guides",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "8 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076046",
+          "resourceId": "LR076046",
+          "careerId": "full-stack-developer",
+          "skill": "Full Stack Development",
+          "skills_covered": [
+            "Full Stack Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Full Stack Open",
+          "provider": "University of Helsinki",
+          "url": "https://fullstackopen.com/",
+          "videoUrl": "https://fullstackopen.com/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076044",
+          "resourceId": "LR076044",
+          "careerId": "full-stack-developer",
+          "skill": "Full Stack Development",
+          "skills_covered": [
+            "Full Stack Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "The Odin Project",
+          "provider": "The Odin Project",
+          "url": "https://www.theodinproject.com/",
+          "videoUrl": "https://www.theodinproject.com/",
+          "rating": 4.8,
+          "duration": "23 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076033",
+          "resourceId": "LR076033",
+          "careerId": "full-stack-developer",
+          "skill": "Java",
+          "skills_covered": [
+            "Java"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Java Documentation",
+          "provider": "Oracle",
+          "url": "https://docs.oracle.com/en/java/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "51 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076038",
+          "resourceId": "LR076038",
+          "careerId": "full-stack-developer",
+          "skill": "Programming",
+          "skills_covered": [
+            "Programming",
+            "Web Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "freeCodeCamp",
+          "provider": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "videoUrl": "https://www.freecodecamp.org/",
+          "rating": 4.8,
+          "duration": "48 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p4",
+      "title": "Phase 4: Career & Placement for Full Stack Developer",
+      "description": "Deploy real-world capstone project and prepare for career placement.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "JavaScript",
+        "Developer Roadmaps",
+        "Computer Science",
+        "Programming",
+        "Web Development"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p4_1",
+          "title": "JavaScript",
+          "description": "Master JavaScript competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "JavaScript"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_2",
+          "title": "Developer Roadmaps",
+          "description": "Master Developer Roadmaps competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Developer Roadmaps"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_3",
+          "title": "Computer Science",
+          "description": "Master Computer Science competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Computer Science"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_4",
+          "title": "Programming",
+          "description": "Master Programming competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Programming"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_5",
+          "title": "Web Development",
+          "description": "Master Web Development competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Web Development"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076033",
+          "resourceId": "LR076033",
+          "careerId": "full-stack-developer",
+          "skill": "Java",
+          "skills_covered": [
+            "Java"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Java Documentation",
+          "provider": "Oracle",
+          "url": "https://docs.oracle.com/en/java/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "51 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076038",
+          "resourceId": "LR076038",
+          "careerId": "full-stack-developer",
+          "skill": "Programming",
+          "skills_covered": [
+            "Programming",
+            "Web Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "freeCodeCamp",
+          "provider": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "videoUrl": "https://www.freecodecamp.org/",
+          "rating": 4.8,
+          "duration": "48 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076041",
+          "resourceId": "LR076041",
+          "careerId": "full-stack-developer",
+          "skill": "Developer Roadmaps",
+          "skills_covered": [
+            "Developer Roadmaps"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "roadmap.sh",
+          "provider": "roadmap.sh",
+          "url": "https://roadmap.sh/",
+          "videoUrl": "https://roadmap.sh/",
+          "rating": 4.8,
+          "duration": "54 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR074948",
+          "resourceId": "LR074948",
+          "careerId": "full-stack-developer",
+          "skill": "Computer Science",
+          "skills_covered": [
+            "Computer Science"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "CS50",
+          "provider": "Harvard",
+          "url": "https://cs50.harvard.edu/",
+          "videoUrl": "https://cs50.harvard.edu/",
+          "rating": 4.8,
+          "duration": "36 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076046",
+          "resourceId": "LR076046",
+          "careerId": "full-stack-developer",
+          "skill": "Full Stack Development",
+          "skills_covered": [
+            "Full Stack Development"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Full Stack Open",
+          "provider": "University of Helsinki",
+          "url": "https://fullstackopen.com/",
+          "videoUrl": "https://fullstackopen.com/",
+          "rating": 4.8,
+          "duration": "33 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076034",
+          "resourceId": "LR076034",
+          "careerId": "full-stack-developer",
+          "skill": "HTML",
+          "skills_covered": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "MDN Web Docs",
+          "provider": "MDN",
+          "url": "https://developer.mozilla.org/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "11 hours",
+          "level": "Intermediate",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "learningResources": [
+    {
+      "id": "LR076046",
+      "resourceId": "LR076046",
+      "careerId": "full-stack-developer",
+      "skill": "Full Stack Development",
+      "skills_covered": [
+        "Full Stack Development"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Full Stack Open",
+      "provider": "University of Helsinki",
+      "url": "https://fullstackopen.com/",
+      "videoUrl": "https://fullstackopen.com/",
+      "rating": 4.8,
+      "duration": "33 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076034",
+      "resourceId": "LR076034",
+      "careerId": "full-stack-developer",
+      "skill": "HTML",
+      "skills_covered": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "MDN Web Docs",
+      "provider": "MDN",
+      "url": "https://developer.mozilla.org/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "11 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076044",
+      "resourceId": "LR076044",
+      "careerId": "full-stack-developer",
+      "skill": "Full Stack Development",
+      "skills_covered": [
+        "Full Stack Development"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "The Odin Project",
+      "provider": "The Odin Project",
+      "url": "https://www.theodinproject.com/",
+      "videoUrl": "https://www.theodinproject.com/",
+      "rating": 4.8,
+      "duration": "23 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076033",
+      "resourceId": "LR076033",
+      "careerId": "full-stack-developer",
+      "skill": "Java",
+      "skills_covered": [
+        "Java"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Java Documentation",
+      "provider": "Oracle",
+      "url": "https://docs.oracle.com/en/java/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "51 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076038",
+      "resourceId": "LR076038",
+      "careerId": "full-stack-developer",
+      "skill": "Programming",
+      "skills_covered": [
+        "Programming",
+        "Web Development"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "freeCodeCamp",
+      "provider": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/",
+      "videoUrl": "https://www.freecodecamp.org/",
+      "rating": 4.8,
+      "duration": "48 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "2",
+      "phase_name": "Skill Development",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076047",
+      "resourceId": "LR076047",
+      "careerId": "full-stack-developer",
+      "skill": "DSA",
+      "skills_covered": [
+        "DSA",
+        "Coding"
+      ],
+      "resourceType": "project",
+      "type": "project",
+      "title": "LeetCode",
+      "provider": "LeetCode",
+      "url": "https://leetcode.com/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "7 hours",
+      "level": "Intermediate",
+      "access": "Freemium",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076041",
+      "resourceId": "LR076041",
+      "careerId": "full-stack-developer",
+      "skill": "Developer Roadmaps",
+      "skills_covered": [
+        "Developer Roadmaps"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "roadmap.sh",
+      "provider": "roadmap.sh",
+      "url": "https://roadmap.sh/",
+      "videoUrl": "https://roadmap.sh/",
+      "rating": 4.8,
+      "duration": "54 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076045",
+      "resourceId": "LR076045",
+      "careerId": "full-stack-developer",
+      "skill": "Git",
+      "skills_covered": [
+        "Git",
+        "GitHub"
+      ],
+      "resourceType": "project",
+      "type": "project",
+      "title": "GitHub Skills",
+      "provider": "GitHub",
+      "url": "https://skills.github.com/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "65 hours",
+      "level": "Intermediate",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    }
+  ]
+}

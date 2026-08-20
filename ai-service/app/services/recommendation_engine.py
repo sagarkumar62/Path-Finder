@@ -8,17 +8,32 @@ from app.models.career import Career, SkillRequirement
 from app.utils.normalization import normalize_profile_skills
 from app.config.settings import settings
 
-_BASE = Path(__file__).resolve().parents[1] / "data"
+from app.ingestion.unified_loader import load_unified_careers
 
 
 def load_careers() -> List[Career]:
-    path = _BASE / "careers.json"
-    data = json.loads(path.read_text(encoding="utf-8"))
-    careers = [Career(**c) for c in data]
+    unified = load_unified_careers()
+    careers = []
+    for c in unified:
+        req_skills = []
+        for s in c.get("required_skills", []):
+            if isinstance(s, dict):
+                req_skills.append(SkillRequirement(
+                    name=s.get("name", ""),
+                    importance=s.get("importance", 0.5),
+                    required_level=s.get("required_level", 3)
+                ))
+        c_copy = dict(c)
+        c_copy["required_skills"] = req_skills
+        try:
+            careers.append(Career(**c_copy))
+        except Exception:
+            pass
     return careers
 
 
 CAREERS = load_careers()
+
 
 
 def _skill_match(profile_skills: List[Dict], required: List[SkillRequirement]) -> Tuple[float, List[str], List[str]]:

@@ -1,0 +1,70 @@
+{
+  "careerId": "ai-engineer",
+  "title": "AI Engineer",
+  "domain": "technology",
+  "description": "Design, build, and deploy production-grade Artificial Intelligence and LLM applications using PyTorch, vector databases, and RAG architectures.",
+  "aliases": ["ai engineer", "artificial intelligence engineer", "ai/ml engineer"],
+  "nodes": [
+    {
+      "id": "python",
+      "title": "Python Programming",
+      "type": "foundation",
+      "description": "Master Python fundamentals, OOP, data structures, and virtual environments.",
+      "topics": ["Python Syntax & Data Structures", "OOP & Design Patterns", "Virtual Environments"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "machine_learning",
+      "title": "Machine Learning Fundamentals",
+      "type": "core",
+      "description": "Train regression, classification, and clustering models using Scikit-Learn.",
+      "topics": ["Supervised & Unsupervised Learning", "Scikit-Learn Models", "Feature Engineering"],
+      "difficulty": "intermediate",
+      "importance": 0.98,
+      "requiredLevel": 4,
+      "prerequisites": ["python"]
+    },
+    {
+      "id": "deep_learning",
+      "title": "Deep Learning & PyTorch",
+      "type": "advanced",
+      "description": "Construct neural networks, backpropagation, and custom PyTorch modules.",
+      "topics": ["Neural Net Architecture", "Backpropagation", "PyTorch Modules"],
+      "difficulty": "advanced",
+      "importance": 0.92,
+      "requiredLevel": 4,
+      "prerequisites": ["machine_learning"]
+    },
+    {
+      "id": "transformers",
+      "title": "Transformers & LLMs",
+      "type": "advanced",
+      "description": "Understand Self-Attention mechanisms, Encoder-Decoder architectures, and HuggingFace Hub.",
+      "topics": ["Self-Attention", "LLM Models", "HuggingFace Transformers"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "requiredLevel": 3,
+      "prerequisites": ["deep_learning"]
+    },
+    {
+      "id": "mlops",
+      "title": "MLOps & Model Deployment Capstone",
+      "type": "capstone",
+      "description": "Deploy LLM APIs using FastAPI, Docker, and cloud infrastructure.",
+      "topics": ["FastAPI Model Serving", "Docker Containerization", "Production Capstone Project"],
+      "difficulty": "advanced",
+      "importance": 0.85,
+      "requiredLevel": 4,
+      "prerequisites": ["transformers"]
+    }
+  ],
+  "edges": [
+    { "source": "python", "target": "machine_learning", "type": "prerequisite" },
+    { "source": "machine_learning", "target": "deep_learning", "type": "prerequisite" },
+    { "source": "deep_learning", "target": "transformers", "type": "prerequisite" },
+    { "source": "transformers", "target": "mlops", "type": "prerequisite" }
+  ]
+}

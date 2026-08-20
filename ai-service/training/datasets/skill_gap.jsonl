@@ -1,0 +1,100 @@
+{"id": "gap_1", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 3}, {"name": "Data Analysis", "level": 3}], "target_career": "Data Scientist", "missing_skills": ["Statistics"]}
+{"id": "gap_2", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 4}], "target_career": "Machine Learning Engineer", "missing_skills": ["Machine Learning", "Statistics"]}
+{"id": "gap_3", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 3}], "target_career": "Machine Learning Engineer", "missing_skills": ["Machine Learning", "Statistics"]}
+{"id": "gap_4", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 5}, {"name": "JavaScript", "level": 5}, {"name": "React", "level": 5}], "target_career": "Full Stack Developer", "missing_skills": ["Node.js"]}
+{"id": "gap_5", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 3}, {"name": "Databases", "level": 3}, {"name": "JavaScript", "level": 3}], "target_career": "Full Stack Developer", "missing_skills": ["Node.js"]}
+{"id": "gap_6", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 4}, {"name": "JavaScript", "level": 5}], "target_career": "Full Stack Developer", "missing_skills": ["React", "Databases"]}
+{"id": "gap_7", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 5}, {"name": "Statistics", "level": 5}], "target_career": "Data Scientist", "missing_skills": ["Data Analysis"]}
+{"id": "gap_8", "data_type": "synthetic_training_data", "user_skills": [{"name": "Docker", "level": 4}, {"name": "Ci/Cd", "level": 3}], "target_career": "DevOps Engineer", "missing_skills": ["Cloud"]}
+{"id": "gap_9", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 4}], "target_career": "Data Scientist", "missing_skills": ["Python", "Data Analysis"]}
+{"id": "gap_10", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 3}], "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "React"]}
+{"id": "gap_11", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 3}], "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics"]}
+{"id": "gap_12", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cybersecurity Analyst", "missing_skills": ["Security Fundamentals", "Networking"]}
+{"id": "gap_13", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "Databases", "level": 3}], "target_career": "Backend Developer", "missing_skills": ["Apis"]}
+{"id": "gap_14", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "React", "level": 4}, {"name": "JavaScript", "level": 3}], "target_career": "Full Stack Developer", "missing_skills": ["Databases"]}
+{"id": "gap_15", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Analyst", "missing_skills": ["SQL", "Data Analysis", "Excel"]}
+{"id": "gap_16", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"]}
+{"id": "gap_17", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "Databases", "level": 4}], "target_career": "Backend Developer", "missing_skills": ["Apis"]}
+{"id": "gap_18", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"]}
+{"id": "gap_19", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 4}, {"name": "JavaScript", "level": 3}, {"name": "Node.js", "level": 5}], "target_career": "Full Stack Developer", "missing_skills": ["Databases"]}
+{"id": "gap_20", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 4}, {"name": "Statistics", "level": 3}], "target_career": "Machine Learning Engineer", "missing_skills": ["Machine Learning"]}
+{"id": "gap_21", "data_type": "synthetic_training_data", "user_skills": [{"name": "JavaScript", "level": 5}, {"name": "React", "level": 3}], "target_career": "Full Stack Developer", "missing_skills": ["Node.js", "Databases"]}
+{"id": "gap_22", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 5}, {"name": "Docker", "level": 4}], "target_career": "DevOps Engineer", "missing_skills": ["Ci/Cd"]}
+{"id": "gap_23", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"]}
+{"id": "gap_24", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "Cloud Engineer", "missing_skills": ["Networking"]}
+{"id": "gap_25", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"]}
+{"id": "gap_26", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 5}], "target_career": "UI/UX Designer", "missing_skills": ["Design"]}
+{"id": "gap_27", "data_type": "synthetic_training_data", "user_skills": [{"name": "Design", "level": 3}], "target_career": "UI/UX Designer", "missing_skills": ["Prototyping"]}
+{"id": "gap_28", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 3}, {"name": "Excel", "level": 4}], "target_career": "Data Analyst", "missing_skills": ["SQL"]}
+{"id": "gap_29", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 4}, {"name": "Excel", "level": 4}], "target_career": "Data Analyst", "missing_skills": ["SQL"]}
+{"id": "gap_30", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"]}
+{"id": "gap_31", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics", "Data Analysis"]}
+{"id": "gap_32", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 5}, {"name": "Apis", "level": 4}], "target_career": "Backend Developer", "missing_skills": ["Databases"]}
+{"id": "gap_33", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Analyst", "missing_skills": ["SQL", "Data Analysis", "Excel"]}
+{"id": "gap_34", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 5}], "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "React"]}
+{"id": "gap_35", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 3}], "target_career": "UI/UX Designer", "missing_skills": ["Design"]}
+{"id": "gap_36", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"]}
+{"id": "gap_37", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 3}], "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React"]}
+{"id": "gap_38", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Backend Developer", "missing_skills": ["Node.js", "Databases", "Apis"]}
+{"id": "gap_39", "data_type": "synthetic_training_data", "user_skills": [{"name": "Networking", "level": 4}], "target_career": "Cybersecurity Analyst", "missing_skills": ["Security Fundamentals"]}
+{"id": "gap_40", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Analyst", "missing_skills": ["SQL", "Data Analysis", "Excel"]}
+{"id": "gap_41", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics", "Data Analysis"]}
+{"id": "gap_42", "data_type": "synthetic_training_data", "user_skills": [{"name": "Design", "level": 5}], "target_career": "UI/UX Designer", "missing_skills": ["Prototyping"]}
+{"id": "gap_43", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "React", "Html/Css"]}
+{"id": "gap_44", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"]}
+{"id": "gap_45", "data_type": "synthetic_training_data", "user_skills": [{"name": "Ci/Cd", "level": 5}], "target_career": "DevOps Engineer", "missing_skills": ["Docker", "Cloud"]}
+{"id": "gap_46", "data_type": "synthetic_training_data", "user_skills": [{"name": "Machine Learning", "level": 4}, {"name": "Data Engineering", "level": 3}], "target_career": "AI Engineer", "missing_skills": ["Python"]}
+{"id": "gap_47", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"]}
+{"id": "gap_48", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "AI Engineer", "missing_skills": ["Python", "Machine Learning", "Data Engineering"]}
+{"id": "gap_49", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 4}], "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React"]}
+{"id": "gap_50", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 4}, {"name": "JavaScript", "level": 5}], "target_career": "Frontend Developer", "missing_skills": ["React"]}
+{"id": "gap_51", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"]}
+{"id": "gap_52", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 4}, {"name": "Excel", "level": 4}], "target_career": "Data Analyst", "missing_skills": ["SQL"]}
+{"id": "gap_53", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "Cloud Engineer", "missing_skills": ["Networking"]}
+{"id": "gap_54", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 4}], "target_career": "Data Scientist", "missing_skills": ["Python", "Data Analysis"]}
+{"id": "gap_55", "data_type": "synthetic_training_data", "user_skills": [{"name": "Ui/Ux", "level": 4}], "target_career": "Mobile Developer", "missing_skills": ["Mobile Development"]}
+{"id": "gap_56", "data_type": "synthetic_training_data", "user_skills": [{"name": "Docker", "level": 5}], "target_career": "DevOps Engineer", "missing_skills": ["Ci/Cd", "Cloud"]}
+{"id": "gap_57", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"]}
+{"id": "gap_58", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 4}], "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React"]}
+{"id": "gap_59", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "React", "level": 3}], "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Databases"]}
+{"id": "gap_60", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"]}
+{"id": "gap_61", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"]}
+{"id": "gap_62", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"]}
+{"id": "gap_63", "data_type": "synthetic_training_data", "user_skills": [{"name": "Excel", "level": 3}, {"name": "Data Analysis", "level": 4}], "target_career": "Data Analyst", "missing_skills": ["SQL"]}
+{"id": "gap_64", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"]}
+{"id": "gap_65", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 5}, {"name": "Html/Css", "level": 5}], "target_career": "Frontend Developer", "missing_skills": ["JavaScript"]}
+{"id": "gap_66", "data_type": "synthetic_training_data", "user_skills": [{"name": "Networking", "level": 5}], "target_career": "Cloud Engineer", "missing_skills": ["Cloud"]}
+{"id": "gap_67", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 5}], "target_career": "UI/UX Designer", "missing_skills": ["Design"]}
+{"id": "gap_68", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 3}], "target_career": "Data Scientist", "missing_skills": ["Statistics", "Data Analysis"]}
+{"id": "gap_69", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 4}], "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "Html/Css"]}
+{"id": "gap_70", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Backend Developer", "missing_skills": ["Node.js", "Databases", "Apis"]}
+{"id": "gap_71", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 3}], "target_career": "UI/UX Designer", "missing_skills": ["Design"]}
+{"id": "gap_72", "data_type": "synthetic_training_data", "user_skills": [{"name": "JavaScript", "level": 5}, {"name": "React", "level": 5}], "target_career": "Frontend Developer", "missing_skills": ["Html/Css"]}
+{"id": "gap_73", "data_type": "synthetic_training_data", "user_skills": [{"name": "Machine Learning", "level": 3}, {"name": "Statistics", "level": 3}], "target_career": "Machine Learning Engineer", "missing_skills": ["Python"]}
+{"id": "gap_74", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "DevOps Engineer", "missing_skills": ["Docker", "Ci/Cd"]}
+{"id": "gap_75", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 5}, {"name": "Data Engineering", "level": 3}], "target_career": "AI Engineer", "missing_skills": ["Machine Learning"]}
+{"id": "gap_76", "data_type": "synthetic_training_data", "user_skills": [{"name": "Excel", "level": 3}, {"name": "Data Analysis", "level": 4}], "target_career": "Data Analyst", "missing_skills": ["SQL"]}
+{"id": "gap_77", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 4}], "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning"]}
+{"id": "gap_78", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cybersecurity Analyst", "missing_skills": ["Security Fundamentals", "Networking"]}
+{"id": "gap_79", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"]}
+{"id": "gap_80", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 5}, {"name": "Data Engineering", "level": 3}], "target_career": "AI Engineer", "missing_skills": ["Machine Learning"]}
+{"id": "gap_81", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"]}
+{"id": "gap_82", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"]}
+{"id": "gap_83", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"]}
+{"id": "gap_84", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "AI Engineer", "missing_skills": ["Python", "Machine Learning", "Data Engineering"]}
+{"id": "gap_85", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"]}
+{"id": "gap_86", "data_type": "synthetic_training_data", "user_skills": [{"name": "SQL", "level": 3}], "target_career": "Data Analyst", "missing_skills": ["Data Analysis", "Excel"]}
+{"id": "gap_87", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"]}
+{"id": "gap_88", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 5}, {"name": "Machine Learning", "level": 5}], "target_career": "Machine Learning Engineer", "missing_skills": ["Python"]}
+{"id": "gap_89", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 5}, {"name": "React", "level": 5}], "target_career": "Frontend Developer", "missing_skills": ["JavaScript"]}
+{"id": "gap_90", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "Cloud Engineer", "missing_skills": ["Networking"]}
+{"id": "gap_91", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React", "Databases"]}
+{"id": "gap_92", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"]}
+{"id": "gap_93", "data_type": "synthetic_training_data", "user_skills": [{"name": "Machine Learning", "level": 3}], "target_career": "AI Engineer", "missing_skills": ["Python", "Data Engineering"]}
+{"id": "gap_94", "data_type": "synthetic_training_data", "user_skills": [{"name": "Mobile Development", "level": 3}], "target_career": "Mobile Developer", "missing_skills": ["Ui/Ux"]}
+{"id": "gap_95", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics", "Data Analysis"]}
+{"id": "gap_96", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 3}], "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "Databases"]}
+{"id": "gap_97", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "AI Engineer", "missing_skills": ["Python", "Machine Learning", "Data Engineering"]}
+{"id": "gap_98", "data_type": "synthetic_training_data", "user_skills": [{"name": "JavaScript", "level": 4}], "target_career": "Frontend Developer", "missing_skills": ["React", "Html/Css"]}
+{"id": "gap_99", "data_type": "synthetic_training_data", "user_skills": [{"name": "Design", "level": 3}], "target_career": "UI/UX Designer", "missing_skills": ["Prototyping"]}
+{"id": "gap_100", "data_type": "synthetic_training_data", "user_skills": [{"name": "Ui/Ux", "level": 3}], "target_career": "Mobile Developer", "missing_skills": ["Mobile Development"]}

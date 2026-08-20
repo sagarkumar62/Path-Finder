@@ -1,0 +1,58 @@
+{
+  "id": "cyber-security",
+  "title": "Cybersecurity Analyst",
+  "domain": "technology",
+  "source": "roadmap.sh",
+  "source_url": "https://roadmap.sh/cyber-security",
+  "nodes": [
+    {
+      "id": "networking_sec",
+      "title": "Network & System Security",
+      "type": "foundation",
+      "description": "Understand TCP/IP protocols, OSI security layers, firewalls, VPNs, IDS/IPS, and packet analysis.",
+      "topics": ["TCP/IP & Packet Analysis (Wireshark)", "Firewalls & VPNs", "IDS / IPS Systems", "Network Hardening"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": [],
+      "recommended_level": 4
+    },
+    {
+      "id": "cryptography",
+      "title": "Cryptography & PKI",
+      "type": "core",
+      "description": "Master symmetric and asymmetric encryption, hashing algorithms, SSL/TLS, and Public Key Infrastructure.",
+      "topics": ["AES & RSA Encryption", "SHA Hashing & Digital Signatures", "SSL / TLS Handshake", "PKI & Certificates"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["networking_sec"],
+      "recommended_level": 3
+    },
+    {
+      "id": "threat_analysis",
+      "title": "Threat Intelligence & SIEM",
+      "type": "advanced",
+      "description": "Analyze security logs, deploy SIEM tools (Splunk / Elastic), conduct threat hunting, and incident response.",
+      "topics": ["SIEM Deployment (Splunk)", "Log Aggregation & Analysis", "Threat Hunting Techniques", "Incident Response Frameworks"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "prerequisites": ["cryptography"],
+      "recommended_level": 4
+    },
+    {
+      "id": "ethical_hacking",
+      "title": "Ethical Hacking & Security Audit Capstone",
+      "type": "capstone",
+      "description": "Perform vulnerability assessments, penetration testing, web app audits (OWASP Top 10), and security reports.",
+      "topics": ["OWASP Top 10 Vulnerabilities", "Penetration Testing (Metasploit)", "Vulnerability Scanning", "Security Audit Capstone"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "prerequisites": ["threat_analysis"],
+      "recommended_level": 4
+    }
+  ],
+  "edges": [
+    { "from": "networking_sec", "to": "cryptography", "type": "prerequisite" },
+    { "from": "cryptography", "to": "threat_analysis", "type": "prerequisite" },
+    { "from": "threat_analysis", "to": "ethical_hacking", "type": "prerequisite" }
+  ]
+}

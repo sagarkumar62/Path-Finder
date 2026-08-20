@@ -1,0 +1,35 @@
+{
+  "id": "devops-engineer",
+  "title": "DevOps Engineer",
+  "domain": "technology",
+  "career_type": "technical",
+  "source": {
+    "provider": "roadmap.sh",
+    "source_id": "devops",
+    "url": "https://roadmap.sh/devops"
+  },
+  "description": "Automate infrastructure provisioning, CI/CD pipelines, container orchestration, and system observability for production cloud environments.",
+  "skills": [
+    { "id": "linux", "name": "Linux & Bash Administration", "importance": 0.95, "required_level": 4, "phase": 1 },
+    { "id": "networking", "name": "Networking & Protocols", "importance": 0.90, "required_level": 3, "phase": 1 },
+    { "id": "git", "name": "Git & Source Control", "importance": 0.90, "required_level": 3, "phase": 1 },
+    { "id": "docker", "name": "Docker & Containerization", "importance": 0.95, "required_level": 4, "phase": 2 },
+    { "id": "cicd", "name": "CI/CD Pipelines (GitHub Actions / Jenkins)", "importance": 0.92, "required_level": 4, "phase": 2 },
+    { "id": "kubernetes", "name": "Kubernetes Orchestration", "importance": 0.90, "required_level": 4, "phase": 3 },
+    { "id": "terraform", "name": "Infrastructure as Code (Terraform)", "importance": 0.88, "required_level": 3, "phase": 3 },
+    { "id": "observability", "name": "Monitoring & Observability (Prometheus / Grafana)", "importance": 0.85, "required_level": 3, "phase": 4 }
+  ],
+  "prerequisites": [
+    ["linux", "docker"],
+    ["networking", "docker"],
+    ["git", "cicd"],
+    ["docker", "kubernetes"],
+    ["docker", "terraform"],
+    ["kubernetes", "observability"]
+  ],
+  "recommended_skills": ["AWS / GCP", "Ansible", "Helm", "Service Mesh"],
+  "interests": ["Infrastructure", "Cloud Computing", "DevOps"],
+  "education": ["Computer Science", "Information Technology"],
+  "experience_levels": ["Junior", "Mid", "Senior"],
+  "typical_duration_months": 7
+}

@@ -1,0 +1,110 @@
+{
+  "id": "devops",
+  "title": "DevOps Engineer",
+  "domain": "technology",
+  "source": "roadmap.sh",
+  "source_url": "https://roadmap.sh/devops",
+  "nodes": [
+    {
+      "id": "linux",
+      "title": "Linux & OS Administration",
+      "type": "foundation",
+      "description": "Master Linux CLI, process management, file permissions, shell scripting (Bash), and system administration.",
+      "topics": ["Linux Commands & CLI", "Bash Scripting", "File System Permissions", "Systemd & Services"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": [],
+      "recommended_level": 4
+    },
+    {
+      "id": "networking",
+      "title": "Networking & Security Fundamentals",
+      "type": "foundation",
+      "description": "Understand OSI Model, TCP/IP, DNS, HTTP/S, SSH, Firewalls, Reverse Proxies (Nginx), and SSL/TLS.",
+      "topics": ["TCP/IP & OSI Model", "DNS & Routing", "SSH & Firewall Rules", "Nginx & Reverse Proxies"],
+      "difficulty": "beginner",
+      "importance": 0.95,
+      "prerequisites": ["linux"],
+      "recommended_level": 3
+    },
+    {
+      "id": "git",
+      "title": "Git & Version Control",
+      "type": "core",
+      "description": "Master Git branching strategies, pull requests, merge conflict resolution, and Git workflows.",
+      "topics": ["Git Commands & Branching", "Rebase & Merge Strategies", "GitHub / GitLab Actions"],
+      "difficulty": "beginner",
+      "importance": 0.90,
+      "prerequisites": ["linux"],
+      "recommended_level": 3
+    },
+    {
+      "id": "docker",
+      "title": "Docker & Containerization",
+      "type": "core",
+      "description": "Build, run, and manage OCI container images, Dockerfiles, Docker Compose, networking, and volumes.",
+      "topics": ["Docker Architecture", "Dockerfile Optimization", "Docker Compose", "Container Security"],
+      "difficulty": "intermediate",
+      "importance": 0.98,
+      "prerequisites": ["linux", "networking"],
+      "recommended_level": 4
+    },
+    {
+      "id": "cicd",
+      "title": "CI/CD Automation Pipelines",
+      "type": "core",
+      "description": "Design automated build, test, and release pipelines using GitHub Actions, GitLab CI, or Jenkins.",
+      "topics": ["Automated Testing", "Pipeline Triggers & Artifacts", "Environment Secrets", "Deployment Strategies"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["git", "docker"],
+      "recommended_level": 4
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes Orchestration",
+      "type": "advanced",
+      "description": "Orchestrate containerized applications using Pods, Deployments, Services, Ingress Controllers, and Helm Charts.",
+      "topics": ["Kube Architecture", "Pods, Deployments & Services", "Ingress Controllers", "Helm Package Manager"],
+      "difficulty": "advanced",
+      "importance": 0.92,
+      "prerequisites": ["docker", "networking"],
+      "recommended_level": 4
+    },
+    {
+      "id": "terraform",
+      "title": "Infrastructure as Code (Terraform)",
+      "type": "advanced",
+      "description": "Provision cloud infrastructure declaratively using Terraform modules, state management, and HCL syntax.",
+      "topics": ["HCL Syntax & Providers", "State Management & Backends", "Terraform Modules", "Cloud Infrastructure"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "prerequisites": ["docker", "networking"],
+      "recommended_level": 3
+    },
+    {
+      "id": "observability",
+      "title": "Monitoring & Observability Capstone",
+      "type": "capstone",
+      "description": "Implement metrics collection (Prometheus), dashboard visualization (Grafana), logging (ELK/Loki), and alerting.",
+      "topics": ["Prometheus Metrics", "Grafana Dashboards", "Log Aggregation (Loki)", "Production Infrastructure Project"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "prerequisites": ["kubernetes", "terraform"],
+      "recommended_level": 4
+    }
+  ],
+  "edges": [
+    { "from": "linux", "to": "networking", "type": "prerequisite" },
+    { "from": "linux", "to": "git", "type": "prerequisite" },
+    { "from": "linux", "to": "docker", "type": "prerequisite" },
+    { "from": "networking", "to": "docker", "type": "prerequisite" },
+    { "from": "git", "to": "cicd", "type": "prerequisite" },
+    { "from": "docker", "to": "cicd", "type": "prerequisite" },
+    { "from": "docker", "to": "kubernetes", "type": "prerequisite" },
+    { "from": "networking", "to": "kubernetes", "type": "prerequisite" },
+    { "from": "docker", "to": "terraform", "type": "prerequisite" },
+    { "from": "kubernetes", "to": "observability", "type": "prerequisite" },
+    { "from": "terraform", "to": "observability", "type": "prerequisite" }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "careerId": "devops-engineer",
+  "title": "DevOps Engineer",
+  "domain": "technology",
+  "description": "Automate infrastructure provisioning, CI/CD pipelines, container orchestration, and observability.",
+  "aliases": ["devops engineer", "devops", "cloud devops engineer"],
+  "nodes": [
+    {
+      "id": "linux",
+      "title": "Linux & OS Administration",
+      "type": "foundation",
+      "description": "Master Linux CLI, process management, file permissions, shell scripting (Bash), and system administration.",
+      "topics": ["Linux Commands & CLI", "Bash Scripting", "File System Permissions", "Systemd"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "docker",
+      "title": "Docker & Containerization",
+      "type": "core",
+      "description": "Build, run, and manage OCI container images, Dockerfiles, and Docker Compose.",
+      "topics": ["Docker Architecture", "Dockerfile Optimization", "Docker Compose"],
+      "difficulty": "intermediate",
+      "importance": 0.98,
+      "requiredLevel": 4,
+      "prerequisites": ["linux"]
+    },
+    {
+      "id": "cicd",
+      "title": "CI/CD Pipelines",
+      "type": "core",
+      "description": "Design automated build, test, and release pipelines using GitHub Actions or Jenkins.",
+      "topics": ["Automated Testing", "GitHub Actions", "Deployment Strategies"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["docker"]
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes Orchestration",
+      "type": "advanced",
+      "description": "Orchestrate containerized applications using Pods, Deployments, Services, and Helm.",
+      "topics": ["Kube Architecture", "Pods & Services", "Helm Package Manager"],
+      "difficulty": "advanced",
+      "importance": 0.92,
+      "requiredLevel": 4,
+      "prerequisites": ["docker"]
+    },
+    {
+      "id": "observability",
+      "title": "Monitoring & Observability Capstone",
+      "type": "capstone",
+      "description": "Implement metrics collection (Prometheus) and dashboard visualization (Grafana).",
+      "topics": ["Prometheus Metrics", "Grafana Dashboards", "Log Aggregation"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "requiredLevel": 4,
+      "prerequisites": ["kubernetes"]
+    }
+  ],
+  "edges": [
+    { "source": "linux", "target": "docker", "type": "prerequisite" },
+    { "source": "docker", "target": "cicd", "type": "prerequisite" },
+    { "source": "docker", "target": "kubernetes", "type": "prerequisite" },
+    { "source": "kubernetes", "target": "observability", "type": "prerequisite" }
+  ]
+}

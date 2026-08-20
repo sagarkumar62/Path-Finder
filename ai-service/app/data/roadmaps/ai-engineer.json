@@ -1,0 +1,107 @@
+{
+  "id": "ai-engineer",
+  "title": "AI Engineer",
+  "domain": "technology",
+  "source": "roadmap.sh",
+  "source_url": "https://roadmap.sh/ai-engineer",
+  "nodes": [
+    {
+      "id": "python",
+      "title": "Python Programming",
+      "type": "foundation",
+      "description": "Master Python fundamentals, OOP, data structures, virtual environments, and asynchronous execution.",
+      "topics": ["Python Syntax & Data Structures", "OOP & Design Patterns", "Virtual Environments", "Async IO"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": [],
+      "recommended_level": 4
+    },
+    {
+      "id": "math_stats",
+      "title": "Linear Algebra & Statistics",
+      "type": "foundation",
+      "description": "Understand matrices, vectors, eigenvalues, calculus gradients, probability distributions, and hypothesis testing.",
+      "topics": ["Matrix Multiplication & Vectors", "Derivatives & Gradients", "Probability Distributions", "Statistical Testing"],
+      "difficulty": "beginner",
+      "importance": 0.90,
+      "prerequisites": ["python"],
+      "recommended_level": 3
+    },
+    {
+      "id": "data_manipulation",
+      "title": "NumPy, Pandas & Data Wrangling",
+      "type": "core",
+      "description": "Manipulate structured datasets, perform vectorization with NumPy, and clean data with Pandas.",
+      "topics": ["NumPy Arrays & Vectorization", "Pandas DataFrames", "Data Cleaning & Imputation", "Exploratory Data Analysis"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["python", "math_stats"],
+      "recommended_level": 4
+    },
+    {
+      "id": "machine_learning",
+      "title": "Machine Learning Fundamentals",
+      "type": "core",
+      "description": "Train regression, classification, clustering models, decision trees, and evaluate metrics with Scikit-Learn.",
+      "topics": ["Supervised & Unsupervised Learning", "Scikit-Learn Models", "Feature Engineering", "Cross-Validation & Metrics"],
+      "difficulty": "intermediate",
+      "importance": 0.98,
+      "prerequisites": ["data_manipulation"],
+      "recommended_level": 4
+    },
+    {
+      "id": "deep_learning",
+      "title": "Deep Learning & PyTorch",
+      "type": "advanced",
+      "description": "Construct neural networks, activation functions, backpropagation, CNNs, RNNs, and custom PyTorch modules.",
+      "topics": ["Neural Net Architecture", "Backpropagation & Optimizers", "PyTorch Tensors & Modules", "CNNs & Computer Vision"],
+      "difficulty": "advanced",
+      "importance": 0.92,
+      "prerequisites": ["machine_learning"],
+      "recommended_level": 4
+    },
+    {
+      "id": "transformers",
+      "title": "Transformers & HuggingFace",
+      "type": "advanced",
+      "description": "Understand Self-Attention mechanisms, Encoder-Decoder architectures, fine-tuning, and HuggingFace Hub.",
+      "topics": ["Self-Attention & Transformer Architecture", "BERT, GPT & LLaMA Models", "HuggingFace Transformers", "Fine-Tuning (LoRA / PEFT)"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "prerequisites": ["deep_learning"],
+      "recommended_level": 3
+    },
+    {
+      "id": "rag_vector_db",
+      "title": "RAG & Vector Databases",
+      "type": "advanced",
+      "description": "Implement Retrieval-Augmented Generation using dense embeddings, FAISS, Pinecone, and LangChain/LlamaIndex.",
+      "topics": ["Text Chunking & Dense Embeddings", "FAISS & Vector Similarity", "LangChain & LlamaIndex", "RAG Pipeline Architecture"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "prerequisites": ["transformers"],
+      "recommended_level": 3
+    },
+    {
+      "id": "mlops",
+      "title": "MLOps & LLM Deployment Capstone",
+      "type": "capstone",
+      "description": "Deploy LLM APIs using FastAPI, Docker, model monitoring, quantization, and cloud infrastructure.",
+      "topics": ["FastAPI Model Serving", "vLLM & Model Quantization", "Docker Containerization", "Production Capstone Project"],
+      "difficulty": "advanced",
+      "importance": 0.85,
+      "prerequisites": ["rag_vector_db"],
+      "recommended_level": 4
+    }
+  ],
+  "edges": [
+    { "from": "python", "to": "math_stats", "type": "prerequisite" },
+    { "from": "python", "to": "data_manipulation", "type": "prerequisite" },
+    { "from": "math_stats", "to": "data_manipulation", "type": "prerequisite" },
+    { "from": "data_manipulation", "to": "machine_learning", "type": "prerequisite" },
+    { "from": "machine_learning", "to": "deep_learning", "type": "prerequisite" },
+    { "from": "deep_learning", "to": "transformers", "type": "prerequisite" },
+    { "from": "transformers", "to": "rag_vector_db", "type": "prerequisite" },
+    { "from": "rag_vector_db", "to": "mlops", "type": "prerequisite" }
+  ]
+}

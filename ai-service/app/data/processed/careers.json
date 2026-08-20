@@ -1,0 +1,3058 @@
+[
+  {
+    "id": "frontend-developer",
+    "title": "Frontend Developer",
+    "description": "Comprehensive career pathway for Frontend Developer covering Software Development skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Full Stack Development",
+        "raw_name": "Full Stack Development",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Git",
+        "raw_name": "Git",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Github",
+        "raw_name": "GitHub",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Java",
+        "raw_name": "Java",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Dsa",
+        "raw_name": "DSA",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Coding",
+        "raw_name": "Coding",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Spring Boot",
+        "raw_name": "Spring Boot",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "HTML",
+        "raw_name": "HTML",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "CSS",
+        "raw_name": "CSS",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "raw_name": "JavaScript",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Developer Roadmaps",
+      "Computer Science",
+      "Programming",
+      "Web Development"
+    ],
+    "interests": [
+      "Software Development"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Intermediate"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "frontend-developer"
+    ]
+  },
+  {
+    "id": "nlp-engineer",
+    "title": "NLP Engineer",
+    "description": "Comprehensive career pathway for NLP Engineer covering Data & AI skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Deep Learning",
+        "raw_name": "Deep Learning",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "raw_name": "Machine Learning",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Nlp",
+        "raw_name": "NLP",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Transformers",
+        "raw_name": "Transformers",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Python",
+        "raw_name": "Python",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Science",
+        "raw_name": "Data Science",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analysis",
+        "raw_name": "Data Analysis",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning Projects",
+        "raw_name": "Machine Learning Projects",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Data & AI"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "nlp-engineer"
+    ]
+  },
+  {
+    "id": "ml-engineer",
+    "title": "ML Engineer",
+    "description": "Comprehensive career pathway for ML Engineer covering Data & AI skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Deep Learning",
+        "raw_name": "Deep Learning",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "raw_name": "Machine Learning",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Python",
+        "raw_name": "Python",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Science",
+        "raw_name": "Data Science",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Nlp",
+        "raw_name": "NLP",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Transformers",
+        "raw_name": "Transformers",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analysis",
+        "raw_name": "Data Analysis",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning Projects",
+        "raw_name": "Machine Learning Projects",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Data & AI"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Advanced"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "ml-engineer"
+    ]
+  },
+  {
+    "id": "cloud-architect",
+    "title": "Cloud Architect",
+    "description": "Comprehensive career pathway for Cloud Architect covering Cloud & DevOps skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Microsoft Azure",
+        "raw_name": "Azure",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Linux",
+        "raw_name": "Linux",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Aws Cloud",
+        "raw_name": "AWS Cloud",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "raw_name": "Kubernetes",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cloud Computing",
+        "raw_name": "Cloud Computing",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Devops",
+        "raw_name": "DevOps",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Infrastructure As Code",
+        "raw_name": "Infrastructure as Code",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Containers",
+        "raw_name": "Containers",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Ci/Cd",
+        "raw_name": "CI/CD",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Cloud & DevOps"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "cloud-architect"
+    ]
+  },
+  {
+    "id": "security-analyst",
+    "title": "Security Analyst",
+    "description": "Comprehensive career pathway for Security Analyst covering Cybersecurity skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Linux",
+        "raw_name": "Linux",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Web Security",
+        "raw_name": "Web Security",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Networking",
+        "raw_name": "Networking",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security",
+        "raw_name": "Security",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity",
+        "raw_name": "Cybersecurity",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Penetration Testing",
+        "raw_name": "Penetration Testing",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security Governance",
+        "raw_name": "Security Governance",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity Fundamentals",
+        "raw_name": "Cybersecurity Fundamentals",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Cybersecurity"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "security-analyst"
+    ]
+  },
+  {
+    "id": "devops-engineer",
+    "title": "DevOps Engineer",
+    "description": "Automate infrastructure provisioning, CI/CD pipelines, container orchestration, and system observability for production cloud environments.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Linux & Bash Administration",
+        "raw_name": "Linux & Bash Administration",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      },
+      {
+        "name": "Networking & Protocols",
+        "raw_name": "Networking & Protocols",
+        "importance": 0.9,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      },
+      {
+        "name": "Git & Source Control",
+        "raw_name": "Git & Source Control",
+        "importance": 0.9,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      },
+      {
+        "name": "Docker & Containerization",
+        "raw_name": "Docker & Containerization",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      },
+      {
+        "name": "Ci/Cd Pipelines",
+        "raw_name": "CI/CD Pipelines (GitHub Actions / Jenkins)",
+        "importance": 0.92,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      },
+      {
+        "name": "Kubernetes Orchestration",
+        "raw_name": "Kubernetes Orchestration",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      },
+      {
+        "name": "Infrastructure As Code",
+        "raw_name": "Infrastructure as Code (Terraform)",
+        "importance": 0.88,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      },
+      {
+        "name": "Monitoring & Observability",
+        "raw_name": "Monitoring & Observability (Prometheus / Grafana)",
+        "importance": 0.85,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "devops",
+          "url": "https://roadmap.sh/devops"
+        }
+      }
+    ],
+    "recommended_skills": [
+      "Aws / Gcp",
+      "Ansible",
+      "Helm",
+      "Service Mesh"
+    ],
+    "interests": [
+      "Infrastructure",
+      "Cloud Computing",
+      "DevOps"
+    ],
+    "education": [
+      "Computer Science",
+      "Information Technology"
+    ],
+    "experience_levels": [
+      "Junior",
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 7,
+    "source": {
+      "provider": "roadmap.sh",
+      "source_id": "devops",
+      "url": "https://roadmap.sh/devops"
+    },
+    "source_ids": [
+      "devops-engineer"
+    ]
+  },
+  {
+    "id": "project-manager",
+    "title": "Project Manager",
+    "description": "Comprehensive career pathway for Project Manager covering Management & Product skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Project Management",
+        "raw_name": "Project Management",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Product Management",
+        "raw_name": "Product Management",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Scrum",
+        "raw_name": "Scrum",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Power Bi",
+        "raw_name": "Power BI",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analytics",
+        "raw_name": "Data Analytics",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Business Strategy",
+        "raw_name": "Business Strategy",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Agile",
+        "raw_name": "Agile",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Management & Product"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Intermediate"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "project-manager"
+    ]
+  },
+  {
+    "id": "cybersecurity-engineer",
+    "title": "Cybersecurity Engineer",
+    "description": "Comprehensive career pathway for Cybersecurity Engineer covering Cybersecurity skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Linux",
+        "raw_name": "Linux",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Web Security",
+        "raw_name": "Web Security",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security",
+        "raw_name": "Security",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Networking",
+        "raw_name": "Networking",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity",
+        "raw_name": "Cybersecurity",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security Governance",
+        "raw_name": "Security Governance",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Penetration Testing",
+        "raw_name": "Penetration Testing",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity Fundamentals",
+        "raw_name": "Cybersecurity Fundamentals",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Cybersecurity"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "cybersecurity-engineer"
+    ]
+  },
+  {
+    "id": "java-developer",
+    "title": "Java Developer",
+    "description": "Comprehensive career pathway for Java Developer covering Software Development skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Full Stack Development",
+        "raw_name": "Full Stack Development",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Git",
+        "raw_name": "Git",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Github",
+        "raw_name": "GitHub",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Dsa",
+        "raw_name": "DSA",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Coding",
+        "raw_name": "Coding",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Java",
+        "raw_name": "Java",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "HTML",
+        "raw_name": "HTML",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "CSS",
+        "raw_name": "CSS",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "raw_name": "JavaScript",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Spring Boot",
+        "raw_name": "Spring Boot",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Developer Roadmaps",
+      "Programming",
+      "Web Development",
+      "Computer Science"
+    ],
+    "interests": [
+      "Software Development"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Intermediate"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "java-developer"
+    ]
+  },
+  {
+    "id": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "description": "Architect and deploy end-to-end web applications, from responsive modern frontend interfaces to scalable backend APIs and database infrastructure.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Html5 & Modern Css",
+        "raw_name": "HTML5 & Modern CSS",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      },
+      {
+        "name": "JavaScript",
+        "raw_name": "JavaScript (ES6+)",
+        "importance": 0.98,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      },
+      {
+        "name": "React",
+        "raw_name": "React.js",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      },
+      {
+        "name": "Node.Js & Express.Js",
+        "raw_name": "Node.js & Express.js",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      },
+      {
+        "name": "Sql & Nosql Databases",
+        "raw_name": "SQL & NoSQL Databases (PostgreSQL / MongoDB)",
+        "importance": 0.9,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "raw_name": "TypeScript",
+        "importance": 0.88,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      },
+      {
+        "name": "Next.js",
+        "raw_name": "Next.js Framework",
+        "importance": 0.85,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      },
+      {
+        "name": "System Security, Jwt Auth & Cloud Deployment",
+        "raw_name": "System Security, JWT Auth & Cloud Deployment",
+        "importance": 0.82,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "full-stack",
+          "url": "https://roadmap.sh/full-stack"
+        }
+      }
+    ],
+    "recommended_skills": [
+      "Tailwind Css",
+      "Docker",
+      "GRAPHQL",
+      "Rest Apis"
+    ],
+    "interests": [
+      "Web Development",
+      "Software Engineering"
+    ],
+    "education": [
+      "Computer Science",
+      "Bootcamp / Self-Taught"
+    ],
+    "experience_levels": [
+      "Junior",
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 6,
+    "source": {
+      "provider": "roadmap.sh",
+      "source_id": "full-stack",
+      "url": "https://roadmap.sh/full-stack"
+    },
+    "source_ids": [
+      "full-stack-developer"
+    ]
+  },
+  {
+    "id": "technical-product-manager",
+    "title": "Technical Product Manager",
+    "description": "Comprehensive career pathway for Technical Product Manager covering Management & Product skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Project Management",
+        "raw_name": "Project Management",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Product Management",
+        "raw_name": "Product Management",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Scrum",
+        "raw_name": "Scrum",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Business Strategy",
+        "raw_name": "Business Strategy",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Power Bi",
+        "raw_name": "Power BI",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analytics",
+        "raw_name": "Data Analytics",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Agile",
+        "raw_name": "Agile",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Management & Product"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Advanced"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "technical-product-manager"
+    ]
+  },
+  {
+    "id": "ai-engineer",
+    "title": "AI Engineer",
+    "description": "Design, build, and deploy production-grade Artificial Intelligence and LLM applications using modern deep learning frameworks, vector databases, and RAG architectures.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Python",
+        "raw_name": "Python",
+        "importance": 0.98,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      },
+      {
+        "name": "Linear Algebra & Statistics",
+        "raw_name": "Linear Algebra & Statistics",
+        "importance": 0.9,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      },
+      {
+        "name": "Machine Learning",
+        "raw_name": "Machine Learning",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      },
+      {
+        "name": "Deep Learning",
+        "raw_name": "Deep Learning",
+        "importance": 0.92,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      },
+      {
+        "name": "PyTorch",
+        "raw_name": "PyTorch",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      },
+      {
+        "name": "Transformers & Llms",
+        "raw_name": "Transformers & LLMs",
+        "importance": 0.88,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      },
+      {
+        "name": "Rag & Vector Databases",
+        "raw_name": "RAG & Vector Databases",
+        "importance": 0.85,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      },
+      {
+        "name": "Mlops & Model Deployment",
+        "raw_name": "MLOps & Model Deployment",
+        "importance": 0.82,
+        "required_level": 3,
+        "source": {
+          "provider": "roadmap.sh",
+          "source_id": "ai-engineer",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      }
+    ],
+    "recommended_skills": [
+      "TensorFlow",
+      "Langchain",
+      "Llamaindex",
+      "Docker"
+    ],
+    "interests": [
+      "AI",
+      "Machine Learning",
+      "Data Science"
+    ],
+    "education": [
+      "Computer Science",
+      "Data Science"
+    ],
+    "experience_levels": [
+      "Junior",
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 8,
+    "source": {
+      "provider": "roadmap.sh",
+      "source_id": "ai-engineer",
+      "url": "https://roadmap.sh/ai-engineer"
+    },
+    "source_ids": [
+      "ai-engineer"
+    ]
+  },
+  {
+    "id": "product-manager",
+    "title": "Product Manager",
+    "description": "Comprehensive career pathway for Product Manager covering Management & Product skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Project Management",
+        "raw_name": "Project Management",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Product Management",
+        "raw_name": "Product Management",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Scrum",
+        "raw_name": "Scrum",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analytics",
+        "raw_name": "Data Analytics",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Business Strategy",
+        "raw_name": "Business Strategy",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Power Bi",
+        "raw_name": "Power BI",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Agile",
+        "raw_name": "Agile",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Management & Product"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "product-manager"
+    ]
+  },
+  {
+    "id": "site-reliability-engineer",
+    "title": "Site Reliability Engineer",
+    "description": "Comprehensive career pathway for Site Reliability Engineer covering Cloud & DevOps skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Aws Cloud",
+        "raw_name": "AWS Cloud",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Linux",
+        "raw_name": "Linux",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Microsoft Azure",
+        "raw_name": "Azure",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "raw_name": "Kubernetes",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Infrastructure As Code",
+        "raw_name": "Infrastructure as Code",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cloud Computing",
+        "raw_name": "Cloud Computing",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Devops",
+        "raw_name": "DevOps",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Containers",
+        "raw_name": "Containers",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Ci/Cd",
+        "raw_name": "CI/CD",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Cloud & DevOps"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "site-reliability-engineer"
+    ]
+  },
+  {
+    "id": "security-architect",
+    "title": "Security Architect",
+    "description": "Comprehensive career pathway for Security Architect covering Cybersecurity skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Linux",
+        "raw_name": "Linux",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Web Security",
+        "raw_name": "Web Security",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Networking",
+        "raw_name": "Networking",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security",
+        "raw_name": "Security",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity",
+        "raw_name": "Cybersecurity",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security Governance",
+        "raw_name": "Security Governance",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Penetration Testing",
+        "raw_name": "Penetration Testing",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity Fundamentals",
+        "raw_name": "Cybersecurity Fundamentals",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Cybersecurity"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "security-architect"
+    ]
+  },
+  {
+    "id": "data-scientist",
+    "title": "Data Scientist",
+    "description": "Comprehensive career pathway for Data Scientist covering Data & AI skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Deep Learning",
+        "raw_name": "Deep Learning",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "raw_name": "Machine Learning",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Nlp",
+        "raw_name": "NLP",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Transformers",
+        "raw_name": "Transformers",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Python",
+        "raw_name": "Python",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Science",
+        "raw_name": "Data Science",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analysis",
+        "raw_name": "Data Analysis",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning Projects",
+        "raw_name": "Machine Learning Projects",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Data & AI"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Intermediate"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "data-scientist"
+    ]
+  },
+  {
+    "id": "penetration-tester",
+    "title": "Penetration Tester",
+    "description": "Comprehensive career pathway for Penetration Tester covering Cybersecurity skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Linux",
+        "raw_name": "Linux",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Web Security",
+        "raw_name": "Web Security",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security",
+        "raw_name": "Security",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Networking",
+        "raw_name": "Networking",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity",
+        "raw_name": "Cybersecurity",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Security Governance",
+        "raw_name": "Security Governance",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Penetration Testing",
+        "raw_name": "Penetration Testing",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cybersecurity Fundamentals",
+        "raw_name": "Cybersecurity Fundamentals",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Cybersecurity"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "penetration-tester"
+    ]
+  },
+  {
+    "id": "cloud-engineer",
+    "title": "Cloud Engineer",
+    "description": "Comprehensive career pathway for Cloud Engineer covering Cloud & DevOps skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Microsoft Azure",
+        "raw_name": "Azure",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Aws Cloud",
+        "raw_name": "AWS Cloud",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Linux",
+        "raw_name": "Linux",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "raw_name": "Kubernetes",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Cloud Computing",
+        "raw_name": "Cloud Computing",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Infrastructure As Code",
+        "raw_name": "Infrastructure as Code",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Devops",
+        "raw_name": "DevOps",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Ci/Cd",
+        "raw_name": "CI/CD",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Containers",
+        "raw_name": "Containers",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Cloud & DevOps"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "cloud-engineer"
+    ]
+  },
+  {
+    "id": "python-developer",
+    "title": "Python Developer",
+    "description": "Comprehensive career pathway for Python Developer covering Software Development skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Full Stack Development",
+        "raw_name": "Full Stack Development",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Java",
+        "raw_name": "Java",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Git",
+        "raw_name": "Git",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Github",
+        "raw_name": "GitHub",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Dsa",
+        "raw_name": "DSA",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Coding",
+        "raw_name": "Coding",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "HTML",
+        "raw_name": "HTML",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "CSS",
+        "raw_name": "CSS",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "raw_name": "JavaScript",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Spring Boot",
+        "raw_name": "Spring Boot",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Developer Roadmaps",
+      "Computer Science",
+      "Programming",
+      "Web Development"
+    ],
+    "interests": [
+      "Software Development"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Intermediate"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "python-developer"
+    ]
+  },
+  {
+    "id": "data-engineer",
+    "title": "Data Engineer",
+    "description": "Comprehensive career pathway for Data Engineer covering Data & AI skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Deep Learning",
+        "raw_name": "Deep Learning",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "raw_name": "Machine Learning",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Python",
+        "raw_name": "Python",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Science",
+        "raw_name": "Data Science",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Nlp",
+        "raw_name": "NLP",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Transformers",
+        "raw_name": "Transformers",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analysis",
+        "raw_name": "Data Analysis",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning Projects",
+        "raw_name": "Machine Learning Projects",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Data & AI"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Advanced"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "data-engineer"
+    ]
+  },
+  {
+    "id": "business-analyst",
+    "title": "Business Analyst",
+    "description": "Comprehensive career pathway for Business Analyst covering Management & Product skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Project Management",
+        "raw_name": "Project Management",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Product Management",
+        "raw_name": "Product Management",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Scrum",
+        "raw_name": "Scrum",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analytics",
+        "raw_name": "Data Analytics",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Power Bi",
+        "raw_name": "Power BI",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Business Strategy",
+        "raw_name": "Business Strategy",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Agile",
+        "raw_name": "Agile",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Management & Product"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "business-analyst"
+    ]
+  },
+  {
+    "id": "data-analyst",
+    "title": "Data Analyst",
+    "description": "Comprehensive career pathway for Data Analyst covering Data & AI skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Deep Learning",
+        "raw_name": "Deep Learning",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "raw_name": "Machine Learning",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Python",
+        "raw_name": "Python",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Science",
+        "raw_name": "Data Science",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Nlp",
+        "raw_name": "NLP",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Transformers",
+        "raw_name": "Transformers",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "SQL",
+        "raw_name": "SQL",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Data Analysis",
+        "raw_name": "Data Analysis",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning Projects",
+        "raw_name": "Machine Learning Projects",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [],
+    "interests": [
+      "Data & AI"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "data-analyst"
+    ]
+  },
+  {
+    "id": "backend-developer",
+    "title": "Backend Developer",
+    "description": "Comprehensive career pathway for Backend Developer covering Software Development skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Full Stack Development",
+        "raw_name": "Full Stack Development",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Git",
+        "raw_name": "Git",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Github",
+        "raw_name": "GitHub",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Dsa",
+        "raw_name": "DSA",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Coding",
+        "raw_name": "Coding",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Java",
+        "raw_name": "Java",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Spring Boot",
+        "raw_name": "Spring Boot",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "HTML",
+        "raw_name": "HTML",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "CSS",
+        "raw_name": "CSS",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "raw_name": "JavaScript",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Developer Roadmaps",
+      "Programming",
+      "Web Development",
+      "Computer Science"
+    ],
+    "interests": [
+      "Software Development"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "backend-developer"
+    ]
+  },
+  {
+    "id": "mobile-app-developer",
+    "title": "Mobile App Developer",
+    "description": "Comprehensive career pathway for Mobile App Developer covering Software Development skills, hands-on projects, and industry standards.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Full Stack Development",
+        "raw_name": "Full Stack Development",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Java",
+        "raw_name": "Java",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Git",
+        "raw_name": "Git",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Github",
+        "raw_name": "GitHub",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Dsa",
+        "raw_name": "DSA",
+        "importance": 0.75,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Coding",
+        "raw_name": "Coding",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "HTML",
+        "raw_name": "HTML",
+        "importance": 0.65,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "CSS",
+        "raw_name": "CSS",
+        "importance": 0.6,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "raw_name": "JavaScript",
+        "importance": 0.55,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Spring Boot",
+        "raw_name": "Spring Boot",
+        "importance": 0.5,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Developer Roadmaps",
+      "Programming",
+      "Web Development",
+      "Computer Science"
+    ],
+    "interests": [
+      "Software Development"
+    ],
+    "education": [
+      "Bachelor's Degree"
+    ],
+    "experience_levels": [
+      "Beginner"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "mobile-app-developer"
+    ]
+  },
+  {
+    "id": "pilot",
+    "title": "Commercial Pilot",
+    "description": "Navigates and operates multi-engine aircraft for commercial airlines, cargo transport, and charter flight operations.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Flight Navigation & Plotting",
+        "raw_name": "Flight Navigation & Plotting",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      },
+      {
+        "name": "Aviation Regulations & Faa Standards",
+        "raw_name": "Aviation Regulations & FAA Standards",
+        "importance": 0.92,
+        "required_level": 4,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      },
+      {
+        "name": "Aeronautical Meteorology & Weather Analysis",
+        "raw_name": "Aeronautical Meteorology & Weather Analysis",
+        "importance": 0.9,
+        "required_level": 3,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      },
+      {
+        "name": "Aircraft Avionics & Engines",
+        "raw_name": "Aircraft Avionics & Engines",
+        "importance": 0.88,
+        "required_level": 3,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      },
+      {
+        "name": "Cockpit Radio Communication & Atc Protocols",
+        "raw_name": "Cockpit Radio Communication & ATC Protocols",
+        "importance": 0.85,
+        "required_level": 3,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      },
+      {
+        "name": "Instrument Flight Rules",
+        "raw_name": "Instrument Flight Rules (IFR)",
+        "importance": 0.85,
+        "required_level": 3,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      },
+      {
+        "name": "Multi-Engine Aircraft Operations",
+        "raw_name": "Multi-Engine Aircraft Operations",
+        "importance": 0.82,
+        "required_level": 3,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      },
+      {
+        "name": "Flight Safety & Emergency Procedures",
+        "raw_name": "Flight Safety & Emergency Procedures",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": {
+          "provider": "onet_or_esco",
+          "source_id": "53-2012.00",
+          "url": "https://www.onetonline.org/link/summary/53-2012.00"
+        }
+      }
+    ],
+    "recommended_skills": [
+      "Private Pilot License",
+      "Commercial Pilot License",
+      "Class 1 Medical"
+    ],
+    "interests": [
+      "Aviation",
+      "Flight Operations",
+      "Navigation"
+    ],
+    "education": [
+      "Aviation Science",
+      "Commercial Pilot Certification"
+    ],
+    "experience_levels": [
+      "Junior",
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 18,
+    "source": {
+      "provider": "onet_or_esco",
+      "source_id": "53-2012.00",
+      "url": "https://www.onetonline.org/link/summary/53-2012.00"
+    },
+    "source_ids": [
+      "pilot"
+    ]
+  },
+  {
+    "id": "machine-learning-engineer",
+    "title": "Machine Learning Engineer",
+    "description": "Focuses on training, evaluating, and deploying machine learning models and building scalable model pipelines.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Python",
+        "raw_name": "Python",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "raw_name": "Machine Learning",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Statistics",
+        "raw_name": "Statistics",
+        "importance": 0.9,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Model Evaluation",
+      "Feature Engineering"
+    ],
+    "interests": [
+      "AI",
+      "Research"
+    ],
+    "education": [
+      "Bachelor's or Master's preferred"
+    ],
+    "experience_levels": [
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 9,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "machine-learning-engineer"
+    ]
+  },
+  {
+    "id": "cybersecurity-analyst",
+    "title": "Cybersecurity Analyst",
+    "description": "Monitors systems, investigates incidents, and helps secure applications and infrastructure.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Security Fundamentals",
+        "raw_name": "Security Fundamentals",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Networking",
+        "raw_name": "Networking",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Incident Response",
+      "Forensics"
+    ],
+    "interests": [
+      "Security"
+    ],
+    "education": [],
+    "experience_levels": [
+      "Junior",
+      "Mid"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "cybersecurity-analyst"
+    ]
+  },
+  {
+    "id": "ui-ux-designer",
+    "title": "UI/UX Designer",
+    "description": "Creates user-centered designs, prototypes, and ensures accessible, usable interfaces.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Design",
+        "raw_name": "Design",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Prototyping",
+        "raw_name": "Prototyping",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Figma",
+      "User Research"
+    ],
+    "interests": [
+      "Design",
+      "User Experience"
+    ],
+    "education": [],
+    "experience_levels": [
+      "Junior",
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 5,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "ui-ux-designer"
+    ]
+  },
+  {
+    "id": "mobile-developer",
+    "title": "Mobile Developer",
+    "description": "Builds native or cross-platform mobile applications and optimizes for device constraints.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Mobile Development",
+        "raw_name": "Mobile Development",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Ui/Ux",
+        "raw_name": "UI/UX",
+        "importance": 0.7,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "React Native",
+      "Kotlin",
+      "Swift"
+    ],
+    "interests": [
+      "Mobile",
+      "Interfaces"
+    ],
+    "education": [],
+    "experience_levels": [
+      "Junior",
+      "Mid"
+    ],
+    "typical_duration_months": 6,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "mobile-developer"
+    ]
+  },
+  {
+    "id": "civil-engineer",
+    "title": "Civil Engineer",
+    "description": "Designs, plans, and oversees construction of infrastructure projects such as bridges, roads, and dams.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Structural Analysis",
+        "raw_name": "Structural Analysis",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Autocad & Cad Design",
+        "raw_name": "AutoCAD & CAD Design",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Geotechnical Engineering",
+        "raw_name": "Geotechnical Engineering",
+        "importance": 0.85,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Construction Management",
+        "raw_name": "Construction Management",
+        "importance": 0.8,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Revit",
+      "Surveying",
+      "Building Codes"
+    ],
+    "interests": [
+      "Construction",
+      "Infrastructure",
+      "Engineering"
+    ],
+    "education": [
+      "Bachelor's in Civil Engineering"
+    ],
+    "experience_levels": [
+      "Junior",
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 12,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "civil-engineer"
+    ]
+  },
+  {
+    "id": "accountant",
+    "title": "Accountant",
+    "description": "Prepares financial reports, performs auditing, handles taxation, and ensures financial compliance.",
+    "category": "Technology",
+    "required_skills": [
+      {
+        "name": "Financial Accounting",
+        "raw_name": "Financial Accounting",
+        "importance": 0.95,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Taxation & Compliance",
+        "raw_name": "Taxation & Compliance",
+        "importance": 0.9,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Auditing",
+        "raw_name": "Auditing",
+        "importance": 0.85,
+        "required_level": 3,
+        "source": [
+          "custom"
+        ]
+      },
+      {
+        "name": "Excel Financial Modeling",
+        "raw_name": "Excel Financial Modeling",
+        "importance": 0.85,
+        "required_level": 4,
+        "source": [
+          "custom"
+        ]
+      }
+    ],
+    "recommended_skills": [
+      "Quickbooks",
+      "Sap Financials",
+      "Ifrs Standards"
+    ],
+    "interests": [
+      "Finance",
+      "Accounting",
+      "Tax"
+    ],
+    "education": [
+      "Bachelor's in Accounting or CPA"
+    ],
+    "experience_levels": [
+      "Junior",
+      "Mid",
+      "Senior"
+    ],
+    "typical_duration_months": 9,
+    "source": [
+      "custom"
+    ],
+    "source_ids": [
+      "accountant"
+    ]
+  }
+]

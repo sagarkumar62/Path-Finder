@@ -1,0 +1,100 @@
+{"id": "match_1", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 3}, {"name": "Data Analysis", "level": 3}], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_2", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 4}], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_3", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 3}], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_4", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 5}, {"name": "JavaScript", "level": 5}, {"name": "React", "level": 5}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_5", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 3}, {"name": "Databases", "level": 3}, {"name": "JavaScript", "level": 3}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_6", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 4}, {"name": "JavaScript", "level": 5}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_7", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 5}, {"name": "Statistics", "level": 5}], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_8", "data_type": "synthetic_training_data", "user_skills": [{"name": "Docker", "level": 4}, {"name": "Ci/Cd", "level": 3}], "target_career": "DevOps Engineer", "ground_truth_career_id": "devops-engineer"}
+{"id": "match_9", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 4}], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_10", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 3}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_11", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 3}], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_12", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cybersecurity Analyst", "ground_truth_career_id": "cybersecurity-analyst"}
+{"id": "match_13", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "Databases", "level": 3}], "target_career": "Backend Developer", "ground_truth_career_id": "backend-developer"}
+{"id": "match_14", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "React", "level": 4}, {"name": "JavaScript", "level": 3}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_15", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_16", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_17", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "Databases", "level": 4}], "target_career": "Backend Developer", "ground_truth_career_id": "backend-developer"}
+{"id": "match_18", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_19", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 4}, {"name": "JavaScript", "level": 3}, {"name": "Node.js", "level": 5}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_20", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 4}, {"name": "Statistics", "level": 3}], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_21", "data_type": "synthetic_training_data", "user_skills": [{"name": "JavaScript", "level": 5}, {"name": "React", "level": 3}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_22", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 5}, {"name": "Docker", "level": 4}], "target_career": "DevOps Engineer", "ground_truth_career_id": "devops-engineer"}
+{"id": "match_23", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_24", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_25", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_26", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 5}], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_27", "data_type": "synthetic_training_data", "user_skills": [{"name": "Design", "level": 3}], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_28", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 3}, {"name": "Excel", "level": 4}], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_29", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 4}, {"name": "Excel", "level": 4}], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_30", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_31", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_32", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 5}, {"name": "Apis", "level": 4}], "target_career": "Backend Developer", "ground_truth_career_id": "backend-developer"}
+{"id": "match_33", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_34", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 5}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_35", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 3}], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_36", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_37", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 3}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_38", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Backend Developer", "ground_truth_career_id": "backend-developer"}
+{"id": "match_39", "data_type": "synthetic_training_data", "user_skills": [{"name": "Networking", "level": 4}], "target_career": "Cybersecurity Analyst", "ground_truth_career_id": "cybersecurity-analyst"}
+{"id": "match_40", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_41", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_42", "data_type": "synthetic_training_data", "user_skills": [{"name": "Design", "level": 5}], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_43", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_44", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_45", "data_type": "synthetic_training_data", "user_skills": [{"name": "Ci/Cd", "level": 5}], "target_career": "DevOps Engineer", "ground_truth_career_id": "devops-engineer"}
+{"id": "match_46", "data_type": "synthetic_training_data", "user_skills": [{"name": "Machine Learning", "level": 4}, {"name": "Data Engineering", "level": 3}], "target_career": "AI Engineer", "ground_truth_career_id": "ai-engineer"}
+{"id": "match_47", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_48", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "AI Engineer", "ground_truth_career_id": "ai-engineer"}
+{"id": "match_49", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 4}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_50", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 4}, {"name": "JavaScript", "level": 5}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_51", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}
+{"id": "match_52", "data_type": "synthetic_training_data", "user_skills": [{"name": "Data Analysis", "level": 4}, {"name": "Excel", "level": 4}], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_53", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_54", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 4}], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_55", "data_type": "synthetic_training_data", "user_skills": [{"name": "Ui/Ux", "level": 4}], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}
+{"id": "match_56", "data_type": "synthetic_training_data", "user_skills": [{"name": "Docker", "level": 5}], "target_career": "DevOps Engineer", "ground_truth_career_id": "devops-engineer"}
+{"id": "match_57", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}
+{"id": "match_58", "data_type": "synthetic_training_data", "user_skills": [{"name": "Databases", "level": 4}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_59", "data_type": "synthetic_training_data", "user_skills": [{"name": "Node.js", "level": 3}, {"name": "React", "level": 3}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_60", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_61", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_62", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_63", "data_type": "synthetic_training_data", "user_skills": [{"name": "Excel", "level": 3}, {"name": "Data Analysis", "level": 4}], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_64", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_65", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 5}, {"name": "Html/Css", "level": 5}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_66", "data_type": "synthetic_training_data", "user_skills": [{"name": "Networking", "level": 5}], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_67", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 5}], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_68", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 3}], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_69", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 4}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_70", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Backend Developer", "ground_truth_career_id": "backend-developer"}
+{"id": "match_71", "data_type": "synthetic_training_data", "user_skills": [{"name": "Prototyping", "level": 3}], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_72", "data_type": "synthetic_training_data", "user_skills": [{"name": "JavaScript", "level": 5}, {"name": "React", "level": 5}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_73", "data_type": "synthetic_training_data", "user_skills": [{"name": "Machine Learning", "level": 3}, {"name": "Statistics", "level": 3}], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_74", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "DevOps Engineer", "ground_truth_career_id": "devops-engineer"}
+{"id": "match_75", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 5}, {"name": "Data Engineering", "level": 3}], "target_career": "AI Engineer", "ground_truth_career_id": "ai-engineer"}
+{"id": "match_76", "data_type": "synthetic_training_data", "user_skills": [{"name": "Excel", "level": 3}, {"name": "Data Analysis", "level": 4}], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_77", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 4}], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_78", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cybersecurity Analyst", "ground_truth_career_id": "cybersecurity-analyst"}
+{"id": "match_79", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_80", "data_type": "synthetic_training_data", "user_skills": [{"name": "Python", "level": 5}, {"name": "Data Engineering", "level": 3}], "target_career": "AI Engineer", "ground_truth_career_id": "ai-engineer"}
+{"id": "match_81", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}
+{"id": "match_82", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}
+{"id": "match_83", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_84", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "AI Engineer", "ground_truth_career_id": "ai-engineer"}
+{"id": "match_85", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_86", "data_type": "synthetic_training_data", "user_skills": [{"name": "SQL", "level": 3}], "target_career": "Data Analyst", "ground_truth_career_id": "data-analyst"}
+{"id": "match_87", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_88", "data_type": "synthetic_training_data", "user_skills": [{"name": "Statistics", "level": 5}, {"name": "Machine Learning", "level": 5}], "target_career": "Machine Learning Engineer", "ground_truth_career_id": "machine-learning-engineer"}
+{"id": "match_89", "data_type": "synthetic_training_data", "user_skills": [{"name": "Html/Css", "level": 5}, {"name": "React", "level": 5}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_90", "data_type": "synthetic_training_data", "user_skills": [{"name": "Cloud", "level": 3}], "target_career": "Cloud Engineer", "ground_truth_career_id": "cloud-engineer"}
+{"id": "match_91", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_92", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}
+{"id": "match_93", "data_type": "synthetic_training_data", "user_skills": [{"name": "Machine Learning", "level": 3}], "target_career": "AI Engineer", "ground_truth_career_id": "ai-engineer"}
+{"id": "match_94", "data_type": "synthetic_training_data", "user_skills": [{"name": "Mobile Development", "level": 3}], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}
+{"id": "match_95", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "Data Scientist", "ground_truth_career_id": "data-scientist"}
+{"id": "match_96", "data_type": "synthetic_training_data", "user_skills": [{"name": "React", "level": 3}], "target_career": "Full Stack Developer", "ground_truth_career_id": "full-stack-developer"}
+{"id": "match_97", "data_type": "synthetic_training_data", "user_skills": [], "target_career": "AI Engineer", "ground_truth_career_id": "ai-engineer"}
+{"id": "match_98", "data_type": "synthetic_training_data", "user_skills": [{"name": "JavaScript", "level": 4}], "target_career": "Frontend Developer", "ground_truth_career_id": "frontend-developer"}
+{"id": "match_99", "data_type": "synthetic_training_data", "user_skills": [{"name": "Design", "level": 3}], "target_career": "UI/UX Designer", "ground_truth_career_id": "ui-ux-designer"}
+{"id": "match_100", "data_type": "synthetic_training_data", "user_skills": [{"name": "Ui/Ux", "level": 3}], "target_career": "Mobile Developer", "ground_truth_career_id": "mobile-developer"}

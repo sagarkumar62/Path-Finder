@@ -1,0 +1,34 @@
+{
+  "id": "pilot",
+  "title": "Commercial Pilot",
+  "domain": "aviation",
+  "career_type": "occupational",
+  "source": {
+    "provider": "onet_or_esco",
+    "source_id": "53-2012.00",
+    "url": "https://www.onetonline.org/link/summary/53-2012.00"
+  },
+  "description": "Navigates and operates multi-engine aircraft for commercial airlines, cargo transport, and charter flight operations.",
+  "skills": [
+    { "id": "flight_navigation", "name": "Flight Navigation & Plotting", "importance": 0.95, "required_level": 4, "phase": 1 },
+    { "id": "aviation_regs", "name": "Aviation Regulations & FAA Standards", "importance": 0.92, "required_level": 4, "phase": 1 },
+    { "id": "meteorology", "name": "Aeronautical Meteorology & Weather Analysis", "importance": 0.90, "required_level": 3, "phase": 2 },
+    { "id": "aircraft_systems", "name": "Aircraft Avionics & Engines", "importance": 0.88, "required_level": 3, "phase": 2 },
+    { "id": "radio_comm", "name": "Cockpit Radio Communication & ATC Protocols", "importance": 0.85, "required_level": 3, "phase": 2 },
+    { "id": "instrument_rating", "name": "Instrument Flight Rules (IFR)", "importance": 0.85, "required_level": 3, "phase": 3 },
+    { "id": "multi_engine", "name": "Multi-Engine Aircraft Operations", "importance": 0.82, "required_level": 3, "phase": 3 },
+    { "id": "emergency_protocols", "name": "Flight Safety & Emergency Procedures", "importance": 0.90, "required_level": 4, "phase": 4 }
+  ],
+  "prerequisites": [
+    ["aviation_regs", "flight_navigation"],
+    ["flight_navigation", "instrument_rating"],
+    ["meteorology", "instrument_rating"],
+    ["aircraft_systems", "multi_engine"],
+    ["multi_engine", "emergency_protocols"]
+  ],
+  "recommended_skills": ["Private Pilot License (PPL)", "Commercial Pilot License (CPL)", "Class 1 Medical"],
+  "interests": ["Aviation", "Flight Operations", "Navigation"],
+  "education": ["Aviation Science", "Commercial Pilot Certification"],
+  "experience_levels": ["Junior", "Mid", "Senior"],
+  "typical_duration_months": 18
+}

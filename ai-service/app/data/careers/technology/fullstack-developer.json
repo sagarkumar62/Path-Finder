@@ -1,0 +1,83 @@
+{
+  "careerId": "fullstack-developer",
+  "title": "Fullstack Developer",
+  "domain": "technology",
+  "description": "Architect and deploy modern web applications using HTML, CSS, JavaScript, React, Node.js, databases, and cloud infrastructure.",
+  "aliases": ["fullstack developer", "full stack developer", "full stack engineer"],
+  "nodes": [
+    {
+      "id": "html_css",
+      "title": "HTML5 & Modern CSS",
+      "type": "foundation",
+      "description": "Master responsive layout design, HTML semantics, Flexbox, Grid, and Tailwind CSS.",
+      "topics": ["Semantic HTML", "CSS Flexbox & Grid", "Tailwind CSS", "Responsive Design"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript (ES6+)",
+      "type": "foundation",
+      "description": "Master core JavaScript, DOM manipulation, async programming, Promises, and ES Modules.",
+      "topics": ["JavaScript Syntax", "Async/Await & Promises", "DOM Manipulation", "ES Modules"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "requiredLevel": 4,
+      "prerequisites": ["html_css"]
+    },
+    {
+      "id": "react",
+      "title": "React.js",
+      "type": "core",
+      "description": "Build interactive single page applications using React Hooks, State Management, and UI components.",
+      "topics": ["JSX & State", "useEffect & Custom Hooks", "Context API", "Component Architecture"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["javascript"]
+    },
+    {
+      "id": "nodejs",
+      "title": "Node.js & Express.js",
+      "type": "core",
+      "description": "Develop scalable backend REST APIs, middleware, HTTP authentication, and databases with Node.js.",
+      "topics": ["Node.js Event Loop", "Express Routing", "RESTful API Design", "JWT Authentication"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "requiredLevel": 4,
+      "prerequisites": ["javascript"]
+    },
+    {
+      "id": "databases",
+      "title": "SQL & NoSQL Databases",
+      "type": "core",
+      "description": "Model database schemas using PostgreSQL and MongoDB.",
+      "topics": ["PostgreSQL", "MongoDB", "Prisma ORM", "Database Queries"],
+      "difficulty": "intermediate",
+      "importance": 0.90,
+      "requiredLevel": 3,
+      "prerequisites": ["nodejs"]
+    },
+    {
+      "id": "deployment",
+      "title": "Cloud Deployment & Capstone",
+      "type": "capstone",
+      "description": "Deploy fullstack applications using Docker containers, CI/CD pipelines, and cloud hosting.",
+      "topics": ["Docker Containerization", "Vercel / AWS", "CI/CD Workflows", "Production Capstone Project"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "requiredLevel": 4,
+      "prerequisites": ["react", "databases"]
+    }
+  ],
+  "edges": [
+    { "source": "html_css", "target": "javascript", "type": "prerequisite" },
+    { "source": "javascript", "target": "react", "type": "prerequisite" },
+    { "source": "javascript", "target": "nodejs", "type": "prerequisite" },
+    { "source": "nodejs", "target": "databases", "type": "prerequisite" },
+    { "source": "react", "target": "deployment", "type": "prerequisite" },
+    { "source": "databases", "target": "deployment", "type": "prerequisite" }
+  ]
+}

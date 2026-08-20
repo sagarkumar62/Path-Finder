@@ -1,0 +1,18 @@
+{
+  "technology": {
+    "name": "Technology & Software Development",
+    "description": "Software engineering, cloud infrastructure, AI, data science, and web development pathways."
+  },
+  "aviation": {
+    "name": "Aviation & Flight Operations",
+    "description": "Commercial piloting, flight instruction, air traffic control, and aeronautical operations."
+  },
+  "design": {
+    "name": "Design & User Experience",
+    "description": "UX/UI design, product design, user research, wireframing, and design systems."
+  },
+  "finance": {
+    "name": "Finance & Investment",
+    "description": "Financial analysis, investment banking, corporate accounting, and valuation."
+  }
+}

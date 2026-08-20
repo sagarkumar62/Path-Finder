@@ -1,0 +1,1045 @@
+{
+  "id": "devops-engineer",
+  "career_id": "devops-engineer",
+  "title": "DevOps Engineer",
+  "domain": "cloud-and-devops",
+  "estimatedMonths": 6,
+  "estimatedHours": 200,
+  "nodes": [
+    {
+      "id": "node_1",
+      "nodeId": "node_1",
+      "title": "Azure",
+      "description": "Learn and apply Azure in DevOps Engineer workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "node_2",
+      "nodeId": "node_2",
+      "title": "Linux",
+      "description": "Learn and apply Linux in DevOps Engineer workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "node_3",
+      "nodeId": "node_3",
+      "title": "AWS Cloud",
+      "description": "Learn and apply AWS Cloud in DevOps Engineer workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_2"
+      ]
+    },
+    {
+      "id": "node_4",
+      "nodeId": "node_4",
+      "title": "Kubernetes",
+      "description": "Learn and apply Kubernetes in DevOps Engineer workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "node_5",
+      "nodeId": "node_5",
+      "title": "DevOps",
+      "description": "Learn and apply DevOps in DevOps Engineer workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_4"
+      ]
+    },
+    {
+      "id": "node_6",
+      "nodeId": "node_6",
+      "title": "Cloud Computing",
+      "description": "Learn and apply Cloud Computing in DevOps Engineer workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_5"
+      ]
+    },
+    {
+      "id": "node_7",
+      "nodeId": "node_7",
+      "title": "Infrastructure as Code",
+      "description": "Learn and apply Infrastructure as Code in DevOps Engineer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_6"
+      ]
+    },
+    {
+      "id": "node_8",
+      "nodeId": "node_8",
+      "title": "Containers",
+      "description": "Learn and apply Containers in DevOps Engineer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_7"
+      ]
+    },
+    {
+      "id": "node_9",
+      "nodeId": "node_9",
+      "title": "CI/CD",
+      "description": "Learn and apply CI/CD in DevOps Engineer workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_8"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_node_1_node_2",
+      "source": "node_1",
+      "target": "node_2",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_2_node_3",
+      "source": "node_2",
+      "target": "node_3",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_3_node_4",
+      "source": "node_3",
+      "target": "node_4",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_4_node_5",
+      "source": "node_4",
+      "target": "node_5",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_5_node_6",
+      "source": "node_5",
+      "target": "node_6",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_6_node_7",
+      "source": "node_6",
+      "target": "node_7",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_7_node_8",
+      "source": "node_7",
+      "target": "node_8",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_8_node_9",
+      "source": "node_8",
+      "target": "node_9",
+      "type": "prerequisite"
+    }
+  ],
+  "phases": [
+    {
+      "phaseId": "p1",
+      "title": "Phase 1: Foundations for DevOps Engineer",
+      "description": "Master fundamental prerequisite concepts and core tooling.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Azure",
+        "Linux"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p1_1",
+          "title": "Azure",
+          "description": "Master Azure competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Azure"
+          ]
+        },
+        {
+          "milestoneId": "m_p1_2",
+          "title": "Linux",
+          "description": "Master Linux competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Linux"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076688",
+          "resourceId": "LR076688",
+          "careerId": "devops-engineer",
+          "skill": "Azure",
+          "skills_covered": [
+            "Azure"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/training/",
+          "videoUrl": "https://learn.microsoft.com/training/",
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076687",
+          "resourceId": "LR076687",
+          "careerId": "devops-engineer",
+          "skill": "Linux",
+          "skills_covered": [
+            "Linux"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Linux Journey",
+          "provider": "Linux Journey",
+          "url": "https://linuxjourney.com/",
+          "videoUrl": "https://linuxjourney.com/",
+          "rating": 4.8,
+          "duration": "41 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076680",
+          "resourceId": "LR076680",
+          "careerId": "devops-engineer",
+          "skill": "Containers",
+          "skills_covered": [
+            "Containers"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Docker Docs",
+          "provider": "Docker",
+          "url": "https://docs.docker.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076689",
+          "resourceId": "LR076689",
+          "careerId": "devops-engineer",
+          "skill": "AWS Cloud",
+          "skills_covered": [
+            "AWS Cloud"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "AWS Skill Builder",
+          "provider": "AWS",
+          "url": "https://skillbuilder.aws/",
+          "videoUrl": "https://skillbuilder.aws/",
+          "rating": 4.8,
+          "duration": "39 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076677",
+          "resourceId": "LR076677",
+          "careerId": "devops-engineer",
+          "skill": "Kubernetes",
+          "skills_covered": [
+            "Kubernetes"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Kubernetes Documentation",
+          "provider": "Kubernetes",
+          "url": "https://kubernetes.io/docs/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "24 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076686",
+          "resourceId": "LR076686",
+          "careerId": "devops-engineer",
+          "skill": "Cloud Computing",
+          "skills_covered": [
+            "Cloud Computing"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "Google Cloud Skills Boost",
+          "provider": "Google Cloud",
+          "url": "https://www.cloudskillsboost.google/",
+          "videoUrl": "https://www.cloudskillsboost.google/",
+          "rating": 4.8,
+          "duration": "44 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p2",
+      "title": "Phase 2: Skill Development for DevOps Engineer",
+      "description": "Build core domain logic, architecture, and intermediate patterns.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "AWS Cloud",
+        "Kubernetes"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p2_1",
+          "title": "AWS Cloud",
+          "description": "Master AWS Cloud competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "AWS Cloud"
+          ]
+        },
+        {
+          "milestoneId": "m_p2_2",
+          "title": "Kubernetes",
+          "description": "Master Kubernetes competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Kubernetes"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076689",
+          "resourceId": "LR076689",
+          "careerId": "devops-engineer",
+          "skill": "AWS Cloud",
+          "skills_covered": [
+            "AWS Cloud"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "AWS Skill Builder",
+          "provider": "AWS",
+          "url": "https://skillbuilder.aws/",
+          "videoUrl": "https://skillbuilder.aws/",
+          "rating": 4.8,
+          "duration": "39 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076677",
+          "resourceId": "LR076677",
+          "careerId": "devops-engineer",
+          "skill": "Kubernetes",
+          "skills_covered": [
+            "Kubernetes"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Kubernetes Documentation",
+          "provider": "Kubernetes",
+          "url": "https://kubernetes.io/docs/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "24 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076680",
+          "resourceId": "LR076680",
+          "careerId": "devops-engineer",
+          "skill": "Containers",
+          "skills_covered": [
+            "Containers"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Docker Docs",
+          "provider": "Docker",
+          "url": "https://docs.docker.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076688",
+          "resourceId": "LR076688",
+          "careerId": "devops-engineer",
+          "skill": "Azure",
+          "skills_covered": [
+            "Azure"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/training/",
+          "videoUrl": "https://learn.microsoft.com/training/",
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076686",
+          "resourceId": "LR076686",
+          "careerId": "devops-engineer",
+          "skill": "Cloud Computing",
+          "skills_covered": [
+            "Cloud Computing"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "Google Cloud Skills Boost",
+          "provider": "Google Cloud",
+          "url": "https://www.cloudskillsboost.google/",
+          "videoUrl": "https://www.cloudskillsboost.google/",
+          "rating": 4.8,
+          "duration": "44 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076678",
+          "resourceId": "LR076678",
+          "careerId": "devops-engineer",
+          "skill": "CI/CD",
+          "skills_covered": [
+            "CI/CD"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "GitHub Actions Docs",
+          "provider": "GitHub",
+          "url": "https://docs.github.com/actions",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "23 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p3",
+      "title": "Phase 3: Projects & Experience for DevOps Engineer",
+      "description": "Advanced techniques, performance optimization, and real-world projects.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "DevOps",
+        "Cloud Computing"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p3_1",
+          "title": "DevOps",
+          "description": "Master DevOps competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "DevOps"
+          ]
+        },
+        {
+          "milestoneId": "m_p3_2",
+          "title": "Cloud Computing",
+          "description": "Master Cloud Computing competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Cloud Computing"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076686",
+          "resourceId": "LR076686",
+          "careerId": "devops-engineer",
+          "skill": "Cloud Computing",
+          "skills_covered": [
+            "Cloud Computing"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "Google Cloud Skills Boost",
+          "provider": "Google Cloud",
+          "url": "https://www.cloudskillsboost.google/",
+          "videoUrl": "https://www.cloudskillsboost.google/",
+          "rating": 4.8,
+          "duration": "44 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076685",
+          "resourceId": "LR076685",
+          "careerId": "devops-engineer",
+          "skill": "DevOps",
+          "skills_covered": [
+            "DevOps"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "roadmap.sh DevOps",
+          "provider": "roadmap.sh",
+          "url": "https://roadmap.sh/devops",
+          "videoUrl": "https://roadmap.sh/devops",
+          "rating": 4.8,
+          "duration": "28 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076683",
+          "resourceId": "LR076683",
+          "careerId": "devops-engineer",
+          "skill": "DevOps",
+          "skills_covered": [
+            "DevOps",
+            "Kubernetes"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "KodeKloud",
+          "provider": "KodeKloud",
+          "url": "https://kodekloud.com/",
+          "videoUrl": "https://kodekloud.com/",
+          "rating": 4.8,
+          "duration": "8 hours",
+          "level": "Advanced",
+          "access": "Paid",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076680",
+          "resourceId": "LR076680",
+          "careerId": "devops-engineer",
+          "skill": "Containers",
+          "skills_covered": [
+            "Containers"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Docker Docs",
+          "provider": "Docker",
+          "url": "https://docs.docker.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076688",
+          "resourceId": "LR076688",
+          "careerId": "devops-engineer",
+          "skill": "Azure",
+          "skills_covered": [
+            "Azure"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/training/",
+          "videoUrl": "https://learn.microsoft.com/training/",
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076689",
+          "resourceId": "LR076689",
+          "careerId": "devops-engineer",
+          "skill": "AWS Cloud",
+          "skills_covered": [
+            "AWS Cloud"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "AWS Skill Builder",
+          "provider": "AWS",
+          "url": "https://skillbuilder.aws/",
+          "videoUrl": "https://skillbuilder.aws/",
+          "rating": 4.8,
+          "duration": "39 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p4",
+      "title": "Phase 4: Career & Placement for DevOps Engineer",
+      "description": "Deploy real-world capstone project and prepare for career placement.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Infrastructure as Code",
+        "Containers",
+        "CI/CD"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p4_1",
+          "title": "Infrastructure as Code",
+          "description": "Master Infrastructure as Code competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Infrastructure as Code"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_2",
+          "title": "Containers",
+          "description": "Master Containers competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Containers"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_3",
+          "title": "CI/CD",
+          "description": "Master CI/CD competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "CI/CD"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076680",
+          "resourceId": "LR076680",
+          "careerId": "devops-engineer",
+          "skill": "Containers",
+          "skills_covered": [
+            "Containers"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Docker Docs",
+          "provider": "Docker",
+          "url": "https://docs.docker.com/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076678",
+          "resourceId": "LR076678",
+          "careerId": "devops-engineer",
+          "skill": "CI/CD",
+          "skills_covered": [
+            "CI/CD"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "GitHub Actions Docs",
+          "provider": "GitHub",
+          "url": "https://docs.github.com/actions",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "23 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076684",
+          "resourceId": "LR076684",
+          "careerId": "devops-engineer",
+          "skill": "Infrastructure as Code",
+          "skills_covered": [
+            "Infrastructure as Code"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "Terraform Tutorials",
+          "provider": "HashiCorp",
+          "url": "https://developer.hashicorp.com/terraform/tutorials",
+          "videoUrl": "https://developer.hashicorp.com/terraform/tutorials",
+          "rating": 4.8,
+          "duration": "12 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076688",
+          "resourceId": "LR076688",
+          "careerId": "devops-engineer",
+          "skill": "Azure",
+          "skills_covered": [
+            "Azure"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Microsoft Learn",
+          "provider": "Microsoft",
+          "url": "https://learn.microsoft.com/training/",
+          "videoUrl": "https://learn.microsoft.com/training/",
+          "rating": 4.8,
+          "duration": "75 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076689",
+          "resourceId": "LR076689",
+          "careerId": "devops-engineer",
+          "skill": "AWS Cloud",
+          "skills_covered": [
+            "AWS Cloud"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "AWS Skill Builder",
+          "provider": "AWS",
+          "url": "https://skillbuilder.aws/",
+          "videoUrl": "https://skillbuilder.aws/",
+          "rating": 4.8,
+          "duration": "39 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076677",
+          "resourceId": "LR076677",
+          "careerId": "devops-engineer",
+          "skill": "Kubernetes",
+          "skills_covered": [
+            "Kubernetes"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "Kubernetes Documentation",
+          "provider": "Kubernetes",
+          "url": "https://kubernetes.io/docs/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "24 hours",
+          "level": "Advanced",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "learningResources": [
+    {
+      "id": "LR076680",
+      "resourceId": "LR076680",
+      "careerId": "devops-engineer",
+      "skill": "Containers",
+      "skills_covered": [
+        "Containers"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Docker Docs",
+      "provider": "Docker",
+      "url": "https://docs.docker.com/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "75 hours",
+      "level": "Advanced",
+      "access": "Free",
+      "phase_number": "2",
+      "phase_name": "Skill Development",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076688",
+      "resourceId": "LR076688",
+      "careerId": "devops-engineer",
+      "skill": "Azure",
+      "skills_covered": [
+        "Azure"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Microsoft Learn",
+      "provider": "Microsoft",
+      "url": "https://learn.microsoft.com/training/",
+      "videoUrl": "https://learn.microsoft.com/training/",
+      "rating": 4.8,
+      "duration": "75 hours",
+      "level": "Advanced",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076689",
+      "resourceId": "LR076689",
+      "careerId": "devops-engineer",
+      "skill": "AWS Cloud",
+      "skills_covered": [
+        "AWS Cloud"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "AWS Skill Builder",
+      "provider": "AWS",
+      "url": "https://skillbuilder.aws/",
+      "videoUrl": "https://skillbuilder.aws/",
+      "rating": 4.8,
+      "duration": "39 hours",
+      "level": "Advanced",
+      "access": "Freemium",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076677",
+      "resourceId": "LR076677",
+      "careerId": "devops-engineer",
+      "skill": "Kubernetes",
+      "skills_covered": [
+        "Kubernetes"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "Kubernetes Documentation",
+      "provider": "Kubernetes",
+      "url": "https://kubernetes.io/docs/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "24 hours",
+      "level": "Advanced",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076686",
+      "resourceId": "LR076686",
+      "careerId": "devops-engineer",
+      "skill": "Cloud Computing",
+      "skills_covered": [
+        "Cloud Computing"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "Google Cloud Skills Boost",
+      "provider": "Google Cloud",
+      "url": "https://www.cloudskillsboost.google/",
+      "videoUrl": "https://www.cloudskillsboost.google/",
+      "rating": 4.8,
+      "duration": "44 hours",
+      "level": "Advanced",
+      "access": "Freemium",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076678",
+      "resourceId": "LR076678",
+      "careerId": "devops-engineer",
+      "skill": "CI/CD",
+      "skills_covered": [
+        "CI/CD"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "GitHub Actions Docs",
+      "provider": "GitHub",
+      "url": "https://docs.github.com/actions",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "23 hours",
+      "level": "Advanced",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076684",
+      "resourceId": "LR076684",
+      "careerId": "devops-engineer",
+      "skill": "Infrastructure as Code",
+      "skills_covered": [
+        "Infrastructure as Code"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "Terraform Tutorials",
+      "provider": "HashiCorp",
+      "url": "https://developer.hashicorp.com/terraform/tutorials",
+      "videoUrl": "https://developer.hashicorp.com/terraform/tutorials",
+      "rating": 4.8,
+      "duration": "12 hours",
+      "level": "Advanced",
+      "access": "Free",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076685",
+      "resourceId": "LR076685",
+      "careerId": "devops-engineer",
+      "skill": "DevOps",
+      "skills_covered": [
+        "DevOps"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "roadmap.sh DevOps",
+      "provider": "roadmap.sh",
+      "url": "https://roadmap.sh/devops",
+      "videoUrl": "https://roadmap.sh/devops",
+      "rating": 4.8,
+      "duration": "28 hours",
+      "level": "Advanced",
+      "access": "Free",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    }
+  ]
+}

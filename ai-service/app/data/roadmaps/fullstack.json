@@ -1,0 +1,108 @@
+{
+  "id": "fullstack",
+  "title": "Full Stack Developer",
+  "domain": "technology",
+  "source": "roadmap.sh",
+  "source_url": "https://roadmap.sh/full-stack",
+  "nodes": [
+    {
+      "id": "html_css",
+      "title": "HTML5 & Modern CSS",
+      "type": "foundation",
+      "description": "Master responsive layout design, HTML semantics, CSS Flexbox, Grid, and Tailwind CSS.",
+      "topics": ["Semantic HTML", "CSS Flexbox & Grid", "Tailwind CSS", "Responsive Design"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": [],
+      "recommended_level": 4
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript & ES6+",
+      "type": "foundation",
+      "description": "Master core JavaScript, DOM manipulation, async programming, Promises, and ES Modules.",
+      "topics": ["JavaScript Core Syntax", "Async/Await & Promises", "DOM Manipulation", "ES Modules"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": ["html_css"],
+      "recommended_level": 4
+    },
+    {
+      "id": "react",
+      "title": "React.js",
+      "type": "core",
+      "description": "Build interactive single page applications using React Hooks, State Management, and UI components.",
+      "topics": ["JSX & State", "useEffect & Custom Hooks", "Context API", "Component Architecture"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["javascript"],
+      "recommended_level": 4
+    },
+    {
+      "id": "nodejs",
+      "title": "Node.js & Express.js",
+      "type": "core",
+      "description": "Develop scalable backend REST APIs, middleware, HTTP authentication, and file streaming with Node.js.",
+      "topics": ["Node.js Event Loop", "Express Middleware & Routing", "RESTful API Design", "JWT Authentication"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["javascript"],
+      "recommended_level": 4
+    },
+    {
+      "id": "databases",
+      "title": "SQL & NoSQL Databases",
+      "type": "core",
+      "description": "Model database schemas using PostgreSQL and MongoDB, write indexing rules, and implement ORMs (Prisma/Mongoose).",
+      "topics": ["PostgreSQL & Relational Data", "MongoDB & Document Stores", "ORMs (Prisma / Mongoose)", "Database Indexing & Queries"],
+      "difficulty": "intermediate",
+      "importance": 0.90,
+      "prerequisites": ["nodejs"],
+      "recommended_level": 3
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript",
+      "type": "intermediate",
+      "description": "Implement static typing across both frontend and backend codebases for end-to-end type safety.",
+      "topics": ["Type Annotations & Interfaces", "Generics", "TS Config", "Shared Types"],
+      "difficulty": "intermediate",
+      "importance": 0.88,
+      "prerequisites": ["react", "nodejs"],
+      "recommended_level": 3
+    },
+    {
+      "id": "nextjs",
+      "title": "Next.js Fullstack Framework",
+      "type": "advanced",
+      "description": "Build unified fullstack web applications with React Server Components, App Router, and API endpoints.",
+      "topics": ["Server & Client Components", "Server Actions", "App Router Layouts", "SEO & SSR Performance"],
+      "difficulty": "advanced",
+      "importance": 0.85,
+      "prerequisites": ["typescript", "databases"],
+      "recommended_level": 3
+    },
+    {
+      "id": "cloud_deployment",
+      "title": "Cloud Deployment & Capstone",
+      "type": "capstone",
+      "description": "Deploy fullstack applications using Docker containers, CI/CD pipelines, Vercel, and cloud database instances.",
+      "topics": ["Docker Containerization", "Vercel / AWS Deployment", "CI/CD Workflows", "Production Capstone Application"],
+      "difficulty": "advanced",
+      "importance": 0.85,
+      "prerequisites": ["nextjs"],
+      "recommended_level": 4
+    }
+  ],
+  "edges": [
+    { "from": "html_css", "to": "javascript", "type": "prerequisite" },
+    { "from": "javascript", "to": "react", "type": "prerequisite" },
+    { "from": "javascript", "to": "nodejs", "type": "prerequisite" },
+    { "from": "nodejs", "to": "databases", "type": "prerequisite" },
+    { "from": "react", "to": "typescript", "type": "prerequisite" },
+    { "from": "nodejs", "to": "typescript", "type": "prerequisite" },
+    { "from": "typescript", "to": "nextjs", "type": "prerequisite" },
+    { "from": "databases", "to": "nextjs", "type": "prerequisite" },
+    { "from": "nextjs", "to": "cloud_deployment", "type": "prerequisite" }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ai-engineer",
+  "title": "AI Engineer",
+  "domain": "technology",
+  "career_type": "technical",
+  "source": {
+    "provider": "roadmap.sh",
+    "source_id": "ai-engineer",
+    "url": "https://roadmap.sh/ai-engineer"
+  },
+  "description": "Design, build, and deploy production-grade Artificial Intelligence and LLM applications using modern deep learning frameworks, vector databases, and RAG architectures.",
+  "skills": [
+    { "id": "python", "name": "Python", "importance": 0.98, "required_level": 4, "phase": 1 },
+    { "id": "math_stats", "name": "Linear Algebra & Statistics", "importance": 0.90, "required_level": 3, "phase": 1 },
+    { "id": "machine_learning", "name": "Machine Learning", "importance": 0.95, "required_level": 4, "phase": 2 },
+    { "id": "deep_learning", "name": "Deep Learning", "importance": 0.92, "required_level": 4, "phase": 2 },
+    { "id": "pytorch", "name": "PyTorch", "importance": 0.90, "required_level": 4, "phase": 2 },
+    { "id": "transformers", "name": "Transformers & LLMs", "importance": 0.88, "required_level": 3, "phase": 3 },
+    { "id": "rag_vector_db", "name": "RAG & Vector Databases", "importance": 0.85, "required_level": 3, "phase": 3 },
+    { "id": "mlops", "name": "MLOps & Model Deployment", "importance": 0.82, "required_level": 3, "phase": 4 }
+  ],
+  "prerequisites": [
+    ["python", "machine_learning"],
+    ["math_stats", "machine_learning"],
+    ["machine_learning", "deep_learning"],
+    ["deep_learning", "pytorch"],
+    ["pytorch", "transformers"],
+    ["transformers", "rag_vector_db"],
+    ["rag_vector_db", "mlops"]
+  ],
+  "recommended_skills": ["TensorFlow", "LangChain", "LlamaIndex", "Docker"],
+  "interests": ["AI", "Machine Learning", "Data Science"],
+  "education": ["Computer Science", "Data Science"],
+  "experience_levels": ["Junior", "Mid", "Senior"],
+  "typical_duration_months": 8
+}

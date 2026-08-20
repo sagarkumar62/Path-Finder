@@ -1,0 +1,60 @@
+{
+  "frontend": [
+    "frontend",
+    "frontend developer",
+    "front end developer",
+    "frontend engineer",
+    "web developer frontend",
+    "front-end developer"
+  ],
+  "devops": [
+    "devops",
+    "devops engineer",
+    "dev ops engineer",
+    "cloud devops engineer",
+    "site reliability engineer",
+    "sre"
+  ],
+  "ai-engineer": [
+    "ai engineer",
+    "ai-engineer",
+    "artificial intelligence engineer",
+    "ai/ml engineer",
+    "machine learning engineer",
+    "ml engineer"
+  ],
+  "fullstack": [
+    "fullstack",
+    "fullstack developer",
+    "full stack developer",
+    "full stack engineer",
+    "software engineer"
+  ],
+  "data-engineer": [
+    "data engineer",
+    "data scientist",
+    "data science",
+    "bi analyst"
+  ],
+  "cyber-security": [
+    "cybersecurity",
+    "cyber security",
+    "cybersecurity analyst",
+    "security analyst",
+    "network engineer"
+  ],
+  "mobile-developer": [
+    "mobile developer",
+    "android developer",
+    "ios developer",
+    "react native developer"
+  ],
+  "commercial-pilot": [
+    "pilot",
+    "commercial pilot",
+    "airline pilot",
+    "aircraft pilot",
+    "flight pilot",
+    "aviator"
+  ]
+}

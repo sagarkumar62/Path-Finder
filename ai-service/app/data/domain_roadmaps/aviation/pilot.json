@@ -1,0 +1,107 @@
+{
+  "id": "commercial-pilot",
+  "title": "Commercial Pilot",
+  "domain": "aviation",
+  "source": "domain-dataset",
+  "source_url": "https://www.faa.gov/pilots/safety",
+  "nodes": [
+    {
+      "id": "aviation_fundamentals",
+      "title": "Aviation Fundamentals",
+      "type": "foundation",
+      "description": "Understand basic aircraft components, flight controls, cockpit instrumentation, and flight physics.",
+      "topics": ["Basic Aerodynamics", "Aircraft Flight Controls", "Cockpit Instruments", "Pre-Flight Inspection"],
+      "difficulty": "beginner",
+      "importance": 1.0,
+      "prerequisites": [],
+      "recommended_level": 4
+    },
+    {
+      "id": "air_law",
+      "title": "Air Law & Regulations",
+      "type": "core",
+      "description": "Study Federal Aviation Regulations (FARs), ICAO rules of the air, airspace classifications, and pilot licensing requirements.",
+      "topics": ["FAR Part 61 & 91", "Airspace Classes (A-G)", "Pilot Logbooks & Flight Time", "ICAO International Standards"],
+      "difficulty": "beginner",
+      "importance": 0.95,
+      "prerequisites": ["aviation_fundamentals"],
+      "recommended_level": 4
+    },
+    {
+      "id": "meteorology",
+      "title": "Aviation Meteorology",
+      "type": "core",
+      "description": "Master weather report analysis (METAR, TAF), atmospheric stability, cloud types, icing, and wind shear hazards.",
+      "topics": ["METAR & TAF Weather Reports", "Frontal Systems & Thunderstorms", "Icing & Turbulence Hazards", "Altimetry & Pressure Systems"],
+      "difficulty": "intermediate",
+      "importance": 0.92,
+      "prerequisites": ["aviation_fundamentals"],
+      "recommended_level": 3
+    },
+    {
+      "id": "navigation",
+      "title": "Flight Navigation & Charting",
+      "type": "core",
+      "description": "Learn dead reckoning, pilotage, VFR sectional charts, VOR navigation, and GPS flight planning.",
+      "topics": ["Sectional Aeronautical Charts", "Dead Reckoning & Wind Correction", "VOR & NDB Navigation", "GPS Flight Planning"],
+      "difficulty": "intermediate",
+      "importance": 0.95,
+      "prerequisites": ["aviation_fundamentals"],
+      "recommended_level": 4
+    },
+    {
+      "id": "radio_communication",
+      "title": "Aviation Radio Communication",
+      "type": "core",
+      "description": "Master standard phraseology, Air Traffic Control (ATC) clearances, readbacks, and emergency communications.",
+      "topics": ["Phonetic Alphabet & Phraseology", "ATC Tower & Approach Clearances", "Transponder Codes (Squawk)", "Emergency Transmissions (Mayday/Pan-Pan)"],
+      "difficulty": "intermediate",
+      "importance": 0.88,
+      "prerequisites": ["air_law"],
+      "recommended_level": 3
+    },
+    {
+      "id": "instrument_rating",
+      "title": "Instrument Flight Rules (IFR)",
+      "type": "advanced",
+      "description": "Fly solely by reference to instruments without visual ground contact, holding patterns, and instrument approach procedures.",
+      "topics": ["Attitude Instrument Flying", "ILS & RNAV Instrument Approaches", "Holding Patterns", "IFR Flight Plans"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "prerequisites": ["navigation", "meteorology"],
+      "recommended_level": 4
+    },
+    {
+      "id": "multi_engine",
+      "title": "Multi-Engine Aircraft Operations",
+      "type": "advanced",
+      "description": "Master multi-engine aerodynamics, asymmetric thrust, engine failure procedures, and critical engine concepts.",
+      "topics": ["Asymmetric Thrust & Vmc", "Single-Engine Climb Performance", "Engine Out Emergency Procedures", "Multi-Engine Systems"],
+      "difficulty": "advanced",
+      "importance": 0.88,
+      "prerequisites": ["instrument_rating"],
+      "recommended_level": 4
+    },
+    {
+      "id": "airline_readiness",
+      "title": "Commercial Pilot License & Airline Interview Prep Capstone",
+      "type": "capstone",
+      "description": "Accumulate commercial flight hours, complete CPL checkrides, crew resource management (CRM), and airline technical interviews.",
+      "topics": ["CPL Practical Flight Checkride", "Crew Resource Management (CRM)", "Turbine & Jet Engine Systems", "Airline Technical Interview Prep"],
+      "difficulty": "advanced",
+      "importance": 0.90,
+      "prerequisites": ["multi_engine"],
+      "recommended_level": 4
+    }
+  ],
+  "edges": [
+    { "from": "aviation_fundamentals", "to": "air_law", "type": "prerequisite" },
+    { "from": "aviation_fundamentals", "to": "meteorology", "type": "prerequisite" },
+    { "from": "aviation_fundamentals", "to": "navigation", "type": "prerequisite" },
+    { "from": "air_law", "to": "radio_communication", "type": "prerequisite" },
+    { "from": "navigation", "to": "instrument_rating", "type": "prerequisite" },
+    { "from": "meteorology", "to": "instrument_rating", "type": "prerequisite" },
+    { "from": "instrument_rating", "to": "multi_engine", "type": "prerequisite" },
+    { "from": "multi_engine", "to": "airline_readiness", "type": "prerequisite" }
+  ]
+}

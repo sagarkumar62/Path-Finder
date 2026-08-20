@@ -3,6 +3,7 @@ from app.api.routes.health import router as health_router
 from app.api.routes.recommendation import router as recommend_router
 from app.api.routes.embeddings import router as embeddings_router
 from app.api.routes.search import router as search_router
+from app.api.routes.roadmap import router as roadmap_router
 from app.config.settings import settings
 from app.services.embedding_service import get_embedding_service
 from app.services.embedding_cache import build_career_embeddings
@@ -15,6 +16,7 @@ app.include_router(health_router)
 app.include_router(recommend_router)
 app.include_router(embeddings_router)
 app.include_router(search_router)
+app.include_router(roadmap_router)
 
 
 @app.on_event("startup")

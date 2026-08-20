@@ -1,0 +1,100 @@
+{"id": "seq_1", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Statistics"], "recommended_sequence": ["Python", "Statistics"]}
+{"id": "seq_2", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Machine Learning", "Statistics"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_3", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Machine Learning", "Statistics"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_4", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["Node.js"], "recommended_sequence": ["JavaScript", "Node.js"]}
+{"id": "seq_5", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["Node.js"], "recommended_sequence": ["JavaScript", "Node.js"]}
+{"id": "seq_6", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["React", "Databases"], "recommended_sequence": ["HTML/CSS", "Databases", "JavaScript", "React"]}
+{"id": "seq_7", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Data Analysis"], "recommended_sequence": ["Python", "NumPy", "Pandas", "Data Analysis"]}
+{"id": "seq_8", "data_type": "synthetic_training_data", "target_career": "DevOps Engineer", "missing_skills": ["Cloud"], "recommended_sequence": ["Cloud"]}
+{"id": "seq_9", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Python", "Data Analysis"], "recommended_sequence": ["Python", "NumPy", "Pandas", "Data Analysis"]}
+{"id": "seq_10", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "React"], "recommended_sequence": ["HTML/CSS", "JavaScript", "React"]}
+{"id": "seq_11", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics"], "recommended_sequence": ["Python", "Statistics"]}
+{"id": "seq_12", "data_type": "synthetic_training_data", "target_career": "Cybersecurity Analyst", "missing_skills": ["Security Fundamentals", "Networking"], "recommended_sequence": ["Security Fundamentals", "Networking"]}
+{"id": "seq_13", "data_type": "synthetic_training_data", "target_career": "Backend Developer", "missing_skills": ["Apis"], "recommended_sequence": ["Apis"]}
+{"id": "seq_14", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["Databases"], "recommended_sequence": ["Databases"]}
+{"id": "seq_15", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL", "Data Analysis", "Excel"], "recommended_sequence": ["SQL", "Python", "Excel", "NumPy", "Pandas", "Data Analysis"]}
+{"id": "seq_16", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_17", "data_type": "synthetic_training_data", "target_career": "Backend Developer", "missing_skills": ["Apis"], "recommended_sequence": ["Apis"]}
+{"id": "seq_18", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"], "recommended_sequence": ["Cloud", "Networking"]}
+{"id": "seq_19", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["Databases"], "recommended_sequence": ["Databases"]}
+{"id": "seq_20", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Machine Learning"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_21", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["Node.js", "Databases"], "recommended_sequence": ["Databases", "JavaScript", "Node.js"]}
+{"id": "seq_22", "data_type": "synthetic_training_data", "target_career": "DevOps Engineer", "missing_skills": ["Ci/Cd"], "recommended_sequence": ["Ci/Cd"]}
+{"id": "seq_23", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_24", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Networking"], "recommended_sequence": ["Networking"]}
+{"id": "seq_25", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"], "recommended_sequence": ["Cloud", "Networking"]}
+{"id": "seq_26", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design"], "recommended_sequence": ["Design"]}
+{"id": "seq_27", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Prototyping"], "recommended_sequence": ["Prototyping"]}
+{"id": "seq_28", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL"], "recommended_sequence": ["SQL"]}
+{"id": "seq_29", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL"], "recommended_sequence": ["SQL"]}
+{"id": "seq_30", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"], "recommended_sequence": ["Cloud", "Networking"]}
+{"id": "seq_31", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics", "Data Analysis"], "recommended_sequence": ["Python", "NumPy", "Statistics", "Pandas", "Data Analysis"]}
+{"id": "seq_32", "data_type": "synthetic_training_data", "target_career": "Backend Developer", "missing_skills": ["Databases"], "recommended_sequence": ["Databases"]}
+{"id": "seq_33", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL", "Data Analysis", "Excel"], "recommended_sequence": ["SQL", "Python", "Excel", "NumPy", "Pandas", "Data Analysis"]}
+{"id": "seq_34", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "React"], "recommended_sequence": ["HTML/CSS", "JavaScript", "React"]}
+{"id": "seq_35", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design"], "recommended_sequence": ["Design"]}
+{"id": "seq_36", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"], "recommended_sequence": ["Cloud", "Networking"]}
+{"id": "seq_37", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React"], "recommended_sequence": ["HTML/CSS", "JavaScript", "Node.js", "React"]}
+{"id": "seq_38", "data_type": "synthetic_training_data", "target_career": "Backend Developer", "missing_skills": ["Node.js", "Databases", "Apis"], "recommended_sequence": ["Databases", "Apis", "JavaScript", "Node.js"]}
+{"id": "seq_39", "data_type": "synthetic_training_data", "target_career": "Cybersecurity Analyst", "missing_skills": ["Security Fundamentals"], "recommended_sequence": ["Security Fundamentals"]}
+{"id": "seq_40", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL", "Data Analysis", "Excel"], "recommended_sequence": ["SQL", "Python", "Excel", "NumPy", "Pandas", "Data Analysis"]}
+{"id": "seq_41", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics", "Data Analysis"], "recommended_sequence": ["Python", "NumPy", "Statistics", "Pandas", "Data Analysis"]}
+{"id": "seq_42", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Prototyping"], "recommended_sequence": ["Prototyping"]}
+{"id": "seq_43", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "React", "Html/Css"], "recommended_sequence": ["HTML/CSS", "Html/Css", "JavaScript", "React"]}
+{"id": "seq_44", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"], "recommended_sequence": ["Cloud", "Networking"]}
+{"id": "seq_45", "data_type": "synthetic_training_data", "target_career": "DevOps Engineer", "missing_skills": ["Docker", "Cloud"], "recommended_sequence": ["Cloud", "Docker"]}
+{"id": "seq_46", "data_type": "synthetic_training_data", "target_career": "AI Engineer", "missing_skills": ["Python"], "recommended_sequence": ["Python"]}
+{"id": "seq_47", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_48", "data_type": "synthetic_training_data", "target_career": "AI Engineer", "missing_skills": ["Python", "Machine Learning", "Data Engineering"], "recommended_sequence": ["Python", "Data Engineering", "NumPy", "Statistics", "Machine Learning"]}
+{"id": "seq_49", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React"], "recommended_sequence": ["HTML/CSS", "JavaScript", "Node.js", "React"]}
+{"id": "seq_50", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["React"], "recommended_sequence": ["HTML/CSS", "JavaScript", "React"]}
+{"id": "seq_51", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"], "recommended_sequence": ["Mobile Development", "Ui/Ux"]}
+{"id": "seq_52", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL"], "recommended_sequence": ["SQL"]}
+{"id": "seq_53", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Networking"], "recommended_sequence": ["Networking"]}
+{"id": "seq_54", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Python", "Data Analysis"], "recommended_sequence": ["Python", "NumPy", "Pandas", "Data Analysis"]}
+{"id": "seq_55", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Mobile Development"], "recommended_sequence": ["Mobile Development"]}
+{"id": "seq_56", "data_type": "synthetic_training_data", "target_career": "DevOps Engineer", "missing_skills": ["Ci/Cd", "Cloud"], "recommended_sequence": ["Cloud", "Ci/Cd"]}
+{"id": "seq_57", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"], "recommended_sequence": ["Mobile Development", "Ui/Ux"]}
+{"id": "seq_58", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React"], "recommended_sequence": ["HTML/CSS", "JavaScript", "Node.js", "React"]}
+{"id": "seq_59", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Databases"], "recommended_sequence": ["Databases", "JavaScript"]}
+{"id": "seq_60", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"], "recommended_sequence": ["Prototyping", "Design"]}
+{"id": "seq_61", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"], "recommended_sequence": ["Prototyping", "Design"]}
+{"id": "seq_62", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_63", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL"], "recommended_sequence": ["SQL"]}
+{"id": "seq_64", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"], "recommended_sequence": ["Prototyping", "Design"]}
+{"id": "seq_65", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["JavaScript"], "recommended_sequence": ["JavaScript"]}
+{"id": "seq_66", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud"], "recommended_sequence": ["Cloud"]}
+{"id": "seq_67", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design"], "recommended_sequence": ["Design"]}
+{"id": "seq_68", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Statistics", "Data Analysis"], "recommended_sequence": ["Python", "NumPy", "Statistics", "Pandas", "Data Analysis"]}
+{"id": "seq_69", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["JavaScript", "Html/Css"], "recommended_sequence": ["Html/Css", "JavaScript"]}
+{"id": "seq_70", "data_type": "synthetic_training_data", "target_career": "Backend Developer", "missing_skills": ["Node.js", "Databases", "Apis"], "recommended_sequence": ["Databases", "Apis", "JavaScript", "Node.js"]}
+{"id": "seq_71", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design"], "recommended_sequence": ["Design"]}
+{"id": "seq_72", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["Html/Css"], "recommended_sequence": ["Html/Css"]}
+{"id": "seq_73", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python"], "recommended_sequence": ["Python"]}
+{"id": "seq_74", "data_type": "synthetic_training_data", "target_career": "DevOps Engineer", "missing_skills": ["Docker", "Ci/Cd"], "recommended_sequence": ["Ci/Cd", "Docker"]}
+{"id": "seq_75", "data_type": "synthetic_training_data", "target_career": "AI Engineer", "missing_skills": ["Machine Learning"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_76", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["SQL"], "recommended_sequence": ["SQL"]}
+{"id": "seq_77", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_78", "data_type": "synthetic_training_data", "target_career": "Cybersecurity Analyst", "missing_skills": ["Security Fundamentals", "Networking"], "recommended_sequence": ["Security Fundamentals", "Networking"]}
+{"id": "seq_79", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python", "Machine Learning", "Statistics"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_80", "data_type": "synthetic_training_data", "target_career": "AI Engineer", "missing_skills": ["Machine Learning"], "recommended_sequence": ["Python", "Statistics", "NumPy", "Machine Learning"]}
+{"id": "seq_81", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"], "recommended_sequence": ["Mobile Development", "Ui/Ux"]}
+{"id": "seq_82", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"], "recommended_sequence": ["Mobile Development", "Ui/Ux"]}
+{"id": "seq_83", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Design", "Prototyping"], "recommended_sequence": ["Prototyping", "Design"]}
+{"id": "seq_84", "data_type": "synthetic_training_data", "target_career": "AI Engineer", "missing_skills": ["Python", "Machine Learning", "Data Engineering"], "recommended_sequence": ["Python", "Data Engineering", "NumPy", "Statistics", "Machine Learning"]}
+{"id": "seq_85", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"], "recommended_sequence": ["Cloud", "Networking"]}
+{"id": "seq_86", "data_type": "synthetic_training_data", "target_career": "Data Analyst", "missing_skills": ["Data Analysis", "Excel"], "recommended_sequence": ["Python", "Excel", "NumPy", "Pandas", "Data Analysis"]}
+{"id": "seq_87", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Cloud", "Networking"], "recommended_sequence": ["Cloud", "Networking"]}
+{"id": "seq_88", "data_type": "synthetic_training_data", "target_career": "Machine Learning Engineer", "missing_skills": ["Python"], "recommended_sequence": ["Python"]}
+{"id": "seq_89", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["JavaScript"], "recommended_sequence": ["JavaScript"]}
+{"id": "seq_90", "data_type": "synthetic_training_data", "target_career": "Cloud Engineer", "missing_skills": ["Networking"], "recommended_sequence": ["Networking"]}
+{"id": "seq_91", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "React", "Databases"], "recommended_sequence": ["Databases", "HTML/CSS", "JavaScript", "Node.js", "React"]}
+{"id": "seq_92", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Mobile Development", "Ui/Ux"], "recommended_sequence": ["Mobile Development", "Ui/Ux"]}
+{"id": "seq_93", "data_type": "synthetic_training_data", "target_career": "AI Engineer", "missing_skills": ["Python", "Data Engineering"], "recommended_sequence": ["Data Engineering", "Python"]}
+{"id": "seq_94", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Ui/Ux"], "recommended_sequence": ["Ui/Ux"]}
+{"id": "seq_95", "data_type": "synthetic_training_data", "target_career": "Data Scientist", "missing_skills": ["Python", "Statistics", "Data Analysis"], "recommended_sequence": ["Python", "NumPy", "Statistics", "Pandas", "Data Analysis"]}
+{"id": "seq_96", "data_type": "synthetic_training_data", "target_career": "Full Stack Developer", "missing_skills": ["JavaScript", "Node.js", "Databases"], "recommended_sequence": ["Databases", "JavaScript", "Node.js"]}
+{"id": "seq_97", "data_type": "synthetic_training_data", "target_career": "AI Engineer", "missing_skills": ["Python", "Machine Learning", "Data Engineering"], "recommended_sequence": ["Python", "Data Engineering", "NumPy", "Statistics", "Machine Learning"]}
+{"id": "seq_98", "data_type": "synthetic_training_data", "target_career": "Frontend Developer", "missing_skills": ["React", "Html/Css"], "recommended_sequence": ["HTML/CSS", "Html/Css", "JavaScript", "React"]}
+{"id": "seq_99", "data_type": "synthetic_training_data", "target_career": "UI/UX Designer", "missing_skills": ["Prototyping"], "recommended_sequence": ["Prototyping"]}
+{"id": "seq_100", "data_type": "synthetic_training_data", "target_career": "Mobile Developer", "missing_skills": ["Mobile Development"], "recommended_sequence": ["Mobile Development"]}

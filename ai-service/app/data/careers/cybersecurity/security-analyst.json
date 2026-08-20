@@ -1,0 +1,1017 @@
+{
+  "id": "security-analyst",
+  "career_id": "security-analyst",
+  "title": "Security Analyst",
+  "domain": "cybersecurity",
+  "estimatedMonths": 6,
+  "estimatedHours": 200,
+  "nodes": [
+    {
+      "id": "node_1",
+      "nodeId": "node_1",
+      "title": "Linux",
+      "description": "Learn and apply Linux in Security Analyst workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": []
+    },
+    {
+      "id": "node_2",
+      "nodeId": "node_2",
+      "title": "Web Security",
+      "description": "Learn and apply Web Security in Security Analyst workflows.",
+      "type": "foundation",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "node_3",
+      "nodeId": "node_3",
+      "title": "Networking",
+      "description": "Learn and apply Networking in Security Analyst workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_2"
+      ]
+    },
+    {
+      "id": "node_4",
+      "nodeId": "node_4",
+      "title": "Security",
+      "description": "Learn and apply Security in Security Analyst workflows.",
+      "type": "core",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "node_5",
+      "nodeId": "node_5",
+      "title": "Cybersecurity",
+      "description": "Learn and apply Cybersecurity in Security Analyst workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_4"
+      ]
+    },
+    {
+      "id": "node_6",
+      "nodeId": "node_6",
+      "title": "Penetration Testing",
+      "description": "Learn and apply Penetration Testing in Security Analyst workflows.",
+      "type": "advanced",
+      "recommended_level": 4,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_5"
+      ]
+    },
+    {
+      "id": "node_7",
+      "nodeId": "node_7",
+      "title": "Security Governance",
+      "description": "Learn and apply Security Governance in Security Analyst workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_6"
+      ]
+    },
+    {
+      "id": "node_8",
+      "nodeId": "node_8",
+      "title": "Cybersecurity Fundamentals",
+      "description": "Learn and apply Cybersecurity Fundamentals in Security Analyst workflows.",
+      "type": "capstone",
+      "recommended_level": 3,
+      "requiredLevel": 4,
+      "prerequisites": [
+        "node_7"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_node_1_node_2",
+      "source": "node_1",
+      "target": "node_2",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_2_node_3",
+      "source": "node_2",
+      "target": "node_3",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_3_node_4",
+      "source": "node_3",
+      "target": "node_4",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_4_node_5",
+      "source": "node_4",
+      "target": "node_5",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_5_node_6",
+      "source": "node_5",
+      "target": "node_6",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_6_node_7",
+      "source": "node_6",
+      "target": "node_7",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e_node_7_node_8",
+      "source": "node_7",
+      "target": "node_8",
+      "type": "prerequisite"
+    }
+  ],
+  "phases": [
+    {
+      "phaseId": "p1",
+      "title": "Phase 1: Foundations for Security Analyst",
+      "description": "Master fundamental prerequisite concepts and core tooling.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Linux",
+        "Web Security"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p1_1",
+          "title": "Linux",
+          "description": "Master Linux competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Linux"
+          ]
+        },
+        {
+          "milestoneId": "m_p1_2",
+          "title": "Web Security",
+          "description": "Master Web Security competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Web Security"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076825",
+          "resourceId": "LR076825",
+          "careerId": "security-analyst",
+          "skill": "Linux",
+          "skills_covered": [
+            "Linux"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Linux Journey",
+          "provider": "Linux Journey",
+          "url": "https://linuxjourney.com/",
+          "videoUrl": "https://linuxjourney.com/",
+          "rating": 4.8,
+          "duration": "60 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076816",
+          "resourceId": "LR076816",
+          "careerId": "security-analyst",
+          "skill": "Web Security",
+          "skills_covered": [
+            "Web Security"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "OWASP Web Security Testing Guide",
+          "provider": "OWASP",
+          "url": "https://owasp.org/www-project-web-security-testing-guide/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "38 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076820",
+          "resourceId": "LR076820",
+          "careerId": "security-analyst",
+          "skill": "Web Security",
+          "skills_covered": [
+            "Web Security"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "PortSwigger Web Security Academy",
+          "provider": "PortSwigger",
+          "url": "https://portswigger.net/web-security",
+          "videoUrl": "https://portswigger.net/web-security",
+          "rating": 4.8,
+          "duration": "71 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076826",
+          "resourceId": "LR076826",
+          "careerId": "security-analyst",
+          "skill": "Linux",
+          "skills_covered": [
+            "Linux",
+            "Security"
+          ],
+          "resourceType": "project",
+          "type": "project",
+          "title": "OverTheWire",
+          "provider": "OverTheWire",
+          "url": "https://overthewire.org/wargames/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "64 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076813",
+          "resourceId": "LR076813",
+          "careerId": "security-analyst",
+          "skill": "Security Governance",
+          "skills_covered": [
+            "Security Governance"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "NIST Cybersecurity Framework",
+          "provider": "NIST",
+          "url": "https://www.nist.gov/cyberframework",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "57 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076827",
+          "resourceId": "LR076827",
+          "careerId": "security-analyst",
+          "skill": "Networking",
+          "skills_covered": [
+            "Networking"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Cisco Networking Academy",
+          "provider": "Cisco",
+          "url": "https://www.netacad.com/",
+          "videoUrl": "https://www.netacad.com/",
+          "rating": 4.8,
+          "duration": "74 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p2",
+      "title": "Phase 2: Skill Development for Security Analyst",
+      "description": "Build core domain logic, architecture, and intermediate patterns.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Networking",
+        "Security"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p2_1",
+          "title": "Networking",
+          "description": "Master Networking competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Networking"
+          ]
+        },
+        {
+          "milestoneId": "m_p2_2",
+          "title": "Security",
+          "description": "Master Security competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Security"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076813",
+          "resourceId": "LR076813",
+          "careerId": "security-analyst",
+          "skill": "Security Governance",
+          "skills_covered": [
+            "Security Governance"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "NIST Cybersecurity Framework",
+          "provider": "NIST",
+          "url": "https://www.nist.gov/cyberframework",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "57 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076827",
+          "resourceId": "LR076827",
+          "careerId": "security-analyst",
+          "skill": "Networking",
+          "skills_covered": [
+            "Networking"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Cisco Networking Academy",
+          "provider": "Cisco",
+          "url": "https://www.netacad.com/",
+          "videoUrl": "https://www.netacad.com/",
+          "rating": 4.8,
+          "duration": "74 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076816",
+          "resourceId": "LR076816",
+          "careerId": "security-analyst",
+          "skill": "Web Security",
+          "skills_covered": [
+            "Web Security"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "OWASP Web Security Testing Guide",
+          "provider": "OWASP",
+          "url": "https://owasp.org/www-project-web-security-testing-guide/",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "38 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075993",
+          "resourceId": "LR075993",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity",
+          "skills_covered": [
+            "Cybersecurity"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Cybrary",
+          "provider": "Cybrary",
+          "url": "https://www.cybrary.it/",
+          "videoUrl": "https://www.cybrary.it/",
+          "rating": 4.8,
+          "duration": "72 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076820",
+          "resourceId": "LR076820",
+          "careerId": "security-analyst",
+          "skill": "Web Security",
+          "skills_covered": [
+            "Web Security"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "PortSwigger Web Security Academy",
+          "provider": "PortSwigger",
+          "url": "https://portswigger.net/web-security",
+          "videoUrl": "https://portswigger.net/web-security",
+          "rating": 4.8,
+          "duration": "71 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076823",
+          "resourceId": "LR076823",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity",
+          "skills_covered": [
+            "Cybersecurity"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "TryHackMe",
+          "provider": "TryHackMe",
+          "url": "https://tryhackme.com/",
+          "videoUrl": "https://tryhackme.com/",
+          "rating": 4.8,
+          "duration": "78 hours",
+          "level": "Beginner",
+          "access": "Freemium",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p3",
+      "title": "Phase 3: Projects & Experience for Security Analyst",
+      "description": "Advanced techniques, performance optimization, and real-world projects.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Cybersecurity",
+        "Penetration Testing"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p3_1",
+          "title": "Cybersecurity",
+          "description": "Master Cybersecurity competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Cybersecurity"
+          ]
+        },
+        {
+          "milestoneId": "m_p3_2",
+          "title": "Penetration Testing",
+          "description": "Master Penetration Testing competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Penetration Testing"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076822",
+          "resourceId": "LR076822",
+          "careerId": "security-analyst",
+          "skill": "Penetration Testing",
+          "skills_covered": [
+            "Penetration Testing"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "Hack The Box",
+          "provider": "Hack The Box",
+          "url": "https://www.hackthebox.com/",
+          "videoUrl": "https://www.hackthebox.com/",
+          "rating": 4.8,
+          "duration": "44 hours",
+          "level": "Beginner",
+          "access": "Freemium",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075993",
+          "resourceId": "LR075993",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity",
+          "skills_covered": [
+            "Cybersecurity"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Cybrary",
+          "provider": "Cybrary",
+          "url": "https://www.cybrary.it/",
+          "videoUrl": "https://www.cybrary.it/",
+          "rating": 4.8,
+          "duration": "72 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076823",
+          "resourceId": "LR076823",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity",
+          "skills_covered": [
+            "Cybersecurity"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "TryHackMe",
+          "provider": "TryHackMe",
+          "url": "https://tryhackme.com/",
+          "videoUrl": "https://tryhackme.com/",
+          "rating": 4.8,
+          "duration": "78 hours",
+          "level": "Beginner",
+          "access": "Freemium",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076824",
+          "resourceId": "LR076824",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity Fundamentals",
+          "skills_covered": [
+            "Cybersecurity Fundamentals"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "CompTIA Security+",
+          "provider": "CompTIA",
+          "url": "https://www.comptia.org/certifications/security",
+          "videoUrl": "https://www.comptia.org/certifications/security",
+          "rating": 4.8,
+          "duration": "23 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076813",
+          "resourceId": "LR076813",
+          "careerId": "security-analyst",
+          "skill": "Security Governance",
+          "skills_covered": [
+            "Security Governance"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "NIST Cybersecurity Framework",
+          "provider": "NIST",
+          "url": "https://www.nist.gov/cyberframework",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "57 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076825",
+          "resourceId": "LR076825",
+          "careerId": "security-analyst",
+          "skill": "Linux",
+          "skills_covered": [
+            "Linux"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Linux Journey",
+          "provider": "Linux Journey",
+          "url": "https://linuxjourney.com/",
+          "videoUrl": "https://linuxjourney.com/",
+          "rating": 4.8,
+          "duration": "60 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "phaseId": "p4",
+      "title": "Phase 4: Career & Placement for Security Analyst",
+      "description": "Deploy real-world capstone project and prepare for career placement.",
+      "estimatedWeeks": 4,
+      "skills": [
+        "Security Governance",
+        "Cybersecurity Fundamentals"
+      ],
+      "milestones": [
+        {
+          "milestoneId": "m_p4_1",
+          "title": "Security Governance",
+          "description": "Master Security Governance competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Security Governance"
+          ]
+        },
+        {
+          "milestoneId": "m_p4_2",
+          "title": "Cybersecurity Fundamentals",
+          "description": "Master Cybersecurity Fundamentals competencies and practical implementation.",
+          "estimatedHours": 15,
+          "skills": [
+            "Cybersecurity Fundamentals"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "LR076813",
+          "resourceId": "LR076813",
+          "careerId": "security-analyst",
+          "skill": "Security Governance",
+          "skills_covered": [
+            "Security Governance"
+          ],
+          "resourceType": "documentation",
+          "type": "documentation",
+          "title": "NIST Cybersecurity Framework",
+          "provider": "NIST",
+          "url": "https://www.nist.gov/cyberframework",
+          "videoUrl": null,
+          "rating": 4.8,
+          "duration": "57 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "1",
+          "phase_name": "Foundation",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR075993",
+          "resourceId": "LR075993",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity",
+          "skills_covered": [
+            "Cybersecurity"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Cybrary",
+          "provider": "Cybrary",
+          "url": "https://www.cybrary.it/",
+          "videoUrl": "https://www.cybrary.it/",
+          "rating": 4.8,
+          "duration": "72 hours",
+          "level": "Advanced",
+          "access": "Freemium",
+          "phase_number": "2",
+          "phase_name": "Skill Development",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076823",
+          "resourceId": "LR076823",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity",
+          "skills_covered": [
+            "Cybersecurity"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "TryHackMe",
+          "provider": "TryHackMe",
+          "url": "https://tryhackme.com/",
+          "videoUrl": "https://tryhackme.com/",
+          "rating": 4.8,
+          "duration": "78 hours",
+          "level": "Beginner",
+          "access": "Freemium",
+          "phase_number": "3",
+          "phase_name": "Projects & Experience",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076824",
+          "resourceId": "LR076824",
+          "careerId": "security-analyst",
+          "skill": "Cybersecurity Fundamentals",
+          "skills_covered": [
+            "Cybersecurity Fundamentals"
+          ],
+          "resourceType": "course",
+          "type": "course",
+          "title": "CompTIA Security+",
+          "provider": "CompTIA",
+          "url": "https://www.comptia.org/certifications/security",
+          "videoUrl": "https://www.comptia.org/certifications/security",
+          "rating": 4.8,
+          "duration": "23 hours",
+          "level": "Beginner",
+          "access": "Paid",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076825",
+          "resourceId": "LR076825",
+          "careerId": "security-analyst",
+          "skill": "Linux",
+          "skills_covered": [
+            "Linux"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Linux Journey",
+          "provider": "Linux Journey",
+          "url": "https://linuxjourney.com/",
+          "videoUrl": "https://linuxjourney.com/",
+          "rating": 4.8,
+          "duration": "60 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        },
+        {
+          "id": "LR076827",
+          "resourceId": "LR076827",
+          "careerId": "security-analyst",
+          "skill": "Networking",
+          "skills_covered": [
+            "Networking"
+          ],
+          "resourceType": "video",
+          "type": "video",
+          "title": "Cisco Networking Academy",
+          "provider": "Cisco",
+          "url": "https://www.netacad.com/",
+          "videoUrl": "https://www.netacad.com/",
+          "rating": 4.8,
+          "duration": "74 hours",
+          "level": "Beginner",
+          "access": "Free",
+          "phase_number": "4",
+          "phase_name": "Career & Placement",
+          "source": "careers.csv",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "learningResources": [
+    {
+      "id": "LR076813",
+      "resourceId": "LR076813",
+      "careerId": "security-analyst",
+      "skill": "Security Governance",
+      "skills_covered": [
+        "Security Governance"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "NIST Cybersecurity Framework",
+      "provider": "NIST",
+      "url": "https://www.nist.gov/cyberframework",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "57 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "1",
+      "phase_name": "Foundation",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076825",
+      "resourceId": "LR076825",
+      "careerId": "security-analyst",
+      "skill": "Linux",
+      "skills_covered": [
+        "Linux"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Linux Journey",
+      "provider": "Linux Journey",
+      "url": "https://linuxjourney.com/",
+      "videoUrl": "https://linuxjourney.com/",
+      "rating": 4.8,
+      "duration": "60 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076827",
+      "resourceId": "LR076827",
+      "careerId": "security-analyst",
+      "skill": "Networking",
+      "skills_covered": [
+        "Networking"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Cisco Networking Academy",
+      "provider": "Cisco",
+      "url": "https://www.netacad.com/",
+      "videoUrl": "https://www.netacad.com/",
+      "rating": 4.8,
+      "duration": "74 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "4",
+      "phase_name": "Career & Placement",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076816",
+      "resourceId": "LR076816",
+      "careerId": "security-analyst",
+      "skill": "Web Security",
+      "skills_covered": [
+        "Web Security"
+      ],
+      "resourceType": "documentation",
+      "type": "documentation",
+      "title": "OWASP Web Security Testing Guide",
+      "provider": "OWASP",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/",
+      "videoUrl": null,
+      "rating": 4.8,
+      "duration": "38 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "2",
+      "phase_name": "Skill Development",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076822",
+      "resourceId": "LR076822",
+      "careerId": "security-analyst",
+      "skill": "Penetration Testing",
+      "skills_covered": [
+        "Penetration Testing"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "Hack The Box",
+      "provider": "Hack The Box",
+      "url": "https://www.hackthebox.com/",
+      "videoUrl": "https://www.hackthebox.com/",
+      "rating": 4.8,
+      "duration": "44 hours",
+      "level": "Beginner",
+      "access": "Freemium",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR075993",
+      "resourceId": "LR075993",
+      "careerId": "security-analyst",
+      "skill": "Cybersecurity",
+      "skills_covered": [
+        "Cybersecurity"
+      ],
+      "resourceType": "video",
+      "type": "video",
+      "title": "Cybrary",
+      "provider": "Cybrary",
+      "url": "https://www.cybrary.it/",
+      "videoUrl": "https://www.cybrary.it/",
+      "rating": 4.8,
+      "duration": "72 hours",
+      "level": "Advanced",
+      "access": "Freemium",
+      "phase_number": "2",
+      "phase_name": "Skill Development",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076820",
+      "resourceId": "LR076820",
+      "careerId": "security-analyst",
+      "skill": "Web Security",
+      "skills_covered": [
+        "Web Security"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "PortSwigger Web Security Academy",
+      "provider": "PortSwigger",
+      "url": "https://portswigger.net/web-security",
+      "videoUrl": "https://portswigger.net/web-security",
+      "rating": 4.8,
+      "duration": "71 hours",
+      "level": "Beginner",
+      "access": "Free",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    },
+    {
+      "id": "LR076823",
+      "resourceId": "LR076823",
+      "careerId": "security-analyst",
+      "skill": "Cybersecurity",
+      "skills_covered": [
+        "Cybersecurity"
+      ],
+      "resourceType": "course",
+      "type": "course",
+      "title": "TryHackMe",
+      "provider": "TryHackMe",
+      "url": "https://tryhackme.com/",
+      "videoUrl": "https://tryhackme.com/",
+      "rating": 4.8,
+      "duration": "78 hours",
+      "level": "Beginner",
+      "access": "Freemium",
+      "phase_number": "3",
+      "phase_name": "Projects & Experience",
+      "source": "careers.csv",
+      "verified": true
+    }
+  ]
+}
