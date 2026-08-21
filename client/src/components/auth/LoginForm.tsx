@@ -8,8 +8,11 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { api } from '@/lib/api';
 
+import { useAuth } from '@/context/AuthContext';
+
 export function LoginForm() {
   const router = useRouter();
+  const { refreshAuth } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -27,6 +30,7 @@ export function LoginForm() {
 
     try {
       await api.login(email, password);
+      await refreshAuth();
       router.push('/dashboard');
     } catch (err: any) {
       setError(err?.response?.data?.message || 'Login failed. Please check credentials.');
@@ -34,6 +38,7 @@ export function LoginForm() {
       setLoading(false);
     }
   };
+
 
   return (
     <Card className="p-6 bg-white shadow-soft rounded-2xl space-y-4">

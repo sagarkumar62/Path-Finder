@@ -10,9 +10,11 @@ export interface User {
   id: string;
   name: string;
   email: string;
+  role?: string;
   avatar?: string;
   createdAt: string;
 }
+
 
 export interface LearnerProfile {
   id: string;
@@ -51,14 +53,34 @@ export interface CareerRecommendation {
   averageSalary?: string;
 }
 
+export interface SkillGapDetail {
+  name: string;
+  currentLevel: number; // 0 to 4
+  requiredLevel: number; // 4
+  gap: number;
+  priority: 'high' | 'medium' | 'low';
+  category: 'strong' | 'needsWork' | 'missing';
+}
+
 export interface SkillGapAnalysis {
-  careerId: string;
-  careerTitle: string;
-  matchScore: number;
-  items: SkillGapItem[];
-  strongCount: number;
-  improvementCount: number;
-  missingCount: number;
+  career?: string;
+  currentSkills?: string[];
+  missingSkills?: string[];
+  skillsToImprove?: string[];
+  priority?: string[];
+  details?: SkillGapDetail[];
+  summary?: {
+    strongCount: number;
+    needsWorkCount: number;
+    missingCount: number;
+  };
+  careerId?: string;
+  careerTitle?: string;
+  matchScore?: number;
+  strongCount?: number;
+  improvementCount?: number;
+  missingCount?: number;
+  items?: any[];
 }
 
 export interface RoadmapResource {
@@ -91,11 +113,38 @@ export interface RoadmapPhase {
 }
 
 export interface AdaptiveEvent {
-  date: string;
-  reason: string;
-  adjustment: string;
-  previousDurationWeeks: number;
-  newDurationWeeks: number;
+  message?: string;
+  date?: string;
+  reason?: string;
+  adjustment?: string;
+  previousDurationWeeks?: number;
+  newDurationWeeks?: number;
+}
+
+
+export interface RoadmapGraphNode {
+  nodeId: string;
+  id?: string;
+  title: string;
+  type?: string;
+  description?: string;
+  topics?: string[];
+  difficulty?: 'beginner' | 'intermediate' | 'advanced' | 'capstone';
+  importance?: number;
+  userLevel?: number;
+  requiredLevel?: number;
+  skillGap?: number;
+  priority?: 'HIGH' | 'MEDIUM' | 'LOW';
+  status?: 'MASTERED' | 'RECOMMENDED' | 'LOCKED' | 'OPTIONAL';
+  stateLabel?: string;
+  prerequisites?: string[];
+  resources?: RoadmapResource[];
+}
+
+export interface RoadmapGraphEdge {
+  source: string;
+  target: string;
+  type?: string;
 }
 
 export interface Roadmap {
@@ -103,10 +152,17 @@ export interface Roadmap {
   userId: string;
   careerId: string;
   careerTitle: string;
+  requestedCareer?: string;
+  resolvedCareer?: string;
+  domain?: string;
+  sourceProvider?: string;
+  resolutionMethod?: string;
   totalDurationMonths: number;
   weeklyCommitmentHours: number;
   overallCompletionPercent: number;
   currentPhaseNumber: number;
+  nodes?: RoadmapGraphNode[];
+  edges?: RoadmapGraphEdge[];
   phases: RoadmapPhase[];
   adaptiveEvents?: AdaptiveEvent[];
   updatedAt: string;
@@ -115,15 +171,30 @@ export interface Roadmap {
 export interface UserProgress {
   id: string;
   userId: string;
+  activeRoadmapId?: string | null;
+  activeRoadmapTitle?: string | null;
   totalLearningHours: number;
   currentStreakDays: number;
   completedMilestonesCount: number;
+  totalMilestones?: number;
+  remainingMilestones?: number;
+  overallPercentage?: number;
   acquiredSkillsCount: number;
   completedProjectsCount: number;
+  phaseBreakdown?: {
+    phaseId: string;
+    title: string;
+    description?: string;
+    totalMilestones: number;
+    completedMilestones: number;
+    completionPercentage: number;
+    status: 'not_started' | 'in_progress' | 'completed';
+  }[];
   recentActivity: {
     id: string;
     title: string;
     type: string;
+    status?: string;
     timestamp: string;
   }[];
 }
@@ -138,6 +209,8 @@ export interface DashboardData {
   };
   currentProgress: {
     overallCompletionPercent: number;
+    completedMilestones?: number;
+    totalMilestones?: number;
     learningHours: number;
     streakDays: number;
   };
@@ -153,11 +226,20 @@ export interface DashboardData {
     estimatedMinutes: number;
     resourceType: string;
   };
-  skillGapSummary: {
+  nextActions?: { action: string; label: string }[];
+  careerGoal?: {
+    targetCareer: string;
+    experienceLevel?: string;
+    weeklyLearningHours?: number;
+  };
+  skillGapSummary?: {
     strong: number;
     needsWork: number;
     missing: number;
   };
+  skillGap?: SkillGapAnalysis;
+  roadmap?: any;
+  progress?: any;
   recommendedResources: {
     id: string;
     title: string;
@@ -170,8 +252,11 @@ export interface DashboardData {
 export interface AIMessage {
   id: string;
   sender: 'user' | 'assistant';
+  role?: 'user' | 'assistant' | 'system';
   content: string;
   timestamp: string;
+  suggestedActions?: string[];
+  relatedSkills?: string[];
   actionCard?: {
     title: string;
     description: string;
@@ -183,7 +268,10 @@ export interface AIMessage {
 
 export interface Conversation {
   id: string;
+  _id?: string;
   userId: string;
+  title: string;
   messages: AIMessage[];
   updatedAt: string;
+  createdAt?: string;
 }

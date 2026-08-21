@@ -1,13 +1,18 @@
+import http from 'http';
 import app from './app';
 import { connectDB } from './config/db';
 import { env } from './config/env';
 import { logger } from './utils/logger';
+import { initSocket } from './socket';
 
 const startServer = async () => {
   try {
     await connectDB();
 
-    const server = app.listen(env.PORT, () => {
+    const httpServer = http.createServer(app);
+    initSocket(httpServer);
+
+    const server = httpServer.listen(env.PORT, () => {
       logger.info(`=================================`);
       logger.info(`🚀 CAREER PATHFINDER API Server`);
       logger.info(`Environment: ${env.NODE_ENV}`);

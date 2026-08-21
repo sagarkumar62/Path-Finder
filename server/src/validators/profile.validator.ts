@@ -36,12 +36,12 @@ export const profileSchema = z.object({
   targetCareer: z.string().optional(),
   targetCareerGoal: z.string().optional(),
   goalReason: z.string().optional(),
-  skills: z.array(z.union([z.string(), skillObjectSchema])).default([]),
-  interests: z.array(z.string()).default([]),
-  careerGoals: z.array(z.string()).default([]),
-  learningPreferences: z.array(z.string()).default([]),
+  skills: z.array(z.union([z.string(), skillObjectSchema])).optional().default([]),
+  interests: z.array(z.string()).optional().default([]),
+  careerGoals: z.array(z.string()).optional().default([]),
+  learningPreferences: z.any().optional().default([]),
   preferredLearningStyle: z.string().optional(),
-  weeklyLearningHours: z.number().min(1).max(168).optional().default(10),
+  weeklyLearningHours: z.number().optional(),
   completedCourses: z.array(completedCourseSchema).optional().default([]),
   certifications: z.array(certificationSchema).optional().default([]),
   projects: z.array(projectSchema).optional().default([]),
@@ -55,3 +55,4 @@ export const profileUpdateSchema = profileSchema.partial();
 
 export type ProfileInput = z.infer<typeof profileSchema>;
 export type ProfileUpdateInput = z.infer<typeof profileUpdateSchema>;
+

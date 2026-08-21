@@ -21,30 +21,62 @@ export class ProfileService {
   async createOrUpdateProfile(userId: string, data: ProfileInput): Promise<ILearnerProfile> {
     let profile = await LearnerProfile.findOne({ userId });
 
+    const normalizedData: any = { ...data };
+    if (data.targetCareerGoal && !data.targetCareer) {
+      normalizedData.targetCareer = data.targetCareerGoal;
+    }
+    if (data.learningPreferences && typeof data.learningPreferences === 'object' && !Array.isArray(data.learningPreferences)) {
+      if (data.learningPreferences.weeklyHours && !data.weeklyLearningHours) {
+        normalizedData.weeklyLearningHours = data.learningPreferences.weeklyHours;
+      }
+    }
+
     if (profile) {
-      Object.assign(profile, data);
+      Object.assign(profile, normalizedData);
       await profile.save();
     } else {
       profile = await LearnerProfile.create({
         userId,
-        ...data,
+        ...normalizedData,
       });
+    }
+
+    // Recalculate % AI fit and career recommendations in real time for updated skills
+    try {
+      const { recommendationService } = await import('./recommendation.service');
+      await recommendationService.getRecommendations(userId);
+    } catch (err) {
+      console.warn('[ProfileService] Real-time AI fit recalculation skipped:', err);
     }
 
     return profile;
   }
 
+
   async replaceProfile(userId: string, data: ProfileInput): Promise<ILearnerProfile> {
     let profile = await LearnerProfile.findOne({ userId });
 
+    const normalizedData: any = { ...data };
+    if (data.targetCareerGoal && !data.targetCareer) {
+      normalizedData.targetCareer = data.targetCareerGoal;
+    }
+
     if (!profile) {
-      profile = new LearnerProfile({ userId, ...data });
+      profile = new LearnerProfile({ userId, ...normalizedData });
     } else {
-      profile.set(data);
+      profile.set(normalizedData);
       profile.userId = userId as any;
     }
 
     await profile.save();
+
+    try {
+      const { recommendationService } = await import('./recommendation.service');
+      await recommendationService.getRecommendations(userId);
+    } catch (err) {
+      console.warn('[ProfileService] Real-time AI fit recalculation skipped:', err);
+    }
+
     return profile;
   }
 
@@ -54,10 +86,25 @@ export class ProfileService {
       throw ApiError.notFound('Learner profile not found.');
     }
 
-    Object.assign(profile, data);
+    const normalizedData: any = { ...data };
+    if (data.targetCareerGoal && !data.targetCareer) {
+      normalizedData.targetCareer = data.targetCareerGoal;
+    }
+
+    Object.assign(profile, normalizedData);
     await profile.save();
+
+    try {
+      const { recommendationService } = await import('./recommendation.service');
+      await recommendationService.getRecommendations(userId);
+    } catch (err) {
+      console.warn('[ProfileService] Real-time AI fit recalculation skipped:', err);
+    }
+
     return profile;
   }
+
+
 }
 
 export const profileService = new ProfileService();

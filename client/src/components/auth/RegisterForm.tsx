@@ -8,8 +8,11 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { api } from '@/lib/api';
 
+import { useAuth } from '@/context/AuthContext';
+
 export function RegisterForm() {
   const router = useRouter();
+  const { refreshAuth } = useAuth();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -33,6 +36,7 @@ export function RegisterForm() {
 
     try {
       await api.register({ name, email, password });
+      await refreshAuth();
       router.push('/onboarding');
     } catch (err: any) {
       setError(err?.response?.data?.message || err?.message || 'Registration failed. Please try again.');
@@ -40,6 +44,7 @@ export function RegisterForm() {
       setLoading(false);
     }
   };
+
 
   return (
     <Card className="p-6 bg-white shadow-soft rounded-2xl space-y-4">

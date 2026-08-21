@@ -3,7 +3,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { User, LearnerProfile } from '@/types';
 import { api } from '@/lib/api';
-import { mockUser, mockLearnerProfile } from '@/lib/mock-data';
 
 import { useQueryClient } from '@tanstack/react-query';
 
@@ -15,6 +14,7 @@ interface AuthContextType {
     userData: { name?: string; avatar?: string },
     profileData: Partial<LearnerProfile>
   ) => Promise<void>;
+  changePassword: (currentPass: string, newPass: string) => Promise<void>;
   refreshAuth: () => Promise<void>;
 }
 
@@ -23,6 +23,7 @@ const AuthContext = createContext<AuthContextType>({
   profile: null,
   loading: true,
   updateUserAndProfile: async () => {},
+  changePassword: async () => {},
   refreshAuth: async () => {},
 });
 
@@ -36,13 +37,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       setLoading(true);
       const currentUser = await api.getCurrentUser();
+      if (!currentUser) {
+        setUser(null);
+        setProfile(null);
+        return;
+      }
       const currentProfile = await api.getProfile();
       setUser(currentUser);
       setProfile(currentProfile);
     } catch (error) {
-      console.warn('[AuthProvider] Failed to load user session, using fallback:', error);
-      setUser(mockUser);
-      setProfile(mockLearnerProfile);
+      console.warn('[AuthProvider] Unauthenticated or session expired:', error);
+      setUser(null);
+      setProfile(null);
     } finally {
       setLoading(false);
     }
@@ -77,10 +83,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       queryClient.invalidateQueries({ queryKey: ['recommendations'] });
       queryClient.invalidateQueries({ queryKey: ['roadmap'] });
       queryClient.invalidateQueries({ queryKey: ['progress'] });
+      queryClient.invalidateQueries({ queryKey: ['skill-gap'] });
+      queryClient.invalidateQueries({ queryKey: ['career'] });
     } catch (error) {
       console.error('[AuthProvider] Failed to update user profile:', error);
       throw error;
     }
+  };
+
+  const changePassword = async (currentPass: string, newPass: string) => {
+    await api.changePassword(currentPass, newPass);
   };
 
   return (
@@ -90,6 +102,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         profile,
         loading,
         updateUserAndProfile,
+        changePassword,
         refreshAuth: fetchUserAndProfile,
       }}
     >
@@ -99,3 +112,4 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 };
 
 export const useAuth = () => useContext(AuthContext);
+

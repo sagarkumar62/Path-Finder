@@ -18,7 +18,10 @@ export const env = {
   
   AI_SERVICE_URL: process.env.AI_SERVICE_URL || 'http://localhost:8000',
   AI_SERVICE_TIMEOUT: parseInt(process.env.AI_SERVICE_TIMEOUT || '30000', 10),
-  AI_MOCK_MODE: process.env.AI_MOCK_MODE === 'true' || process.env.NODE_ENV === 'test',
+  AI_MOCK_MODE: process.env.AI_MOCK_MODE === 'true',
   
-  LLM_API_KEY: process.env.LLM_API_KEY || '',
+  GEMINI_API_KEY: process.env.GEMINI_API_KEY || process.env.LLM_API_KEY || '',
+  LLM_API_KEY: process.env.LLM_API_KEY || process.env.GEMINI_API_KEY || '',
+  GEMINI_MODEL: process.env.GEMINI_MODEL || 'gemini-3.6-flash',
 };
+

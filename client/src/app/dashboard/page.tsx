@@ -39,13 +39,16 @@ export default function DashboardPage() {
     },
     activeGoal: {
       title: authProfile?.targetCareerGoal || (authProfile as any)?.targetCareer || dashboard.activeGoal?.title || 'AI Engineer',
-      matchScore: dashboard.activeGoal?.matchScore ?? 87,
-      estimatedMonths: dashboard.activeGoal?.estimatedMonths ?? 7
+      matchScore: dashboard.activeGoal?.matchScore ?? 0,
+      estimatedMonths: dashboard.activeGoal?.estimatedMonths ?? 6
     },
+
     currentProgress: {
-      overallCompletionPercent: dashboard.currentProgress?.overallCompletionPercent ?? 0,
-      learningHours: dashboard.currentProgress?.learningHours ?? 0,
-      streakDays: dashboard.currentProgress?.streakDays ?? 0
+      overallCompletionPercent: dashboard.currentProgress?.overallCompletionPercent ?? dashboard.progress?.overallPercentage ?? (dashboard.roadmap as any)?.overallCompletionPercent ?? 0,
+      completedMilestones: dashboard.currentProgress?.completedMilestones ?? dashboard.progress?.completedMilestones ?? 0,
+      totalMilestones: dashboard.currentProgress?.totalMilestones ?? dashboard.progress?.totalMilestones ?? 0,
+      learningHours: dashboard.currentProgress?.learningHours ?? dashboard.progress?.totalTimeSpentHours ?? 0,
+      streakDays: dashboard.currentProgress?.streakDays ?? dashboard.progress?.currentStreakDays ?? 0
     },
     currentPhase: {
       phaseNumber: dashboard.currentPhase?.phaseNumber ?? 1,
@@ -59,12 +62,19 @@ export default function DashboardPage() {
       resourceType: dashboard.nextAction?.resourceType || 'Resource'
     },
     skillGapSummary: {
-      strong: dashboard.skillGapSummary?.strong ?? 0,
-      needsWork: dashboard.skillGapSummary?.needsWork ?? 0,
-      missing: dashboard.skillGapSummary?.missing ?? 0
+      strong: dashboard.skillGapSummary?.strong ?? dashboard.skillGap?.summary?.strongCount ?? (Array.isArray(dashboard.skillGap?.details) ? dashboard.skillGap.details.filter((d: any) => d.category === 'strong').length : 0),
+      needsWork: dashboard.skillGapSummary?.needsWork ?? dashboard.skillGap?.summary?.needsWorkCount ?? (Array.isArray(dashboard.skillGap?.details) ? dashboard.skillGap.details.filter((d: any) => d.category === 'needsWork').length : 0),
+      missing: dashboard.skillGapSummary?.missing ?? dashboard.skillGap?.summary?.missingCount ?? (Array.isArray(dashboard.skillGap?.details) ? dashboard.skillGap.details.filter((d: any) => d.category === 'missing').length : 0)
     },
     recommendedResources: Array.isArray(dashboard.recommendedResources) ? dashboard.recommendedResources : []
   };
+
+  const totalSkillsCount = Math.max(
+    1,
+    safeDashboard.skillGapSummary.strong +
+      safeDashboard.skillGapSummary.needsWork +
+      safeDashboard.skillGapSummary.missing
+  );
 
   return (
     <AppLayout>
@@ -107,6 +117,11 @@ export default function DashboardPage() {
               <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Overall Progress</p>
               <div className="flex items-center justify-between text-sm font-extrabold text-slate-900 mt-0.5">
                 <span>{safeDashboard.currentProgress.overallCompletionPercent}%</span>
+                {safeDashboard.currentProgress.totalMilestones > 0 && (
+                  <span className="text-[11px] font-bold text-slate-500">
+                    {safeDashboard.currentProgress.completedMilestones}/{safeDashboard.currentProgress.totalMilestones}
+                  </span>
+                )}
               </div>
               <Progress value={safeDashboard.currentProgress.overallCompletionPercent} size="sm" className="mt-1" />
             </div>
@@ -197,7 +212,7 @@ export default function DashboardPage() {
                   </span>
                   <span>{safeDashboard.skillGapSummary.strong} Competencies</span>
                 </div>
-                <Progress value={(safeDashboard.skillGapSummary.strong / 8) * 100} barColor="bg-emerald-500" size="sm" />
+                <Progress value={(safeDashboard.skillGapSummary.strong / totalSkillsCount) * 100} barColor="bg-emerald-500" size="sm" />
 
                 <div className="flex items-center justify-between text-xs font-bold pt-2">
                   <span className="text-amber-700 flex items-center gap-1.5">
@@ -205,7 +220,7 @@ export default function DashboardPage() {
                   </span>
                   <span>{safeDashboard.skillGapSummary.needsWork} Skills</span>
                 </div>
-                <Progress value={(safeDashboard.skillGapSummary.needsWork / 8) * 100} barColor="bg-amber-500" size="sm" />
+                <Progress value={(safeDashboard.skillGapSummary.needsWork / totalSkillsCount) * 100} barColor="bg-amber-500" size="sm" />
 
                 <div className="flex items-center justify-between text-xs font-bold pt-2">
                   <span className="text-slate-600 flex items-center gap-1.5">
@@ -213,13 +228,13 @@ export default function DashboardPage() {
                   </span>
                   <span>{safeDashboard.skillGapSummary.missing} Skills</span>
                 </div>
-                <Progress value={(safeDashboard.skillGapSummary.missing / 8) * 100} barColor="bg-slate-300" size="sm" />
+                <Progress value={(safeDashboard.skillGapSummary.missing / totalSkillsCount) * 100} barColor="bg-slate-300" size="sm" />
               </div>
 
               <div className="pt-2">
-                <Link href="/recommendations">
-                  <Button variant="outline" size="sm" className="w-full text-xs font-bold">
-                    Explore Skill Gap Details
+                <Link href={`/skill-gap?targetCareer=${encodeURIComponent(safeDashboard.activeGoal.title)}`}>
+                  <Button variant="primary" size="sm" className="w-full text-xs font-bold gap-1.5 shadow-2xs">
+                    Explore Skill Gap Details <ArrowRight className="h-3.5 w-3.5" />
                   </Button>
                 </Link>
               </div>

@@ -64,7 +64,7 @@ const learnerProfileSchema = new Schema<ILearnerProfile>(
     skills: { type: [Schema.Types.Mixed] as any, default: [] },
     interests: { type: [String], default: [] },
     careerGoals: { type: [String], default: [] },
-    learningPreferences: { type: [String], default: [] },
+    learningPreferences: { type: Schema.Types.Mixed, default: [] },
     preferredLearningStyle: { type: String, default: 'Hands-on' },
     weeklyLearningHours: { type: Number, default: 10 },
     completedCourses: [

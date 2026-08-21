@@ -20,7 +20,14 @@ import {
   BookOpen,
   MapPin,
   Award,
-  Compass
+  Compass,
+  Lock,
+  Key,
+  ShieldCheck,
+  Eye,
+  EyeOff,
+  Loader2,
+  CheckCircle2
 } from 'lucide-react';
 import { AppLayout } from '@/components/layout/AppLayout';
 import { Card } from '@/components/ui/card';
@@ -30,15 +37,27 @@ import { useAuth } from '@/context/AuthContext';
 import { ConfirmSaveModal } from '@/components/profile/ConfirmSaveModal';
 import { Skill, SkillProficiency } from '@/types';
 import { getInitials } from '@/lib/utils';
+import { getSkillSuggestions, SuggestedSkill } from '@/lib/skill-suggestions';
 
 export default function ProfilePage() {
   const router = useRouter();
-  const { user, profile, loading: authLoading, updateUserAndProfile } = useAuth();
+  const { user, profile, loading: authLoading, updateUserAndProfile, changePassword } = useAuth();
 
   const [isEditing, setIsEditing] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [saving, setSaving] = useState(false);
   const [savedSuccess, setSavedSuccess] = useState(false);
+
+  // Password Change State
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [showCurrentPass, setShowCurrentPass] = useState(false);
+  const [showNewPass, setShowNewPass] = useState(false);
+  const [passLoading, setPassLoading] = useState(false);
+  const [passError, setPassError] = useState<string | null>(null);
+  const [passSuccess, setPassSuccess] = useState<string | null>(null);
+
 
   // Form State
   const [name, setName] = useState('');
@@ -157,6 +176,21 @@ export default function ProfilePage() {
     setSkills(skills.filter(s => s.name !== skillName));
   };
 
+  const handleAddSuggestedSkill = (skillName: string) => {
+    if (skills.some(s => s.name.toLowerCase() === skillName.toLowerCase())) return;
+    setSkills([
+      ...skills,
+      { name: skillName, proficiency: newSkillProficiency, category: 'programming' }
+    ]);
+  };
+
+  // Dynamic skill suggestions based on target goal & interests
+  const suggestedSkills = getSkillSuggestions({
+    targetGoal: targetCareerGoal,
+    interests,
+    existingSkills: skills.map(s => s.name)
+  });
+
   const handleAddInterest = () => {
     if (!newInterest.trim()) return;
     if (interests.some(i => i.toLowerCase() === newInterest.trim().toLowerCase())) return;
@@ -169,7 +203,41 @@ export default function ProfilePage() {
     setInterests(interests.filter(i => i !== interestToRemove));
   };
 
+  const handleChangePassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!currentPassword || !newPassword || !confirmPassword) {
+      setPassError('Please fill in all password fields.');
+      return;
+    }
+    if (newPassword.length < 6) {
+      setPassError('New password must be at least 6 characters long.');
+      return;
+    }
+    if (newPassword !== confirmPassword) {
+      setPassError('New passwords do not match.');
+      return;
+    }
+
+    setPassError(null);
+    setPassSuccess(null);
+    setPassLoading(true);
+
+    try {
+      await changePassword(currentPassword, newPassword);
+      setPassSuccess('Password updated successfully! Next time you log in, please use your new password.');
+      setCurrentPassword('');
+      setNewPassword('');
+      setConfirmPassword('');
+      setTimeout(() => setPassSuccess(null), 5000);
+    } catch (err: any) {
+      setPassError(err?.response?.data?.message || err?.message || 'Failed to update password. Please check your current password.');
+    } finally {
+      setPassLoading(false);
+    }
+  };
+
   if (authLoading && !user) {
+
     return (
       <AppLayout>
         <div className="flex items-center justify-center min-h-[60vh]">
@@ -240,7 +308,7 @@ export default function ProfilePage() {
                 </Badge>
               </div>
               <p className="text-indigo-200 text-xs flex items-center justify-center sm:justify-start gap-1.5">
-                <Mail className="h-3.5 w-3.5 text-indigo-300" /> {user?.email || 'learner@example.com'}
+                <Mail className="h-3.5 w-3.5 text-indigo-300" /> {user?.email || '—'}
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-indigo-100/90 font-medium">
                 <span className="flex items-center gap-1">
@@ -288,10 +356,11 @@ export default function ProfilePage() {
 
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-slate-700">Email Address (Read-only)</label>
-                  <div className="h-10 px-3 text-sm rounded-lg border border-slate-100 bg-slate-50 flex items-center text-slate-500 font-medium">
-                    {user?.email || 'learner@example.com'}
+                  <div className="h-10 px-3 text-sm rounded-lg border border-slate-100 bg-slate-50 flex items-center text-slate-700 font-bold">
+                    {user?.email || '—'}
                   </div>
                 </div>
+
 
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-slate-700">Education / Qualification</label>
@@ -432,34 +501,79 @@ export default function ProfilePage() {
                 )}
               </div>
 
-              {/* Add Skill Input in Edit Mode */}
+              {/* Add Skill Input & Typeahead in Edit Mode */}
               {isEditing && (
-                <div className="p-3 bg-indigo-50/50 rounded-xl border border-indigo-100 flex flex-col sm:flex-row items-center gap-2 mt-3">
-                  <input
-                    type="text"
-                    value={newSkillName}
-                    onChange={(e) => setNewSkillName(e.target.value)}
-                    placeholder="Skill name (e.g. Docker, PyTorch)"
-                    className="w-full sm:w-1/2 h-9 px-3 text-xs rounded-lg border border-slate-200 bg-white focus:outline-none focus:border-indigo-600"
-                  />
-                  <select
-                    value={newSkillProficiency}
-                    onChange={(e) => setNewSkillProficiency(e.target.value as SkillProficiency)}
-                    className="w-full sm:w-1/3 h-9 px-3 text-xs rounded-lg border border-slate-200 bg-white font-semibold"
-                  >
-                    <option value="Beginner">Beginner</option>
-                    <option value="Intermediate">Intermediate</option>
-                    <option value="Advanced">Advanced</option>
-                  </select>
-                  <Button
-                    type="button"
-                    variant="primary"
-                    size="sm"
-                    onClick={handleAddSkill}
-                    className="w-full sm:w-auto font-bold text-xs gap-1"
-                  >
-                    <Plus className="h-3.5 w-3.5" /> Add
-                  </Button>
+                <div className="space-y-3 pt-2">
+                  <div className="p-3 bg-indigo-50/50 rounded-xl border border-indigo-100 flex flex-col sm:flex-row items-center gap-2">
+                    <div className="relative w-full sm:w-1/2">
+                      <input
+                        type="text"
+                        value={newSkillName}
+                        onChange={(e) => setNewSkillName(e.target.value)}
+                        placeholder="Skill name (e.g. Docker, PyTorch)"
+                        className="w-full h-9 px-3 text-xs rounded-lg border border-slate-200 bg-white focus:outline-none focus:border-indigo-600 font-medium"
+                      />
+                    </div>
+                    <select
+                      value={newSkillProficiency}
+                      onChange={(e) => setNewSkillProficiency(e.target.value as SkillProficiency)}
+                      className="w-full sm:w-1/3 h-9 px-3 text-xs rounded-lg border border-slate-200 bg-white font-semibold text-slate-800"
+                    >
+                      <option value="Beginner">Beginner</option>
+                      <option value="Intermediate">Intermediate</option>
+                      <option value="Advanced">Advanced</option>
+                    </select>
+                    <Button
+                      type="button"
+                      variant="primary"
+                      size="sm"
+                      onClick={handleAddSkill}
+                      className="w-full sm:w-auto font-bold text-xs gap-1"
+                    >
+                      <Plus className="h-3.5 w-3.5" /> Add
+                    </Button>
+                  </div>
+
+                  {/* Smart Suggested Skills Aligned with Career Goal & Interests */}
+                  <div className="p-4 rounded-2xl bg-gradient-to-r from-indigo-50/80 via-purple-50/60 to-sky-50/60 border border-indigo-100 shadow-2xs space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Sparkles className="h-4 w-4 text-indigo-600 animate-pulse" />
+                        <h3 className="text-xs font-extrabold text-indigo-950 uppercase tracking-wider">
+                          Suggested for {targetCareerGoal || 'Your Goal'} & Interests
+                        </h3>
+                      </div>
+                      <span className="text-[11px] text-indigo-600 font-bold">
+                        Click chip to quick-add
+                      </span>
+                    </div>
+
+                    {suggestedSkills.length > 0 ? (
+                      <div className="flex flex-wrap gap-2 pt-1">
+                        {suggestedSkills
+                          .filter(sug => !newSkillName || sug.name.toLowerCase().includes(newSkillName.toLowerCase()))
+                          .map((sug) => (
+                            <button
+                              key={sug.name}
+                              type="button"
+                              onClick={() => handleAddSuggestedSkill(sug.name)}
+                              className="group px-3 py-1.5 rounded-xl bg-white border border-indigo-200/90 hover:border-indigo-600 hover:bg-indigo-600 hover:text-white flex items-center gap-1.5 text-xs font-extrabold text-indigo-900 shadow-2xs transition-all duration-200 cursor-pointer"
+                              title={`Add ${sug.name} (${sug.reason})`}
+                            >
+                              <Plus className="h-3.5 w-3.5 text-indigo-500 group-hover:text-white transition-colors" />
+                              <span>{sug.name}</span>
+                              <span className="text-[9px] uppercase tracking-wider font-bold px-1.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 group-hover:bg-indigo-500 group-hover:text-white transition-colors">
+                                {sug.source === 'goal' ? 'Goal' : 'Interest'}
+                              </span>
+                            </button>
+                          ))}
+                      </div>
+                    ) : (
+                      <p className="text-xs text-slate-500 italic">
+                        All top recommended skills for {targetCareerGoal || 'your target goal'} and interests have been added!
+                      </p>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
@@ -583,6 +697,148 @@ export default function ProfilePage() {
           </Card>
         </form>
 
+        {/* Section 5: Account Security & Credentials */}
+        <Card className="p-6 sm:p-8 bg-white border-slate-200 shadow-soft rounded-2xl space-y-6">
+          <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
+            <div className="p-2.5 rounded-xl bg-indigo-50 text-indigo-600">
+              <ShieldCheck className="h-6 w-6" />
+            </div>
+            <div>
+              <h2 className="font-extrabold text-lg text-slate-900">Account Security & Credentials</h2>
+              <p className="text-xs text-slate-500">View your assigned account details and update your password securely.</p>
+            </div>
+          </div>
+
+          {/* Account Details Summary */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-slate-50/80 p-4 rounded-xl border border-slate-100">
+            <div className="space-y-1">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Assigned Mail ID</span>
+              <p className="text-xs font-bold text-slate-800 truncate flex items-center gap-1.5">
+                <Mail className="h-3.5 w-3.5 text-indigo-600 shrink-0" />
+                {user?.email || 'Not logged in'}
+              </p>
+            </div>
+            <div className="space-y-1">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Account Role</span>
+              <p className="text-xs font-bold text-slate-800 capitalize flex items-center gap-1.5">
+                <UserIcon className="h-3.5 w-3.5 text-indigo-600 shrink-0" />
+                {user?.role || 'user'}
+              </p>
+            </div>
+            <div className="space-y-1">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Account ID</span>
+              <p className="text-xs font-mono font-bold text-slate-600 truncate">
+                {user?.id || (user as any)?._id || '–'}
+              </p>
+            </div>
+          </div>
+
+          {/* Change Password Form */}
+          <form onSubmit={handleChangePassword} className="space-y-4 pt-2">
+            <h3 className="text-xs font-extrabold text-slate-800 flex items-center gap-2">
+              <Key className="h-4 w-4 text-indigo-600" /> Change Password
+            </h3>
+
+            {passError && (
+              <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-medium flex items-center gap-2">
+                <X className="h-4 w-4 shrink-0" />
+                <span>{passError}</span>
+              </div>
+            )}
+
+            {passSuccess && (
+              <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold flex items-center gap-2 animate-in fade-in duration-200">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+                <span>{passSuccess}</span>
+              </div>
+            )}
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {/* Current Password */}
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-slate-700">Current Password</label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
+                  <input
+                    type={showCurrentPass ? 'text' : 'password'}
+                    value={currentPassword}
+                    onChange={(e) => setCurrentPassword(e.target.value)}
+                    placeholder="••••••••"
+                    required
+                    className="w-full h-10 pl-9 pr-9 text-xs rounded-lg border border-slate-200 bg-white focus:outline-none focus:border-indigo-600 transition-colors"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowCurrentPass(!showCurrentPass)}
+                    className="absolute right-2.5 top-3 text-slate-400 hover:text-slate-600"
+                  >
+                    {showCurrentPass ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  </button>
+                </div>
+              </div>
+
+              {/* New Password */}
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-slate-700">New Password</label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
+                  <input
+                    type={showNewPass ? 'text' : 'password'}
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                    placeholder="Min 6 characters"
+                    required
+                    className="w-full h-10 pl-9 pr-9 text-xs rounded-lg border border-slate-200 bg-white focus:outline-none focus:border-indigo-600 transition-colors"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowNewPass(!showNewPass)}
+                    className="absolute right-2.5 top-3 text-slate-400 hover:text-slate-600"
+                  >
+                    {showNewPass ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  </button>
+                </div>
+              </div>
+
+              {/* Confirm New Password */}
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-slate-700">Confirm New Password</label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
+                  <input
+                    type={showNewPass ? 'text' : 'password'}
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    placeholder="Repeat new password"
+                    required
+                    className="w-full h-10 pl-9 pr-3 text-xs rounded-lg border border-slate-200 bg-white focus:outline-none focus:border-indigo-600 transition-colors"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-end pt-2">
+              <Button
+                type="submit"
+                variant="primary"
+                size="sm"
+                disabled={passLoading}
+                className="gap-2 font-bold text-xs px-5 shadow-xs"
+              >
+                {passLoading ? (
+                  <>
+                    <Loader2 className="h-3.5 w-3.5 animate-spin" /> Updating...
+                  </>
+                ) : (
+                  <>
+                    <Lock className="h-3.5 w-3.5" /> Update Password
+                  </>
+                )}
+              </Button>
+            </div>
+          </form>
+        </Card>
+
         {/* Confirmation Modal */}
         <ConfirmSaveModal
           isOpen={showConfirmModal}
@@ -594,3 +850,4 @@ export default function ProfilePage() {
     </AppLayout>
   );
 }
+

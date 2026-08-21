@@ -55,9 +55,31 @@ export const updateRoadmap = async (
   try {
     const userId = req.user!._id;
     const id = req.params.id as string;
-    const { status } = req.body;
+    const { status, phaseId, milestoneId } = req.body;
+
+    if (milestoneId) {
+      const updated = await roadmapService.toggleRoadmapMilestone(userId, id, phaseId, milestoneId);
+      res.status(200).json(new ApiResponse(200, updated, 'Roadmap milestone updated successfully'));
+      return;
+    }
+
     const updated = await roadmapService.updateRoadmapStatus(id, userId, status);
     res.status(200).json(new ApiResponse(200, updated, 'Roadmap updated successfully'));
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const deleteRoadmap = async (
+  req: AuthenticatedRequest,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const userId = req.user!._id;
+    const id = req.params.id as string;
+    await roadmapService.deleteRoadmap(id, userId);
+    res.status(200).json(new ApiResponse(200, null, 'Roadmap deleted successfully'));
   } catch (error) {
     next(error);
   }

@@ -49,6 +49,7 @@ const progressSchema = new Schema<IProgress>(
 );
 
 progressSchema.index({ userId: 1, roadmapId: 1 });
-progressSchema.index({ userId: 1, milestoneId: 1 });
+progressSchema.index({ userId: 1, milestoneId: 1 }, { unique: true });
+progressSchema.index({ userId: 1, roadmapId: 1, milestoneId: 1 }, { unique: true });
 
 export const Progress = mongoose.model<IProgress>('Progress', progressSchema);

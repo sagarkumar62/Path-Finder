@@ -2,6 +2,8 @@ import { Request, Response, NextFunction } from 'express';
 import { verifyAccessToken, TokenPayload } from '../utils/jwt';
 import { ApiError } from '../utils/ApiError';
 import { User } from '../models/User';
+import { logger } from '../utils/logger';
+import { env } from '../config/env';
 
 export interface AuthenticatedRequest extends Request {
   user?: TokenPayload & { _id: string };
@@ -12,11 +14,21 @@ export const authenticate = async (
   res: Response,
   next: NextFunction
 ): Promise<void> => {
-  try {
-    let token: string | undefined = req.cookies?.accessToken;
+  let tokenSource: 'header' | 'cookie' | 'none' = 'none';
+  let token: string | undefined = undefined;
 
-    if (!token && req.headers.authorization?.startsWith('Bearer ')) {
+  try {
+    // Authorization header takes precedence over browser cookies
+    if (req.headers.authorization?.startsWith('Bearer ')) {
       token = req.headers.authorization.split(' ')[1];
+      tokenSource = 'header';
+    } else if (req.cookies?.accessToken) {
+      token = req.cookies.accessToken;
+      tokenSource = 'cookie';
+    }
+
+    if (env.NODE_ENV === 'development') {
+      logger.info(`[AuthMiddleware] ${req.method} ${req.path} | Token present: ${Boolean(token)} | Token source: ${tokenSource} | Length: ${token?.length || 0}`);
     }
 
     if (!token) {
@@ -35,8 +47,16 @@ export const authenticate = async (
       _id: decoded.userId,
     };
 
+    if (env.NODE_ENV === 'development') {
+      logger.info(`[AuthMiddleware] JWT verification success | Authenticated User ID: ${decoded.userId}`);
+    }
+
     next();
   } catch (error: any) {
+    if (env.NODE_ENV === 'development') {
+      logger.warn(`[AuthMiddleware] Auth verification failed on ${req.method} ${req.path} | Source: ${tokenSource} | Error: ${error.message}`);
+    }
+
     if (error.name === 'JsonWebTokenError' || error.name === 'TokenExpiredError') {
       next(ApiError.unauthorized('Invalid or expired authentication token.'));
     } else {

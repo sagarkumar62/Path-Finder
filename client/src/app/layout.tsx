@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Inter } from 'next/font/google';
 import './globals.css';
 import { QueryProvider } from '@/providers/query-provider';
 import { AuthProvider } from '@/context/AuthContext';
+import { SocketProvider } from '@/context/SocketContext';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -31,7 +32,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 selection:bg-indigo-500 selection:text-white" suppressHydrationWarning>
         <QueryProvider>
           <AuthProvider>
-            {children}
+            <SocketProvider>
+              {children}
+            </SocketProvider>
           </AuthProvider>
         </QueryProvider>
       </body>

@@ -8,6 +8,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { api } from '@/lib/api';
+import { useAuth } from '@/context/AuthContext';
 
 const AVAILABLE_SKILLS = [
   'JavaScript', 'TypeScript', 'React', 'Node.js', 'Python', 'Git',
@@ -25,6 +26,7 @@ const INTEREST_OPTIONS = [
 
 export default function OnboardingPage() {
   const router = useRouter();
+  const { updateUserAndProfile } = useAuth();
   const [step, setStep] = useState(1);
   const totalSteps = 7;
 
@@ -87,19 +89,20 @@ export default function OnboardingPage() {
     setStep(7);
     setIsProcessing(true);
 
-    // Save profile to API
-    await api.saveProfile({
+    // Save profile to API and invalidate query caches
+    await updateUserAndProfile({}, {
       skills: Object.entries(selectedSkills).map(([name, level]) => ({ name, proficiency: level })),
       interests: selectedInterests,
       education,
       experienceLevel,
       targetCareerGoal: targetGoal,
+      targetCareer: targetGoal,
       goalReason,
       learningPreferences: {
         formats: learningFormats as any,
         weeklyHours
       }
-    });
+    } as any);
 
     // Simulate intelligent processing steps
     for (let i = 0; i < 4; i++) {

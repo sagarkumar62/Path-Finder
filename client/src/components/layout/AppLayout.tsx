@@ -12,9 +12,10 @@ import {
   User,
   LogOut,
   Menu,
-  X
+  X,
+  Target
 } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { api } from '@/lib/api';
 import { useAuth } from '@/context/AuthContext';
@@ -24,6 +25,7 @@ const NAV_ITEMS = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/recommendations', label: 'Explore Careers', icon: Compass },
   { href: '/roadmap', label: 'My Roadmap', icon: MapPin },
+  { href: '/skill-gap', label: 'Skill Gap', icon: Target },
   { href: '/progress', label: 'Progress', icon: BarChart2 },
   { href: '/assistant', label: 'AI Assistant', icon: Bot },
   { href: '/profile', label: 'Profile', icon: User }
@@ -33,13 +35,21 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { user } = useAuth();
+  const { user, loading, refreshAuth } = useAuth();
   const userInitials = getInitials(user?.name);
+
+  useEffect(() => {
+    if (!loading && !user) {
+      router.push('/login');
+    }
+  }, [loading, user, router]);
 
   const handleLogout = async () => {
     await api.logout();
+    await refreshAuth();
     router.push('/login');
   };
+
 
   return (
     <div className="min-h-screen flex bg-slate-50">

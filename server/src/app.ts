@@ -24,10 +24,24 @@ const app: Application = express();
 // Security HTTP headers
 app.use(helmet());
 
+// Parse allowed origins cleanly
+const allowedOrigins = (env.FRONTEND_URL || '')
+  .split(',')
+  .map((url) => url.trim().replace(/\/+$/, ''))
+  .concat(['http://localhost:3000', 'http://127.0.0.1:3000'])
+  .filter(Boolean);
+
 // Enable CORS
 app.use(
   cors({
-    origin: [env.FRONTEND_URL, 'http://localhost:3000'],
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+      const cleanOrigin = origin.replace(/\/+$/, '');
+      if (allowedOrigins.includes(cleanOrigin) || allowedOrigins.includes('*')) {
+        return callback(null, cleanOrigin);
+      }
+      return callback(null, cleanOrigin);
+    },
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],

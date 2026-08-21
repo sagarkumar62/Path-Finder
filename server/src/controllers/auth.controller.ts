@@ -111,3 +111,16 @@ export const updateMe = async (req: AuthenticatedRequest, res: Response, next: N
     next(error);
   }
 };
+
+export const changePassword = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  try {
+    const userId = req.user!._id;
+    const { currentPassword, newPassword } = req.body;
+    await authService.changePassword(userId, currentPassword, newPassword);
+
+    res.status(200).json(new ApiResponse(200, null, 'Password changed successfully'));
+  } catch (error) {
+    next(error);
+  }
+};
+

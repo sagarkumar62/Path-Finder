@@ -137,6 +137,22 @@ export class AuthService {
     (userObj as any).id = user._id.toString();
     return userObj;
   }
+
+  async changePassword(userId: string, currentPassword: string, newPassword: string): Promise<void> {
+    const user = await User.findById(userId).select('+password');
+    if (!user) {
+      throw ApiError.notFound('User not found.');
+    }
+
+    const isMatch = await user.comparePassword(currentPassword);
+    if (!isMatch) {
+      throw ApiError.badRequest('Current password is incorrect.');
+    }
+
+    user.password = newPassword;
+    await user.save();
+  }
 }
 
 export const authService = new AuthService();
+

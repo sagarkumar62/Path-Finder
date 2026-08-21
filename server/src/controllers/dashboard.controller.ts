@@ -27,7 +27,7 @@ export const getDashboardData = async (
         progressService.getProgressSummary(userId),
       ]);
 
-    const targetCareer = profileDoc?.targetCareer || activeRoadmapDoc?.targetCareer || 'AI Engineer';
+    const targetCareer = (profileDoc as any)?.targetCareerGoal || profileDoc?.targetCareer || activeRoadmapDoc?.targetCareer || 'AI Engineer';
 
     // Skill gap analysis
     let skillGapData = null;
@@ -41,6 +41,33 @@ export const getDashboardData = async (
         skillsToImprove: [],
         priority: [],
       };
+    }
+
+    // Calculate dynamic % AI Fit score based on user's current acquired skills and roadmap progress
+    let recommendations: any[] = [];
+    let targetRec = null;
+    let matchScore = 75;
+
+    try {
+      recommendations = await recommendationService.getRecommendations(userId);
+      targetRec = recommendations.find((r) => r.career.toLowerCase() === targetCareer.toLowerCase()) || recommendations[0];
+
+      if (skillGapData && Array.isArray(skillGapData.details) && skillGapData.details.length > 0) {
+        const totalReq = skillGapData.details.length;
+        const mastered = skillGapData.details.filter((d: any) => d.category === 'strong' || d.currentLevel >= 3).length;
+        const inProgress = skillGapData.details.filter((d: any) => d.category === 'needsWork').length;
+
+        // Base skill match ratio (70% weight) + roadmap completion boost (30% weight)
+        const skillRatio = (mastered + inProgress * 0.5) / totalReq;
+        const roadmapBoost = ((progressSummary.overallPercentage || 0) / 100) * 0.3;
+
+        const calculatedScore = Math.round((skillRatio * 0.7 + roadmapBoost) * 100);
+        matchScore = Math.min(99, Math.max(35, calculatedScore));
+      } else if (targetRec) {
+        matchScore = targetRec.matchScore;
+      }
+    } catch (err) {
+      console.warn('[DashboardController] Error computing AI fit match score:', err);
     }
 
     // Determine next actions for user
@@ -60,21 +87,40 @@ export const getDashboardData = async (
 
     const payload = {
       user: userDoc,
+      activeGoal: {
+        careerId: targetRec?.id || 'active_goal',
+        title: targetCareer,
+        matchScore,
+        estimatedMonths: targetRec ? parseInt(targetRec.estimatedTransition) || 6 : 6,
+        scoreBreakdown: targetRec?.scoreBreakdown
+      },
       careerGoal: {
         targetCareer,
-        experienceLevel: profileDoc?.experienceLevel || 'Beginner',
+        experienceLevel: profileDoc?.experienceLevel || 'Mid',
         weeklyLearningHours: profileDoc?.weeklyLearningHours || 10,
-        careerGoals: profileDoc?.careerGoals || [],
       },
-      topRecommendations: latestRecommendationDoc?.recommendations || [],
+      topRecommendations: recommendations.length > 0 ? recommendations : (latestRecommendationDoc?.recommendations || []),
       skillGap: skillGapData,
+      skillGapSummary: {
+        strong: skillGapData?.summary?.strongCount ?? skillGapData?.details?.filter((d: any) => d.category === 'strong').length ?? 0,
+        needsWork: skillGapData?.summary?.needsWorkCount ?? skillGapData?.details?.filter((d: any) => d.category === 'needsWork').length ?? 0,
+        missing: skillGapData?.summary?.missingCount ?? skillGapData?.details?.filter((d: any) => d.category === 'missing').length ?? 0,
+      },
       roadmap: activeRoadmapDoc || null,
       progress: progressSummary,
+      currentProgress: {
+        overallCompletionPercent: progressSummary.overallPercentage ?? activeRoadmapDoc?.overallCompletionPercent ?? 0,
+        completedMilestones: progressSummary.completedMilestones ?? 0,
+        totalMilestones: progressSummary.totalMilestones ?? 0,
+        learningHours: progressSummary.totalTimeSpentHours ?? 0,
+        streakDays: progressSummary.currentStreakDays ?? 0,
+      },
       nextActions,
       recentActivity: progressSummary.recentActivity || [],
     };
 
     res.status(200).json(new ApiResponse(200, payload, 'Dashboard data aggregated successfully'));
+
   } catch (error) {
     next(error);
   }
